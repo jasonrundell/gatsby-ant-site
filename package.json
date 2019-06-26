@@ -19,7 +19,12 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.8.6"
   },
   "keywords": [
     "gatsby"
