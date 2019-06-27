@@ -1,12 +1,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Header from '../header'
+import Image from '../image'
 
-describe('Header', () => {
-  it('renders correctly', () => {
+describe("Image", () => {
+  it("renders correctly", () => {
     const tree = renderer
-      .create(<Header siteTitle="Default Starter" />)
+      .create(<Image />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
