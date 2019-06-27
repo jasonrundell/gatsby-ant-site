@@ -1,13 +1,12 @@
-import React from "react"
+import React from 'react'
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { title, children } = this.props
     return (
       <>
         <Header siteTitle={title} />
