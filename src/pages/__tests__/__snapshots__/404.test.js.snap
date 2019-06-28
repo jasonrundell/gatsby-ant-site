@@ -43,6 +43,7 @@ Array [
        
       <a
         href="https://www.gatsbyjs.org"
+        rel="noopener noreferrer"
       >
         Gatsby
       </a>
