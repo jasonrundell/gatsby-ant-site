@@ -7,16 +7,11 @@ import SEO from '../components/seo'
 
 import styles from './index.module.scss'
 
-console.log(styles)
-
-const Index = () => ({
+/*export default () => ({
   render() {
     const { data } = this.props
-    const { title } = data.site.siteMetadata
-    const { description } = data.site.siteMetadata
-    const { author } = data.site.siteMetadata
+    const { title, description, author, lang } = data.site.siteMetadata
     const { file } = data
-    const lang = 'en'
 
     return (
       <Layout title={title}>
@@ -31,9 +26,36 @@ const Index = () => ({
       </Layout>
     )
   }
-})
+})*/
 
-export default Index
+export default ({data}) => (
+  <Layout 
+    title={data.site.siteMetadata.title}
+  >
+    <SEO 
+      title={data.site.siteMetadata.title} 
+      description={data.site.siteMetadata.description} 
+      author={data.site.siteMetadata.author} 
+      lang={data.site.siteMetadata.lang} 
+    />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div 
+      className={styles.containerFigure}
+    >
+      <Figure 
+        image={data.file} 
+        altText="Astronaut" 
+      />
+    </div>
+    <Link 
+      to="/page-2/"
+    >
+      Go to page 2
+    </Link>
+  </Layout>
+)
 
 export const pageQuery = graphql`
   query {
@@ -41,7 +63,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title,
         description,
-        author
+        author,
+        lang
       }
     },
     file(relativePath: { eq: "gatsby-astronaut.png" }) {
