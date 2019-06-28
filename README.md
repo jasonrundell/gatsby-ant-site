@@ -4,6 +4,10 @@ Kick off your blog project with this default boilerplate (based off of https://g
 
 _Have another more specific idea? You may want to check out Gatsby's vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
+## View current build
+
+[https://jovial-swartz-3be317.netlify.com](https://jovial-swartz-3be317.netlify.com)
+
 ## 🚀 Quick start
 Some knowledge of `GatsbyJS`, `NPM`, `React`, `Markdown`, `JavaScript`, `Node`, `HTML`, `CSS`, `SASS`, and `GraphQL` will help greatly when using this project and latering it for your own purposes.
 
