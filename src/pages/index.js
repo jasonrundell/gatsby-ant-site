@@ -7,27 +7,6 @@ import SEO from '../components/seo'
 
 import styles from './index.module.scss'
 
-/*export default () => ({
-  render() {
-    const { data } = this.props
-    const { title, description, author, lang } = data.site.siteMetadata
-    const { file } = data
-
-    return (
-      <Layout title={title}>
-        <SEO title={title} description={description} author={author} lang={lang} />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div className={styles.containerFigure}>
-          <Figure image={file} altText="Astronaut" />
-        </div>
-        <Link to="/page-2/">Go to page 2</Link>
-      </Layout>
-    )
-  }
-})*/
-
 export default ({data}) => (
   <Layout 
     title={data.site.siteMetadata.title}
