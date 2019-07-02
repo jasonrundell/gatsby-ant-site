@@ -1,0 +1,4 @@
+install:
+  - npm install # make sure to install the deps when Travis runs.
+after_success:
+  - npm run lh -- --perf=96 --pwa=100 https://jovial-swartz-3be317.netlify.com
