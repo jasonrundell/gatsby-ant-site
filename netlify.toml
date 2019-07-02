@@ -1,0 +1,2 @@
+[build]
+  command = "npm run lh -- --perf=96 --pwa=100 https://jovial-swartz-3be317.netlify.com"
