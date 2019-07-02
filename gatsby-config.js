@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Starter Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    lang: 'en'
+    lang: `en`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,7 +28,8 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-react-axe`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
   ],
 }
