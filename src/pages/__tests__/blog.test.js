@@ -1,19 +1,19 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import SecondPage from '../page-2'
+import Blog from '../blog'
 
-describe('SecondPage', () => {
+describe('Blog', () => {
   it('renders correctly', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: "SecondPage",
+          title: "Blog",
         },
       },
     }
 
-    const tree = renderer.create(<SecondPage data={data} />).toJSON()
+    const tree = renderer.create(<Blog data={data} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

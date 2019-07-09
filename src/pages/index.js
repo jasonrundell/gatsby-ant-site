@@ -29,9 +29,9 @@ export default ({data}) => (
       />
     </div>
     <Link 
-      to="/page-2/"
+      to="/blog/"
     >
-      Go to page 2
+      Go to the Blog
     </Link>
   </Layout>
 )
