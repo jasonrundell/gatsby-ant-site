@@ -2,15 +2,19 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-// import SEO from '../components/seo'
+import SEO from '../components/seo'
 
-import styles from './blog.module.scss'
-
-export default function Blog(props) {
+export default props => {
   const { data } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout title={data.site.siteMetadata.title}>
+      <SEO
+        title={`${data.site.siteMetadata.title} | Blog`}
+        description={`Blog posts by ${data.site.siteMetadata.author}`}
+        author={data.site.siteMetadata.author}
+        lang={data.site.siteMetadata.lang}
+      />
       <ul>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
@@ -27,7 +31,7 @@ export default function Blog(props) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     site {
       siteMetadata {
         title
@@ -36,7 +40,10 @@ export const pageQuery = graphql`
         lang
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      limit: 5
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 250)

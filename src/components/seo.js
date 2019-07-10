@@ -2,25 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-const SEO = ({ description, author, lang, title, meta }) => (
+const SEO = props => (
   <Helmet
     htmlAttributes={{
-      lang,
+      lang: props.lang,
     }}
-    title={title}
-    titleTemplate={`%s | ${title}`}
+    title={props.title}
     meta={[
       {
         name: `description`,
-        content: description,
+        content: props.description,
       },
       {
         property: `og:title`,
-        content: title,
+        content: props.title,
       },
       {
         property: `og:description`,
-        content: description,
+        content: props.description,
       },
       {
         property: `og:type`,
@@ -32,17 +31,17 @@ const SEO = ({ description, author, lang, title, meta }) => (
       },
       {
         name: `twitter:creator`,
-        content: author,
+        content: props.author,
       },
       {
         name: `twitter:title`,
-        content: title,
+        content: props.title,
       },
       {
         name: `twitter:description`,
-        content: description,
+        content: props.description,
       },
-    ].concat(meta)}
+    ].concat(props.meta)}
   />
 )
 

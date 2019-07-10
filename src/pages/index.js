@@ -10,7 +10,7 @@ import styles from './index.module.scss'
 export default ({ data }) => (
   <Layout title={data.site.siteMetadata.title}>
     <SEO
-      title={data.site.siteMetadata.title}
+      title={`${data.site.siteMetadata.title} | Home`}
       description={data.site.siteMetadata.description}
       author={data.site.siteMetadata.author}
       lang={data.site.siteMetadata.lang}
@@ -25,7 +25,7 @@ export default ({ data }) => (
 )
 
 export const pageQuery = graphql`
-  query {
+  query IndexQuery {
     site {
       siteMetadata {
         title

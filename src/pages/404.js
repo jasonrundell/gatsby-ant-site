@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 export default ({ data }) => (
   <Layout title={data.site.siteMetadata.title}>
     <SEO
-      title={data.site.siteMetadata.title}
+      title={`${data.site.siteMetadata.title} | 404 Page not found`}
       description={data.site.siteMetadata.description}
       author={data.site.siteMetadata.author}
       lang={data.site.siteMetadata.lang}
