@@ -31,11 +31,11 @@ export default function Template(props) {
         <div>
           {prev &&
             <Link to={prev.frontmatter.path}>
-              {prev.frontmatter.title}
+              ← Previous blog: {prev.frontmatter.title}
             </Link>}
           {next &&
             <Link to={next.frontmatter.path}>
-              {next.frontmatter.title}
+              Next blog: {next.frontmatter.title} →
             </Link>}
         </div>
       </article>

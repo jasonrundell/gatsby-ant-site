@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ImageFluid from './image-fluid'
 
 const Figure = ({ altText, caption, image }) => ({
-  render (){
+  render() {
     let dataCaption = ''
     if (caption) {
       dataCaption = <figcaption>{caption}</figcaption>
@@ -15,7 +15,7 @@ const Figure = ({ altText, caption, image }) => ({
         {dataCaption}
       </figure>
     )
-  }  
+  },
 })
 
 Figure.defaultProps = {

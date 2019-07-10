@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from 'gatsby'
+import React from 'react'
 
-import styles from "./breadcrumb.module.scss"
+import styles from './breadcrumb.module.scss'
 
 export default () => (
   <nav aria-label="Breadcrumb" className={styles.breadcrumb}>

@@ -8,7 +8,7 @@ describe('Page404', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: "Page404",
+          title: 'Page404',
         },
       },
     }

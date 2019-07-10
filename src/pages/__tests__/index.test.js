@@ -8,19 +8,19 @@ describe('Index', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: "Default Starter Blog",
+          title: 'Default Starter Blog',
         },
       },
       file: {
         childImageSharp: {
           fluid: {
-            base64: "",
+            base64: '',
             aspectRatio: 1,
-            src: "",
-            srcSet: "",
-            sizes: ""
-          }
-        }
+            src: '',
+            srcSet: '',
+            sizes: '',
+          },
+        },
       },
     }
 

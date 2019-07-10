@@ -8,7 +8,7 @@ describe('Blog', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: "Blog",
+          title: 'Blog',
         },
       },
     }
