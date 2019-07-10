@@ -1,5 +1,5 @@
 .header {
-  background-color: rebeccapurple;
+  background-color: purple;
   margin-bottom: 1.45rem;
 }
 
@@ -16,4 +16,7 @@
 .link {
   color: white;
   text-decoration: none;
+  &:visited {
+    color: white;
+  }
 }

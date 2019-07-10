@@ -7,6 +7,11 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-axe`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,8 +23,6 @@ module.exports = {
         name: 'blog',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -45,8 +48,5 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-react-axe`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-offline`,
   ],
 }

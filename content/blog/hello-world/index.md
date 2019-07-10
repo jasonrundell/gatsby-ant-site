@@ -1,5 +1,7 @@
 ---
 title: "Hello World"
+description: "Hello World meta description"
+author: "Jason Rundell"
 date: "2017-07-14T03:49:16.408Z"
 path: /hello-world
 tags: ["test"]
