@@ -5,8 +5,13 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    li {
-      margin: 0 1rem 0 0;
+    li + li::before {
+      display: inline-block;
+      margin: 0 0.75rem;
+      transform: rotate(15deg);
+      border-right: 1px solid currentColor;
+      height: 0.8em;
+      content: '';
     }
   }
 }
