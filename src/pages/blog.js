@@ -16,7 +16,7 @@ export default function Blog(props) {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <li key={post.id} className={styles.postContainer}>
+              <li key={post.id}>
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
               </li>
             )
