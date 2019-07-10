@@ -11,24 +11,17 @@ export default function Blog(props) {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <section>
+      <ul>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <article key={post.id} className={styles.postContainer}>
-                <h1>
-                  <Link to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </h1>
-                <h2>{post.frontmatter.date}</h2>
-                <p>{post.excerpt}</p>
-                <Link to={post.frontmatter.path}>Read more</Link>
-              </article>
+              <li key={post.id} className={styles.postContainer}>
+                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+              </li>
             )
           })}
-      </section>
+      </ul>
     </Layout>
   )
 }

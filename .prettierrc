@@ -2,5 +2,7 @@
   "endOfLine": "lf",
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "proseWrap": "always",
+  "htmlWhitespaceSensitivity": "strict"
 }
