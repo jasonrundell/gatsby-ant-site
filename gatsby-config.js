@@ -15,12 +15,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-      options: {
         path: `${__dirname}/content/blog`,
         name: 'blog',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -42,11 +45,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              linkImagesToOriginal: false
-            }
-          }
-        ]
-      }
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
     },
   ],
 }
