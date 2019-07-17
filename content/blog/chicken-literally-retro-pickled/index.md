@@ -7,7 +7,9 @@ path: /chicken-literally-retro-pickled
 tags: ['chicken', 'pickle', 'retro']
 ---
 
-![le Yak](./images/animal-animal-photography-blur-671931.jpg)
+![Yak](./images/animal-animal-photography-blur-671931.jpg)
+
+> Photo by Shane Aldendorff from Pexels
 
 Lorem ipsum dolor amet franzen post-ironic fanny pack flannel neutra brunch
 paleo chicharrones enamel pin everyday carry. 90's celiac tofu truffaut venmo

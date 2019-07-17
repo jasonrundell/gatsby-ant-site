@@ -7,7 +7,9 @@ path: /swag-direct-trade
 tags: ['swag', 'trade']
 ---
 
-![Yo Yo Yak](./images/animal-animal-photography-blur-2382741.jpg)
+![Yak](./images/animal-animal-photography-blur-2382741.jpg)
+
+> Photo by kelly lacy from Pexels
 
 Lorem ipsum dolor amet swag banjo viral roof party typewriter flannel health
 goth pok pok kickstarter. Roof party coloring book VHS kombucha tote bag banjo.
@@ -17,7 +19,7 @@ pok. Plaid +1 street art meggings glossier tbh ethical tacos lo-fi tattooed
 synth brooklyn gluten-free. Tote bag craft beer raclette, waistcoat butcher four
 dollar toast poutine pok pok dreamcatcher chia glossier taxidermy.
 
-## helvetica master cleanse
+## Helvetica master cleanse
 
 Flexitarian pabst aesthetic leggings. Normcore green juice mixtape, flexitarian
 cred snackwave microdosing yr pinterest biodiesel tofu gentrify vinyl. Vice
