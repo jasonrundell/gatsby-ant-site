@@ -3,7 +3,7 @@ title: 'Swag Direct Trade'
 description: 'Swag Direct Trade meta description'
 author: 'Jason Rundell'
 date: '2019-07-10'
-path: /swag-direct-trade
+path: /blog/swag-direct-trade
 tags: ['swag', 'trade']
 ---
 

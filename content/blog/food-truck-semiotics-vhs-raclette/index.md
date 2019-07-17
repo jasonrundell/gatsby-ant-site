@@ -3,7 +3,7 @@ title: 'Food Truck Semiotics VHS Raclette'
 description: 'Food Truck Semiotics VHS Raclette meta description'
 author: 'Jason Rundell'
 date: '2019-07-14'
-path: /food-truck-semiotics-vhs-raclette
+path: /blog/food-truck-semiotics-vhs-raclette
 tags: ['food', 'truck', 'vhs']
 ---
 

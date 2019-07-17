@@ -3,7 +3,7 @@ title: 'Chicken Literally Retro Pickled'
 description: 'Chicken Literally Retro Pickled description'
 author: 'Jason Rundell'
 date: '2019-07-09'
-path: /chicken-literally-retro-pickled
+path: /blog/chicken-literally-retro-pickled
 tags: ['chicken', 'pickle', 'retro']
 ---
 
