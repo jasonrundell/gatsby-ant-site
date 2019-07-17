@@ -2,9 +2,12 @@
   font-size: 1rem;
   ol {
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.7;
     li + li::before {
       display: inline-block;
       margin: 0 0.75rem;
