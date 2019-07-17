@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Breadcrumb from '../components/breadcrumb'
 
+import styles from './blog-post.module.scss'
+
 export default function Template(props) {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
@@ -25,7 +27,9 @@ export default function Template(props) {
       />
       <article>
         <h1>{post.frontmatter.title}</h1>
-        <h2>{post.frontmatter.date}</h2>
+        <time datetime={post.frontmatter.date} className={styles.time}>
+          {post.frontmatter.date}
+        </time>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <div>
           {prev && (
