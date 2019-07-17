@@ -3,20 +3,21 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Breadcrumb from '../components/breadcrumb'
 
 export default props => {
   const { data } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <Layout title={data.site.siteMetadata.title}>
+    <Layout
+      title={data.site.siteMetadata.title}
+      crumbs={[{ path: '/blog/', text: 'Blog' }]}
+    >
       <SEO
         title={`${data.site.siteMetadata.title} | Blog`}
         description={`Blog posts by ${data.site.siteMetadata.author}`}
         author={data.site.siteMetadata.author}
         lang={data.site.siteMetadata.lang}
       />
-      <Breadcrumb crumbs={[{ path: '/blog/', text: 'Blog' }]} />
       <ul>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
