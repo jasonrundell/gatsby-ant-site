@@ -23,15 +23,37 @@ Array [
   <div
     className="container"
   >
+    <nav
+      aria-label="Breadcrumb"
+      className="breadcrumb"
+    >
+      <ol>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/blog/"
+          >
+            Blog
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>,
+  <div
+    className="container"
+  >
     <main>
       <h1>
         Hi people
       </h1>
       <p>
         Welcome to your new Gatsby site.
-      </p>
-      <p>
-        Now go build something great.
       </p>
       <div
         className="containerFigure"
@@ -94,12 +116,14 @@ Array [
         </figure>
       </div>
       <a
-        href="/page-2/"
+        href="/blog/"
       >
-        Go to page 2
+        Go to the Blog
       </a>
     </main>
-    <footer>
+    <footer
+      className="footer"
+    >
       © 
       2019
       , Built with
@@ -110,6 +134,9 @@ Array [
       >
         Gatsby
       </a>
+      .
+       
+      Calin says hello.
     </footer>
   </div>,
 ]

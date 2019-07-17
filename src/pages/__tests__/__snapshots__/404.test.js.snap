@@ -23,6 +23,31 @@ Array [
   <div
     className="container"
   >
+    <nav
+      aria-label="Breadcrumb"
+      className="breadcrumb"
+    >
+      <ol>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/blog/"
+          >
+            Blog
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>,
+  <div
+    className="container"
+  >
     <main>
       <h1>
         Not found
@@ -36,7 +61,9 @@ Array [
         Go back to the homepage
       </a>
     </main>
-    <footer>
+    <footer
+      className="footer"
+    >
       © 
       2019
       , Built with
@@ -47,6 +74,9 @@ Array [
       >
         Gatsby
       </a>
+      .
+       
+      Calin says hello.
     </footer>
   </div>,
 ]

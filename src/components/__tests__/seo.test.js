@@ -7,12 +7,13 @@ describe('SEO', () => {
   it('renders correctly', () => {
     const tree = renderer
       .create(
-      <SEO 
-        title="Seo title" 
-        description="Seo description" 
-        author="Seo author" 
-        lang="en" 
-      />)
+        <SEO
+          title="Seo title"
+          description="Seo description"
+          author="Seo author"
+          lang="en"
+        />
+      )
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

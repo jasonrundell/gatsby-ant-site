@@ -8,20 +8,15 @@ describe('ImageFluid', () => {
     const data = {
       childImageSharp: {
         fluid: {
-          base64: "",
+          base64: '',
           aspectRatio: 1,
-          src: "",
-          srcSet: "",
-          sizes: ""
-        }
-      }
+          src: '',
+          srcSet: '',
+          sizes: '',
+        },
+      },
     }
-    const tree = renderer
-      .create(
-      <ImageFluid 
-        image={data}
-      />)
-      .toJSON()
+    const tree = renderer.create(<ImageFluid image={data} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
