@@ -3,15 +3,22 @@ import React from 'react'
 
 import styles from './breadcrumb.module.scss'
 
-export default () => (
-  <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
-    <ol>
-      <li>
-        <Link to="/">Home</Link>
+export default ({ crumbs }) => {
+  const crumbItems = crumbs.map(crumb => {
+    return (
+      <li key={crumb.path}>
+        <Link to={crumb.path}>{crumb.text}</Link>
       </li>
-      <li>
-        <Link to="/blog/">Blog</Link>
-      </li>
-    </ol>
-  </nav>
-)
+    )
+  })
+  return (
+    <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
+      <ol>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        {crumbItems}
+      </ol>
+    </nav>
+  )
+}
