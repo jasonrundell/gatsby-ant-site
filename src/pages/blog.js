@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Breadcrumb from '../components/breadcrumb'
 
 export default props => {
   const { data } = props
@@ -15,6 +16,7 @@ export default props => {
         author={data.site.siteMetadata.author}
         lang={data.site.siteMetadata.lang}
       />
+      <Breadcrumb crumbs={[{ path: '/blog/', text: 'Blog' }]} />
       <ul>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)

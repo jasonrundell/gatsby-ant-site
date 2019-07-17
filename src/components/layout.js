@@ -2,16 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Header from './header'
-import Breadcrumb from './breadcrumb'
 
 import styles from './layout.module.scss'
 
 const Layout = ({ title, children }) => (
   <>
     <Header siteTitle={title} />
-    <div className={styles.container}>
-      <Breadcrumb />
-    </div>
     <div className={styles.container}>
       <main>{children}</main>
       <footer className={styles.footer}>
