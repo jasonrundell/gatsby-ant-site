@@ -4,7 +4,7 @@ description: 'Swag Direct Trade meta description'
 author: 'Jason Rundell'
 date: '2019-07-10'
 path: /swag-direct-trade
-tags: ['test']
+tags: ['swag', 'trade']
 ---
 
 Lorem ipsum dolor amet swag banjo viral roof party typewriter flannel health

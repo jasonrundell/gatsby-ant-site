@@ -1,10 +1,10 @@
 ---
-title: 'Hello World'
-description: 'Hello World meta description'
+title: 'Chicken Literally Retro Pickled'
+description: 'Chicken Literally Retro Pickled description'
 author: 'Jason Rundell'
 date: '2019-07-09'
-path: /hello-world
-tags: ['test']
+path: /chicken-literally-retro-pickled
+tags: ['chicken', 'pickles', 'retro']
 ---
 
 This is a Hello World blog post.
