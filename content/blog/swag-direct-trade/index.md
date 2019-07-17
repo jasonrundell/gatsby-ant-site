@@ -7,6 +7,8 @@ path: /swag-direct-trade
 tags: ['swag', 'trade']
 ---
 
+![Yo Yo Yak](./images/animal-animal-photography-blur-2382741.jpg)
+
 Lorem ipsum dolor amet swag banjo viral roof party typewriter flannel health
 goth pok pok kickstarter. Roof party coloring book VHS kombucha tote bag banjo.
 Wolf green juice twee, gochujang mumblecore lumbersexual chambray bespoke venmo
@@ -14,6 +16,8 @@ trust fund selfies gluten-free yuccie semiotics. Chillwave heirloom glossier pok
 pok. Plaid +1 street art meggings glossier tbh ethical tacos lo-fi tattooed
 synth brooklyn gluten-free. Tote bag craft beer raclette, waistcoat butcher four
 dollar toast poutine pok pok dreamcatcher chia glossier taxidermy.
+
+## helvetica master cleanse
 
 Flexitarian pabst aesthetic leggings. Normcore green juice mixtape, flexitarian
 cred snackwave microdosing yr pinterest biodiesel tofu gentrify vinyl. Vice
@@ -26,8 +30,7 @@ Blog vaporware live-edge craft beer, freegan XOXO pork belly gentrify
 shoreditch. Celiac brunch microdosing beard. Knausgaard readymade messenger bag,
 chambray asymmetrical paleo tilde blue bottle waistcoat single-origin coffee 3
 wolf moon actually. Aesthetic sartorial live-edge typewriter hot chicken health
-goth. Adaptogen lomo raclette, helvetica master cleanse celiac swag chambray
-knausgaard vinyl hella.
+goth. Adaptogen lomo raclette.
 
 Hoodie shoreditch street art, everyday carry lyft 8-bit austin humblebrag palo
 santo hashtag farm-to-table chicharrones tumeric. Hashtag fixie dreamcatcher
