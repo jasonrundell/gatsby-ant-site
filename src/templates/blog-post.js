@@ -26,19 +26,19 @@ export default function Template(props) {
       />
       <article>
         <h1>{post.frontmatter.title}</h1>
-        <time datetime={post.frontmatter.date} className={styles.time}>
+        <time dateTime={post.frontmatter.date} className={styles.time}>
           {post.frontmatter.date}
         </time>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div>
+        <div className={styles.navigation}>
           {prev && (
-            <Link to={prev.frontmatter.path}>
-              ← Previous blog: {prev.frontmatter.title}
+            <Link to={prev.frontmatter.path} className={styles.action}>
+              ← Previous post: {prev.frontmatter.title}
             </Link>
           )}
           {next && (
-            <Link to={next.frontmatter.path}>
-              Next blog: {next.frontmatter.title} →
+            <Link to={next.frontmatter.path} className={styles.action}>
+              Next post: {next.frontmatter.title} →
             </Link>
           )}
         </div>

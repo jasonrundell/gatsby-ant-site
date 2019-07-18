@@ -2,3 +2,13 @@
   display: block;
   margin-bottom: 1rem;
 }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.action {
+  padding: 1rem;
+}
