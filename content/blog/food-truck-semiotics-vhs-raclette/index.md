@@ -20,9 +20,9 @@ Post-ironic palo santo yuccie cloud bread unicorn. Man braid viral enamel pin.
 Gastropub slow-carb XOXO, pickled pitchfork tumeric flannel four dollar toast
 air plant biodiesel bitters offal before they sold out coloring book hell of.
 Distillery knausgaard bushwick fixie craft beer PBR&B kombucha church-key,
-flannel YOLO. Hot chicken tilde bespoke ethical chicharrones bicycle rights
-green juice letterpress drinking vinegar viral gluten-free squid photo booth
-synth tumblr.
+flannel YOLO. Hot chicken tilde bespoke ethical chicharrones
+[bicycle rights](./cornhole-quinoa) green juice letterpress drinking vinegar
+viral gluten-free squid photo booth synth tumblr.
 
 Cardigan readymade hot chicken tilde cliche.
 

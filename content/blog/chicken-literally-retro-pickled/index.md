@@ -4,7 +4,7 @@ description: 'Chicken Literally Retro Pickled description'
 author: 'Jason Rundell'
 date: '2019-07-09'
 path: /blog/chicken-literally-retro-pickled
-tags: ['chicken', 'pickle', 'retro']
+tags: ['chicken', 'pickle', 'retro', 'banjo']
 ---
 
 ![Yak](./images/animal-animal-photography-blur-671931.jpg)
@@ -14,9 +14,9 @@ tags: ['chicken', 'pickle', 'retro']
 Lorem ipsum dolor amet franzen post-ironic fanny pack flannel neutra brunch
 paleo chicharrones enamel pin everyday carry. 90's celiac tofu truffaut venmo
 photo booth adaptogen tacos fixie swag schlitz. Sartorial cornhole unicorn
-scenester hot chicken literally retro pickled next level lyft typewriter
-sriracha jean shorts. Polaroid shaman cred knausgaard PBR&B. Glossier meh
-slow-carb heirloom vinyl.
+scenester [hot chicken](./bitters-salvia-aesthetic-yr-celiac-farm-to-table)
+literally retro pickled next level lyft typewriter sriracha jean shorts.
+Polaroid shaman cred knausgaard PBR&B. Glossier meh slow-carb heirloom vinyl.
 
 ## Cloud bread waistcoat celiac
 
