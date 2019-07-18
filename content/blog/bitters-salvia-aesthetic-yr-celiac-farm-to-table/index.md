@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-06-21'
 path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table
 tags: ['bitters', 'salvia', 'celiac']
+featuredImage: './images/animal-animal-photography-cattle-828784.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-animal-photography-cattle-828784.jpg)

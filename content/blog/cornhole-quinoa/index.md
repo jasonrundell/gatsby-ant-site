@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-08'
 path: /blog/cornhole-quinoa
 tags: ['cornhole', 'quinoa', 'hoodie', 'banjo']
+featuredImage: './images/animal-animal-photography-bull-144234.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-animal-photography-bull-144234.jpg)

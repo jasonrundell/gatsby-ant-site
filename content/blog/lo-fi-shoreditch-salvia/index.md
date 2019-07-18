@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-17'
 path: /blog/lo-fi-shoreditch-salvia
 tags: ['saliva', 'coffee']
+featuredImage: './images/animal-cattle-close-up-1758463.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-cattle-close-up-1758463.jpg)
