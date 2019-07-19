@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-01'
 path: /blog/taxidermy-cardigan-fixie-single-origin-coffee
 tags: ['taxidermy', 'cardigan', 'coffee', 'waistcoat']
+featuredImage: './images/animal-cattle-cow-176384.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-cattle-cow-176384.jpg)

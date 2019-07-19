@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-09'
 path: /blog/chicken-literally-retro-pickled
 tags: ['chicken', 'pickle', 'retro', 'banjo']
+featuredImage: './images/animal-animal-photography-blur-671931.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-animal-photography-blur-671931.jpg)

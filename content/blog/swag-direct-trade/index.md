@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-10'
 path: /blog/swag-direct-trade
 tags: ['swag', 'trade']
+featuredImage: './images/animal-animal-photography-blur-2382741.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-animal-photography-blur-2382741.jpg)

@@ -3,6 +3,9 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ImageFluid from '../components/image-fluid'
+
+import styles from './blog.module.scss'
 
 export default props => {
   const { data } = props
@@ -18,13 +21,21 @@ export default props => {
         author={data.site.siteMetadata.author}
         lang={data.site.siteMetadata.lang}
       />
-      <ul>
+      <ul className={styles.list}>
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
               <li key={post.id}>
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+                <div className={styles.card}>
+                  <ImageFluid
+                    image={post.frontmatter.featuredImage}
+                    alt={post.frontmatter.featuredImageAlt}
+                  />
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </div>
               </li>
             )
           })}
@@ -55,6 +66,14 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 640) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            featuredImageAlt
           }
         }
       }

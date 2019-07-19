@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-15'
 path: /blog/tofu-next-level-pickled-hammock
 tags: ['tofu', 'pickle', 'hammock']
+featuredImage: './images/alpine-alps-animal-1704296.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/alpine-alps-animal-1704296.jpg)

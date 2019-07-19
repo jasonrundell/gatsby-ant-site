@@ -5,6 +5,8 @@ author: 'Jason Rundell'
 date: '2019-07-14'
 path: /blog/food-truck-semiotics-vhs-raclette
 tags: ['food', 'truck', 'vhs']
+featuredImage: './images/animals-daylight-domestic-yak-773176.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![3 yaks](./images/animals-daylight-domestic-yak-773176.jpg)

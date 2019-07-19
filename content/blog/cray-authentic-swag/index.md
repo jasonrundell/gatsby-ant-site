@@ -4,7 +4,9 @@ description: 'Cray Authentic Swag meta description'
 author: 'Jason Rundell'
 date: '2019-07-03'
 path: /blog/cray-authentic-swag
-tags: ['swag']
+tags: ['swag', 'messenger', 'tofu']
+featuredImage: './images/animal-bull-cattle-306036.jpg'
+featuredImageAlt: 'Yak'
 ---
 
 ![Yak](./images/animal-bull-cattle-306036.jpg)
