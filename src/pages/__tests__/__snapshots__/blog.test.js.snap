@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout renders correctly 1`] = `
+exports[`Blog renders correctly 1`] = `
 Array [
   <header
     className="header"
@@ -15,7 +15,7 @@ Array [
           className="link"
           href="/"
         >
-          Layout title
+          
         </a>
       </h1>
     </div>
@@ -23,8 +23,31 @@ Array [
   <div
     className="container"
   >
+    <nav
+      aria-label="Breadcrumb"
+      className="breadcrumb"
+    >
+      <ol>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/blog/"
+          >
+            Blog
+          </a>
+        </li>
+      </ol>
+    </nav>
     <main>
-      Layout test
+      <ul
+        className="list"
+      />
     </main>
     <footer
       className="footer"
