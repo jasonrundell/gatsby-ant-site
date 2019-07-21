@@ -8,8 +8,25 @@ describe('Blog', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: 'Blog',
+          title: '',
         },
+      },
+      allMarkdownRemark: {
+        edges: [
+          {
+            node: {
+              excerpt: '',
+              id: '',
+              frontmatter: {
+                title: '',
+                date: '',
+                path: '',
+                featuredImage: '',
+                featuredImageAlt: '',
+              },
+            },
+          },
+        ],
       },
     }
 
