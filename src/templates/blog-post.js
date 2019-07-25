@@ -3,10 +3,11 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Tags from '../components/tags'
 
 import styles from './blog-post.module.scss'
 
-export default function Template(props) {
+export default props => {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
@@ -30,6 +31,7 @@ export default function Template(props) {
           {post.frontmatter.date}
         </time>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Tags list={post.frontmatter.tags || []} />
         <div className={styles.navigation}>
           {prev && (
             <Link to={prev.frontmatter.path} className={styles.action}>
