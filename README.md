@@ -100,6 +100,10 @@ Change `myfirstgatsbyblog` to the name of the project folder you'd like to use.
 
 This project is licensed under the MIT license.
 
+## Demo
+
+[https://jovial-swartz-3be317.netlify.com/](https://jovial-swartz-3be317.netlify.com/)
+
 ## Cudos
 
 - [Jason Lengstorf (@jlengstorf)](https://github.com/jlengstorf) for the
