@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Header from './header'
-import Breadcrumb from './breadcrumb'
+import Header from '../header'
+import Breadcrumb from '../breadcrumb'
 
 import styles from './layout.module.scss'
 
