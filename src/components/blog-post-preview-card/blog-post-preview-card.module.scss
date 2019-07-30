@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 3px #202020;
+  padding: 1rem;
+}
+
+.cta__link {
+  &::after {
+    content: ' »';
+  }
+}

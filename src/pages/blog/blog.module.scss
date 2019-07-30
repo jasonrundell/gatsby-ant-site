@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--item {
+  flex: 0 0 100%;
+  padding: 0.5rem;
+
+  @media (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+
+  @media (min-width: 1024px) {
+    flex: 0 0 33.3%;
+  }
+}
