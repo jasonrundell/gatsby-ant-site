@@ -2,7 +2,7 @@
 title: 'Bitters Salvia Aesthetic Yr Celiac Farm-to-table'
 description: 'Bitters Salvia Aesthetic Yr Celiac Farm-to-table meta description'
 author: 'Jason Rundell'
-date: '2019-06-21'
+date: '2019-06-21T18:00:00.000-04:00'
 path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table
 tags: ['bitters', 'salvia', 'celiac']
 featuredImage: './images/animal-animal-photography-cattle-828784.jpg'

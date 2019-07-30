@@ -2,7 +2,7 @@
 title: 'Chicken Literally Retro Pickled'
 description: 'Chicken Literally Retro Pickled description'
 author: 'Jason Rundell'
-date: '2019-07-09'
+date: '2019-07-09T18:00:00.000-04:00'
 path: /blog/chicken-literally-retro-pickled
 tags: ['chicken', 'pickle', 'retro', 'banjo']
 featuredImage: './images/animal-animal-photography-blur-671931.jpg'
