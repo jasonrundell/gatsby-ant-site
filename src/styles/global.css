@@ -2,7 +2,9 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 /** My personal styling for a simple accessible start **/
-
+* {
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
