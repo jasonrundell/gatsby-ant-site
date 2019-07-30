@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import moment from 'moment'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -11,6 +12,7 @@ export default props => {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
+  const easyDate = moment(post.frontmatter.date).format('MMMM DD, YYYY')
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -27,19 +29,19 @@ export default props => {
       />
       <article>
         <h1>{post.frontmatter.title}</h1>
-        <time dateTime={post.frontmatter.date} className={styles.time}>
-          {post.frontmatter.date}
+        <time dateTime={post.frontmatter.date} className={styles.post__date}>
+          {easyDate}
         </time>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Tags list={post.frontmatter.tags || []} />
-        <div className={styles.navigation}>
+        <div className={styles.post__navigation}>
           {prev && (
-            <Link to={prev.frontmatter.path} className={styles.action}>
+            <Link to={prev.frontmatter.path} className={styles.post__action}>
               ← Previous post: {prev.frontmatter.title}
             </Link>
           )}
           {next && (
-            <Link to={next.frontmatter.path} className={styles.action}>
+            <Link to={next.frontmatter.path} className={styles.post__action}>
               Next post: {next.frontmatter.title} →
             </Link>
           )}
@@ -62,7 +64,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
         path
         tags
         title

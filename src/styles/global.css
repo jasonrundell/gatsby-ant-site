@@ -11,11 +11,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
+  font-family: serif;
 }
 
 body {
   color: black;
+  font-family: Helvetica, sans-serif;
 }
 
 a {

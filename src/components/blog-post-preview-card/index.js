@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import moment from 'moment'
 import PropTypes from 'prop-types'
 import ImageFluid from '../image-fluid'
 
@@ -12,24 +13,27 @@ const BlogPostPreviewCard = ({
   date,
   link,
   excerpt,
-  ctaLabel,
 }) => ({
   render() {
+    const easyDate = moment(date).format('MMMM DD, YYYY')
     return (
       <div className={styles.card}>
-        {image && <ImageFluid image={image} alt={altText} />}
+        <Link to={link} aria-hidden="true">
+          <div className={styles.post__image}>
+            <ImageFluid image={image} alt={altText} />
+          </div>
+        </Link>
         <header>
           <h2>
             <Link to={link}>{title}</Link>
           </h2>
           <p>
-            <time dateTime={date}>{date}</time>
+            <time dateTime={date} className={styles.post__date}>
+              {easyDate}
+            </time>
           </p>
         </header>
         {excerpt && <p>{excerpt}</p>}
-        <Link to={link} className={styles.cta__link}>
-          {ctaLabel}
-        </Link>
       </div>
     )
   },
@@ -37,7 +41,6 @@ const BlogPostPreviewCard = ({
 
 BlogPostPreviewCard.defaultProps = {
   altText: '',
-  ctaLabel: 'Continue Reading',
 }
 
 BlogPostPreviewCard.propTypes = {

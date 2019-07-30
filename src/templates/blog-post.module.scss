@@ -1,14 +1,13 @@
-.time {
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.navigation {
+.post__navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.action {
+.post__action {
   padding: 1rem;
+}
+
+.post__date {
+  font-size: 0.8rem;
 }
