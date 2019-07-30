@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import ImageFluid from '../components/image-fluid'
+import Layout from '../../components/layout'
+import SEO from '../../components/seo'
+import BlogPostPreviewCard from '../../components/blog-post-preview-card'
 
 import styles from './blog.module.scss'
 
@@ -26,16 +26,15 @@ export default props => {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <li key={post.id}>
-                <div className={styles.card}>
-                  <ImageFluid
-                    image={post.frontmatter.featuredImage}
-                    alt={post.frontmatter.featuredImageAlt}
-                  />
-                  <Link to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </div>
+              <li key={post.id} className={styles.listItem}>
+                <BlogPostPreviewCard
+                  image={post.frontmatter.featuredImage}
+                  altText={post.frontmatter.featuredImageAlt}
+                  link={post.frontmatter.path}
+                  title={post.frontmatter.title}
+                  date={post.frontmatter.date}
+                  excerpt={post.excerpt}
+                />
               </li>
             )
           })}
