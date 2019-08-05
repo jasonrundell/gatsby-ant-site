@@ -1,7 +1,7 @@
 const path = require('path')
 
 const createTagPages = (createPage, edges) => {
-  const tagPageTemplate = path.resolve(`src/pages/tags.js`)
+  // const tagPageTemplate = path.resolve(`src/pages/tags.js`)
   const tagResultsTemplate = path.resolve(`src/templates/tag-results.js`)
   const tagResults = {}
 
