@@ -1,7 +1,7 @@
 ---
 title: 'Swag Direct Trade'
 description: 'Swag Direct Trade meta description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-10T18:00:00.000-04:00'
 path: /blog/swag-direct-trade
 category: 'technology'

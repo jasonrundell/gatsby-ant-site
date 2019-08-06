@@ -1,7 +1,7 @@
 ---
 title: 'Chicken Literally Retro Pickled'
 description: 'Chicken Literally Retro Pickled description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-09T18:00:00.000-04:00'
 path: /blog/chicken-literally-retro-pickled
 category: 'social-media'

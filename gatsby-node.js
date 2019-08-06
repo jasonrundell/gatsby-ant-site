@@ -59,6 +59,34 @@ const createCategoryPages = (createPage, edges) => {
   })
 }
 
+const createAuthorPages = (createPage, edges) => {
+  const authorResultsTemplate = path.resolve(`src/templates/author-results.js`)
+  const authorResults = {}
+
+  edges.forEach(({ node }) => {
+    if (node.frontmatter.author) {
+      const author = node.frontmatter.author
+      if (!authorResults[author]) {
+        authorResults[author] = []
+      }
+      authorResults[author].push(node)
+    }
+  })
+
+  Object.keys(authorResults).forEach(author => {
+    const authorResult = authorResults[author]
+    createPage({
+      path: `/authors/${author}`,
+      component: authorResultsTemplate,
+      context: {
+        authorResults,
+        authorResult,
+        author,
+      },
+    })
+  })
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -78,6 +106,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               date
               path
+              author
               category
               tags
               title
@@ -95,6 +124,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     createTagPages(createPage, posts)
     createCategoryPages(createPage, posts)
+    createAuthorPages(createPage, posts)
 
     // Create pages for each markdown file.
     posts.forEach(({ node }, index) => {

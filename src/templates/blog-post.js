@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import Tags from '../components/tags'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
+import formatAuthorName from '../utils/formatAuthorName'
 
 import styles from './blog-post.module.scss'
 
@@ -25,6 +26,7 @@ export default props => {
   } = post.frontmatter
   const easyDate = moment(date).format('MMMM DD, YYYY')
   const categoryFormatted = formatCategoryTitle(category)
+  const authorFormatted = formatAuthorName(author)
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -39,6 +41,7 @@ export default props => {
       <article>
         <h1>{title}</h1>
         <p className={styles.post__meta}>
+          <Link to={`/authors/${author}`}>{authorFormatted}</Link> |{' '}
           <time dateTime={date}>{easyDate}</time> |{' '}
           <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
         </p>

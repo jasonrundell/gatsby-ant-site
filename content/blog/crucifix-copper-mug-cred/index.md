@@ -1,7 +1,7 @@
 ---
 title: 'Crucifix Copper Mug Cred'
 description: 'Crucifix Copper Mug Cred meta description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-11T18:00:00.000-04:00'
 path: /blog/crucifix-copper-mug-cred
 category: 'technology'
