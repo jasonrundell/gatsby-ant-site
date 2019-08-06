@@ -2,12 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const ImageFluid = ({ image, altText, tabIndex }) => (
-  <Img
-    fluid={image ? image.childImageSharp.fluid : {}}
-    alt={altText}
-    tabIndex={tabIndex}
-  />
+const ImageFluid = ({ image, altText }) => (
+  <Img fluid={image ? image.childImageSharp.fluid : {}} alt={altText} />
 )
 
 ImageFluid.defaultProps = {
@@ -16,7 +12,6 @@ ImageFluid.defaultProps = {
 
 ImageFluid.propTypes = {
   altText: PropTypes.string,
-  tabIndex: PropTypes.number,
   image: PropTypes.object.isRequired,
 }
 
