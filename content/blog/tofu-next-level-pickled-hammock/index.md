@@ -1,7 +1,7 @@
 ---
 title: 'Tofu Next Level Pickled Hammock'
 description: 'Tofu Next Level Pickled Hammock meta description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-15T18:00:00.000-04:00'
 path: /blog/tofu-next-level-pickled-hammock
 category: 'technology'

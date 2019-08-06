@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import ImageFluid from '../image-fluid'
 
 import formatCategoryTitle from '../../utils/formatCategoryTitle'
+import formatAuthorName from '../../utils/formatAuthorName'
 
 import styles from './blog-post-preview-card.module.scss'
 
@@ -13,6 +14,7 @@ const BlogPostPreviewCard = ({
   altText,
   title,
   category,
+  author,
   date,
   link,
   excerpt,
@@ -20,6 +22,7 @@ const BlogPostPreviewCard = ({
   render() {
     const easyDate = moment(date).format('MMMM DD, YYYY')
     const categoryFormatted = formatCategoryTitle(category)
+    const authorFormatted = formatAuthorName(author)
     return (
       <div className={styles.card}>
         <div className={styles.post__image}>
@@ -32,6 +35,7 @@ const BlogPostPreviewCard = ({
             <Link to={link}>{title}</Link>
           </h2>
           <p className={styles.post__meta}>
+            <Link to={`/authors/${author}`}>{authorFormatted}</Link> |{' '}
             <time dateTime={date}>{easyDate}</time> |{' '}
             <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
           </p>

@@ -1,7 +1,7 @@
 ---
 title: 'Cornhole Quinoa'
 description: 'Cornhole Quinoa meta description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-08T18:00:00.000-04:00'
 path: /blog/cornhole-quinoa
 category: 'black-holes'

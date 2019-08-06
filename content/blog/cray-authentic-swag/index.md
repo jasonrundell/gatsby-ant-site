@@ -1,7 +1,7 @@
 ---
 title: 'Cray Authentic Swag'
 description: 'Cray Authentic Swag meta description'
-author: 'Jason Rundell'
+author: 'jason-rundell'
 date: '2019-07-03T18:00:00.000-04:00'
 path: /blog/cray-authentic-swag
 category: 'black-holes'

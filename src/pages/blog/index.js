@@ -31,6 +31,7 @@ export default props => {
                   image={post.frontmatter.featuredImage}
                   altText={post.frontmatter.featuredImageAlt}
                   link={post.frontmatter.path}
+                  author={post.frontmatter.author}
                   category={post.frontmatter.category}
                   title={post.frontmatter.title}
                   date={post.frontmatter.date}
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
             category
+            author
             path
             featuredImage {
               childImageSharp {
