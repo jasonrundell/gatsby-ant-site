@@ -6,34 +6,46 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Tags from '../components/tags'
 
+import formatCategoryTitle from '../utils/formatCategoryTitle'
+
 import styles from './blog-post.module.scss'
 
 export default props => {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
-  const easyDate = moment(post.frontmatter.date).format('MMMM DD, YYYY')
+  const {
+    path,
+    title,
+    description,
+    author,
+    date,
+    category,
+    tags,
+  } = post.frontmatter
+  const easyDate = moment(date).format('MMMM DD, YYYY')
+  const categoryFormatted = formatCategoryTitle(category)
   return (
     <Layout
       title={data.site.siteMetadata.title}
-      crumbs={[
-        { path: '/blog/', text: 'Blog' },
-        { path: post.frontmatter.path, text: post.frontmatter.title },
-      ]}
+      crumbs={[{ path: '/blog/', text: 'Blog' }, { path: path, text: title }]}
     >
       <SEO
-        title={`${data.site.siteMetadata.title} | Blog: ${post.frontmatter.title}`}
-        description={post.frontmatter.description}
-        author={post.frontmatter.author}
+        title={`${data.site.siteMetadata.title} | Blog: ${title}`}
+        description={description}
+        author={author}
         lang={data.site.siteMetadata.lang}
       />
       <article>
-        <h1>{post.frontmatter.title}</h1>
-        <time dateTime={post.frontmatter.date} className={styles.post__date}>
-          {easyDate}
-        </time>
+        <h1>{title}</h1>
+        <p className={styles.post__meta}>
+          <time dateTime={date}>{easyDate}</time> |{' '}
+          <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
+        </p>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <Tags list={post.frontmatter.tags || []} />
+        <h3>Tags</h3>
+        <Tags list={tags || []} />
         <div className={styles.post__navigation}>
           {prev && (
             <Link to={prev.frontmatter.path} className={styles.post__action}>
@@ -68,6 +80,7 @@ export const pageQuery = graphql`
         path
         tags
         title
+        category
         author
         description
       }

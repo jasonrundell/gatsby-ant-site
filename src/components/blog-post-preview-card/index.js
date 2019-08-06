@@ -4,33 +4,36 @@ import moment from 'moment'
 import PropTypes from 'prop-types'
 import ImageFluid from '../image-fluid'
 
+import formatCategoryTitle from '../../utils/formatCategoryTitle'
+
 import styles from './blog-post-preview-card.module.scss'
 
 const BlogPostPreviewCard = ({
   image,
   altText,
   title,
+  category,
   date,
   link,
   excerpt,
 }) => ({
   render() {
     const easyDate = moment(date).format('MMMM DD, YYYY')
+    const categoryFormatted = formatCategoryTitle(category)
     return (
       <div className={styles.card}>
-        <Link to={link} aria-hidden="true">
-          <div className={styles.post__image}>
+        <div className={styles.post__image}>
+          <Link to={link} aria-hidden="true" tabIndex="-1">
             <ImageFluid image={image} alt={altText} />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <header>
           <h2>
             <Link to={link}>{title}</Link>
           </h2>
-          <p>
-            <time dateTime={date} className={styles.post__date}>
-              {easyDate}
-            </time>
+          <p className={styles.post__meta}>
+            <time dateTime={date}>{easyDate}</time> |{' '}
+            <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
           </p>
         </header>
         {excerpt && <p>{excerpt}</p>}

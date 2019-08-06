@@ -4,6 +4,7 @@ description: 'Cray Authentic Swag meta description'
 author: 'Jason Rundell'
 date: '2019-07-03T18:00:00.000-04:00'
 path: /blog/cray-authentic-swag
+category: 'black-holes'
 tags: ['swag', 'messenger', 'tofu']
 featuredImage: './images/animal-bull-cattle-306036.jpg'
 featuredImageAlt: 'Yak'
