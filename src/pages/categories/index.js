@@ -31,7 +31,7 @@ export default props => {
           </li>
         ))}
       </ul>
-      <Link to="/">All posts</Link>
+      <Link to="/blog">All posts</Link>
     </Layout>
   )
 }
