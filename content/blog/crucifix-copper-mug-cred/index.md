@@ -4,6 +4,7 @@ description: 'Crucifix Copper Mug Cred meta description'
 author: 'Jason Rundell'
 date: '2019-07-11T18:00:00.000-04:00'
 path: /blog/crucifix-copper-mug-cred
+category: 'technology'
 tags: ['copper', 'crucifix', 'cornhole']
 featuredImage: './images/animal-close-up-country-1582215.jpg'
 featuredImageAlt: 'Yak'

@@ -4,6 +4,7 @@ description: 'Lo-fi Shoreditch Salvia meta description'
 author: 'Jason Rundell'
 date: '2019-07-17T18:00:00.000-04:00'
 path: /blog/lo-fi-shoreditch-salvia
+category: 'technology'
 tags: ['saliva', 'coffee']
 featuredImage: './images/animal-cattle-close-up-1758463.jpg'
 featuredImageAlt: 'Yak'

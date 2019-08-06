@@ -4,6 +4,7 @@ description: 'Swag Direct Trade meta description'
 author: 'Jason Rundell'
 date: '2019-07-10T18:00:00.000-04:00'
 path: /blog/swag-direct-trade
+category: 'technology'
 tags: ['swag', 'trade']
 featuredImage: './images/animal-animal-photography-blur-2382741.jpg'
 featuredImageAlt: 'Yak'

@@ -4,6 +4,7 @@ description: 'Tofu Next Level Pickled Hammock meta description'
 author: 'Jason Rundell'
 date: '2019-07-15T18:00:00.000-04:00'
 path: /blog/tofu-next-level-pickled-hammock
+category: 'technology'
 tags: ['tofu', 'pickle', 'hammock']
 featuredImage: './images/alpine-alps-animal-1704296.jpg'
 featuredImageAlt: 'Yak'

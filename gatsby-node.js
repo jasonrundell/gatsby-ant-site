@@ -1,7 +1,6 @@
 const path = require('path')
 
 const createTagPages = (createPage, edges) => {
-  // const tagPageTemplate = path.resolve(`src/pages/tags.js`)
   const tagResultsTemplate = path.resolve(`src/templates/tag-results.js`)
   const tagResults = {}
 
@@ -30,6 +29,36 @@ const createTagPages = (createPage, edges) => {
   })
 }
 
+const createCategoryPages = (createPage, edges) => {
+  const categoryResultsTemplate = path.resolve(
+    `src/templates/category-results.js`
+  )
+  const categoryResults = {}
+
+  edges.forEach(({ node }) => {
+    if (node.frontmatter.category) {
+      const category = node.frontmatter.category
+      if (!categoryResults[category]) {
+        categoryResults[category] = []
+      }
+      categoryResults[category].push(node)
+    }
+  })
+
+  Object.keys(categoryResults).forEach(category => {
+    const categoryResult = categoryResults[category]
+    createPage({
+      path: `/categories/${category}`,
+      component: categoryResultsTemplate,
+      context: {
+        categoryResults,
+        categoryResult,
+        category,
+      },
+    })
+  })
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -49,6 +78,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               date
               path
+              category
               tags
               title
             }
@@ -64,6 +94,7 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     createTagPages(createPage, posts)
+    createCategoryPages(createPage, posts)
 
     // Create pages for each markdown file.
     posts.forEach(({ node }, index) => {

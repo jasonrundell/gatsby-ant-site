@@ -4,6 +4,7 @@ description: 'Cornhole Quinoa meta description'
 author: 'Jason Rundell'
 date: '2019-07-08T18:00:00.000-04:00'
 path: /blog/cornhole-quinoa
+category: 'black-holes'
 tags: ['cornhole', 'quinoa', 'hoodie', 'banjo']
 featuredImage: './images/animal-animal-photography-bull-144234.jpg'
 featuredImageAlt: 'Yak'
