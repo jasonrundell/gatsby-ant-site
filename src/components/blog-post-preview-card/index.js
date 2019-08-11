@@ -18,33 +18,28 @@ const BlogPostPreviewCard = ({
   date,
   link,
   excerpt,
-}) => ({
-  render() {
-    const easyDate = moment(date).format('MMMM DD, YYYY')
-    const categoryFormatted = formatCategoryTitle(category)
-    const authorFormatted = formatAuthorName(author)
-    return (
-      <div className={styles.card}>
-        <div className={styles.post__image}>
-          <Link to={link} aria-hidden="true" tabIndex="-1">
-            <ImageFluid image={image} alt={altText} />
-          </Link>
-        </div>
-        <header>
-          <h2>
-            <Link to={link}>{title}</Link>
-          </h2>
-          <p className={styles.post__meta}>
-            <Link to={`/authors/${author}`}>{authorFormatted}</Link> |{' '}
-            <time dateTime={date}>{easyDate}</time> |{' '}
-            <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
-          </p>
-        </header>
-        {excerpt && <p>{excerpt}</p>}
-      </div>
-    )
-  },
-})
+}) => (
+  <div className={styles.card}>
+    <div className={styles.post__image}>
+      <Link to={link} aria-hidden="true" tabIndex="-1">
+        <ImageFluid image={image} alt={altText} />
+      </Link>
+    </div>
+    <header>
+      <h2>
+        <Link to={link}>{title}</Link>
+      </h2>
+      <p className={styles.post__meta}>
+        <Link to={`/authors/${author}`}>{formatAuthorName(author)}</Link> |{' '}
+        <time dateTime={date}>{moment(date).format('MMMM DD, YYYY')}</time> |{' '}
+        <Link to={`/categories/${category}`}>
+          {formatCategoryTitle(category)}
+        </Link>
+      </p>
+    </header>
+    {excerpt && <p>{excerpt}</p>}
+  </div>
+)
 
 BlogPostPreviewCard.defaultProps = {
   altText: '',

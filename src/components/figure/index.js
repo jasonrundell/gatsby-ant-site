@@ -2,24 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ImageFluid from '../image-fluid'
 
-const Figure = ({ altText, caption, image }) => ({
-  render() {
-    let dataCaption = ''
-    if (caption) {
-      dataCaption = <figcaption>{caption}</figcaption>
-    }
-
-    return (
-      <figure>
-        <ImageFluid image={image} alt={altText} />
-        {dataCaption}
-      </figure>
-    )
-  },
-})
+const Figure = ({ altText, caption, image }) => (
+  <figure>
+    <ImageFluid image={image} alt={altText} />
+    {caption && <figcaption>{caption}</figcaption>}
+  </figure>
+)
 
 Figure.defaultProps = {
   altText: '',
+  caption: '',
 }
 
 Figure.propTypes = {
