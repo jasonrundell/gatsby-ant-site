@@ -2,6 +2,12 @@
 
 exports[`Page404 renders correctly 1`] = `
 Array [
+  <a
+    className="link"
+    href="#main"
+  >
+    Skip to main content
+  </a>,
   <header
     className="header"
   >
@@ -23,7 +29,9 @@ Array [
   <div
     className="container"
   >
-    <main>
+    <main
+      id="main"
+    >
       <h1>
         Not found
       </h1>

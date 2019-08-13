@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import SkipToMain from '../skip-to-main'
 import Header from '../header'
 import Breadcrumb from '../breadcrumb'
 
@@ -10,10 +11,11 @@ const Layout = ({ title, crumbs, children }) => {
   let crumbNode = crumbs ? <Breadcrumb crumbs={crumbs} /> : null
   return (
     <>
+      <SkipToMain />
       <Header siteTitle={title} />
       <div className={styles.container}>
         {crumbNode}
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <footer className={styles.footer}>
           © {new Date().getFullYear()}, Built with
           {` `}
