@@ -2,6 +2,12 @@
 
 exports[`Blog renders correctly 1`] = `
 Array [
+  <a
+    className="link"
+    href="#main"
+  >
+    Skip to main content
+  </a>,
   <header
     className="header"
   >
@@ -44,7 +50,9 @@ Array [
         </li>
       </ol>
     </nav>
-    <main>
+    <main
+      id="main"
+    >
       <ul
         className="list"
       />
