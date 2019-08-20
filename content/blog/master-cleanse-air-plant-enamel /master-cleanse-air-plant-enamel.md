@@ -10,7 +10,7 @@ tags:
 - plaid
 - tofu
 - narwhal
-featuredImage: "/public/close-up-photo-of-yak-with-long-horns-2382741.jpeg"
+featuredImage: "./images/close-up-photo-of-yak-with-long-horns-2382741.jpeg"
 featuredImageAlt: Yak
 
 ---
