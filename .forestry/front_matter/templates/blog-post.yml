@@ -29,5 +29,3 @@ fields:
 - type: text
   name: featuredImageAlt
   label: featuredImageAlt
-pages:
-- content/blog/master-cleanse-air-plant-enamel /master-cleanse-air-plant-enamel.md

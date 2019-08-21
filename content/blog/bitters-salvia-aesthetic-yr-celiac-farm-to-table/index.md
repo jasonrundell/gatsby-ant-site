@@ -2,7 +2,7 @@
 title: Bitters Salvia Aesthetic Yr Celiac Farm-to-table
 description: Bitters Salvia Aesthetic Yr Celiac Farm-to-table meta description
 author: jason-rundell
-date: 2019-06-21T18:00:00.000-04:00
+date: 2019-06-21T22:00:00.000+00:00
 path: "/blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table"
 category: social-media
 tags:
@@ -20,7 +20,7 @@ featuredImageAlt: Yak
 Four loko live-edge microdosing kickstarter hexagon kitsch snackwave listicle
 sustainable jean shorts literally hoodie paleo schlitz heirloom.
 
-## Meditation kale chips!
+## Meditation kale chips
 
 Portland copper mug narwhal, tacos prism blue bottle tousled lumbersexual. Man
 bun taxidermy air plant cardigan. PBR&B roof party craft beer health goth street
