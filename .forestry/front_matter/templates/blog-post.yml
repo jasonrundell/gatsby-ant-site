@@ -29,5 +29,3 @@ fields:
 - type: text
   name: featuredImageAlt
   label: featuredImageAlt
-pages:
-- content/blog/banh-mi-tousled-deep-v-selfies.md
