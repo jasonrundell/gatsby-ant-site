@@ -47,7 +47,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "jest",
-    "newtest": "jest -u"
+    "newtest": "jest -u",
+    "clean": "rm -rf .cache/ && rm -rf public/"
   },
   "repository": {
     "type": "git",
