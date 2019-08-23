@@ -8,11 +8,11 @@ category: social-media
 tags:
   - fashion
   - axe
-featuredImage: './images/close-up-photo-of-yak-with-long-horns-2382741.jpg'
+featuredImage: '../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
 featuredImageAlt: Yak
 ---
 
-![Yak](./images/close-up-photo-of-yak-with-long-horns-2382741.jpg)
+![Yak](../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg)
 
 > Photo by KML from Pexels
 
