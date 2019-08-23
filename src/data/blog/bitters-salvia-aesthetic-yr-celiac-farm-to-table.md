@@ -3,17 +3,17 @@ title: Bitters Salvia Aesthetic Yr Celiac Farm-to-table
 description: Bitters Salvia Aesthetic Yr Celiac Farm-to-table meta description
 author: jason-rundell
 date: 2019-06-21T22:00:00.000+00:00
-path: "/blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table"
+path: '/blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table'
 category: social-media
 tags:
-- bitters
-- salvia
-- celiac
-featuredImage: "./images/animal-animal-photography-cattle-828784.jpg"
+  - bitters
+  - salvia
+  - celiac
+featuredImage: '../../images/blog/animal-animal-photography-cattle-828784.jpg'
 featuredImageAlt: Yak
-
 ---
-![Yak](./images/animal-animal-photography-cattle-828784.jpg)
+
+![Yak](../../images/blog/animal-animal-photography-cattle-828784.jpg)
 
 > Photo by Truth Devour from Pexels
 

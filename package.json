@@ -48,7 +48,7 @@
     "serve": "gatsby serve",
     "test": "jest",
     "newtest": "jest -u",
-    "clean": "rm -rf .cache/ && rm -rf public/"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
