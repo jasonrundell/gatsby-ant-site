@@ -2,6 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import Search from '../search'
+
 import styles from './header.module.scss'
 
 const Header = ({ siteTitle }) => (
@@ -12,6 +14,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Search />
     </div>
   </header>
 )

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styled from '@emotion/styled'
 import algoliasearch from 'algoliasearch/lite'
 import {
   Configure,
@@ -9,130 +8,130 @@ import {
   Highlight,
 } from 'react-instantsearch-dom'
 import { FaSearch } from 'react-icons/fa'
-import Overlay from './Overlay/Overlay'
-import { colors, media } from '../tokens'
+import Overlay from '../overlay'
 
-const client = algoliasearch(
-  process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_API_KEY
-)
+import styles from './search.module.scss'
 
-const SearchArea = styled('div')`
-  height: 100vh;
-  margin-top: 0;
-  overflow-y: scroll;
-  padding: 3rem 5%;
-  width: 100%;
-`
+const client = algoliasearch('3E3W8L24GH', '115b7a2e9355c8140000a604dc059c44')
 
-const List = styled('ul')`
-  list-style: none;
-  margin: 0 auto;
-  max-width: 650px;
-  padding: 0;
-`
+// const SearchArea = styled('div')`
+//   height: 100vh;
+//   margin-top: 0;
+//   overflow-y: scroll;
+//   padding: 3rem 5%;
+//   width: 100%;
+// `
 
-const Result = styled('li')`
-  margin-top: 2rem;
-`
+// const List = styled('ul')`
+//   list-style: none;
+//   margin: 0 auto;
+//   max-width: 650px;
+//   padding: 0;
+// `
 
-const Heading = styled('h2')`
-  font-size: 1.25rem;
-  font-weight: 600;
+// const Result = styled('li')`
+//   margin-top: 2rem;
+// `
 
-  a {
-    color: ${colors.heading};
-    text-decoration: none;
+// const Heading = styled('h2')`
+//   font-size: 1.25rem;
+//   font-weight: 600;
 
-    :active,
-    :focus,
-    :hover {
-      color: ${colors.lightest};
-    }
-  }
-`
+//   a {
+//     color: ${colors.heading};
+//     text-decoration: none;
 
-const Link = styled('a')`
-  display: inline-block;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  margin-top: 0.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-`
+//     :active,
+//     :focus,
+//     :hover {
+//       color: ${colors.lightest};
+//     }
+//   }
+// `
+
+// const Link = styled('a')`
+//   display: inline-block;
+//   font-size: 0.75rem;
+//   letter-spacing: 0.1em;
+//   margin-top: 0.5rem;
+//   text-decoration: none;
+//   text-transform: uppercase;
+// `
 
 const Hits = connectHits(({ hits }) => (
-  <List>
+  <ul className={styles.list}>
     {hits.map(hit => (
-      <Result key={hit.objectID}>
-        <Heading>
+      <li className={styles.result} key={hit.objectID}>
+        <h2 className={styles.heading}>
           <a href={`/${hit.slug}`}>
             <Highlight attribute="title" hit={hit} tagName="mark" />
           </a>
-        </Heading>
+        </h2>
         <p>
           <Highlight attribute="description" hit={hit} tagName="mark" />
         </p>
-        <Link href={`/${hit.slug}`}>Read this post &rsaquo;</Link>
-      </Result>
+        <a href={`/${hit.slug}`} className={styles.link}>
+          Read this post &rsaquo;
+        </a>
+      </li>
     ))}
-  </List>
+  </ul>
 ))
 
-const OpenSearch = styled('a')`
-  align-self: center;
-  border: 2px solid transparent;
-  color: ${colors.heading};
-  height: 100%;
-  margin: 0;
-  padding: 0 0.625rem;
-  width: 2.375rem;
+// const OpenSearch = styled('a')`
+//   align-self: center;
+//   border: 2px solid transparent;
+//   color: ${colors.heading};
+//   height: 100%;
+//   margin: 0;
+//   padding: 0 0.625rem;
+//   width: 2.375rem;
 
-  :active,
-  :focus,
-  :hover {
-    background-color: transparent;
-    color: ${colors.primaryDark};
-  }
+//   :active,
+//   :focus,
+//   :hover {
+//     background-color: transparent;
+//     color: ${colors.primaryDark};
+//   }
 
-  :focus {
-    border: 2px solid ${colors.darkest};
-    border-radius: 0;
-  }
+//   :focus {
+//     border: 2px solid ${colors.darkest};
+//     border-radius: 0;
+//   }
 
-  @media ${media.small} {
-    width: 2.5rem;
-  }
-`
+//   @media ${media.small} {
+//     width: 2.5rem;
+//   }
+// `
 
-const Icon = styled(FaSearch)`
-  height: 100%;
-  margin: 0;
-  position: relative;
-  top: -0.125em;
-`
+// const Icon = styled(FaSearch)`
+//   height: 100%;
+//   margin: 0;
+//   position: relative;
+//   top: -0.125em;
+// `
 
-const Label = styled('label')`
-  display: block;
-  margin: 0 auto;
-  max-width: 650px;
-`
+// const Label = styled('label')`
+//   display: block;
+//   margin: 0 auto;
+//   max-width: 650px;
+// `
 
-const Input = styled('input')`
-  border: 2px solid ${colors.textLight};
-  border-radius: 4px;
-  display: block;
-  font-size: 1.25rem;
-  margin-top: 0;
-  padding: 0.5rem 0.75rem;
-  width: 100%;
-`
+// const Input = styled('input')`
+//   border: 2px solid ${colors.textLight};
+//   border-radius: 4px;
+//   display: block;
+//   font-size: 1.25rem;
+//   margin-top: 0;
+//   padding: 0.5rem 0.75rem;
+//   width: 100%;
+// `
 
 const Search = connectSearchBox(({ currentRefinement, refine, setActive }) => (
   <form noValidate action="" role="search">
-    <Label htmlFor="search">
+    <label htmlFor="search" className={styles.label}>
       <span>Search the Blog</span>
-      <Input
+      <input
         type="search"
         id="search"
         value={currentRefinement}
@@ -145,17 +144,15 @@ const Search = connectSearchBox(({ currentRefinement, refine, setActive }) => (
           setActive(true)
           refine(event.currentTarget.value)
         }}
+        className={styles.input}
       />
-    </Label>
+    </label>
   </form>
 ))
 
-const SearchContainer = styled('div')`
-  display: flex;
-  align-items: flex-start;
-  margin-left: auto;
-  margin-top: 0;
-`
+const SearchContainer = ({ children }) => (
+  <div className={styles.searchContainer}>{children}</div>
+)
 
 export default () => {
   const [active, setActive] = useState(false)
@@ -163,19 +160,20 @@ export default () => {
   return (
     <InstantSearch
       searchClient={client}
-      indexName={process.env.ALGOLIA_INDEX_NAME}
+      indexName="prod_GATSBYBLOG"
       root={{ Root: SearchContainer }}
     >
       <Configure distinct={1} />
-      <OpenSearch
+      <a
         href="/search"
         onClick={event => {
           event.preventDefault()
           setActive(true)
         }}
+        className={styles.openSearch}
       >
-        <Icon title="Search the blog" />
-      </OpenSearch>
+        <FaSearch className={styles.icon} title="Search the blog" />
+      </a>
       <Overlay
         hidePopover={() => {
           setActive(false)
@@ -183,10 +181,10 @@ export default () => {
         visible={active}
       >
         {active && (
-          <SearchArea>
+          <div className={styles.searchArea}>
             <Search setActive={setActive} />
             <Hits />
-          </SearchArea>
+          </div>
         )}
       </Overlay>
     </InstantSearch>
