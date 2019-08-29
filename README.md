@@ -116,5 +116,10 @@ This project is licensed under the MIT license.
 
 - I poured over many of the great pages on gatsbyjs.org docs. Here arethe pages
   that I remember that helped me greatly along the way:
+
   - [Creating Tags Pages for Blog Posts](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/)
   - [Testing components with GraphQL](https://www.gatsbyjs.org/docs/testing-components-with-graphql/)
+
+- Lorem ipsum content provided by https://hipsum.co/
+
+- Placeholder Yak photos provided by https://www.pexels.com/search/yak/
