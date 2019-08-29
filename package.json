@@ -59,7 +59,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run newtest",
       "pre-push": "npm run newtest"
     }
   }
