@@ -87,11 +87,11 @@ const createAuthorPages = (createPage, edges) => {
   })
 }
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage, createRedirect } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
-  return graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -115,31 +115,62 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
-    }
+  `)
 
-    const posts = result.data.allMarkdownRemark.edges
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
 
-    createTagPages(createPage, posts)
-    createCategoryPages(createPage, posts)
-    createAuthorPages(createPage, posts)
+  const posts = result.data.allMarkdownRemark.edges
 
-    // Create pages for each markdown file.
-    posts.forEach(({ node }, index) => {
-      const prev = index === 0 ? null : posts[index - 1].node
-      const next = index === posts.length - 1 ? null : posts[index + 1].node
-      createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {
-          prev,
-          next,
-        },
-      })
+  createTagPages(createPage, posts)
+  createCategoryPages(createPage, posts)
+  createAuthorPages(createPage, posts)
+
+  // Create pages for each markdown file.
+  posts.forEach(({ node }, index) => {
+    const prev = index === 0 ? null : posts[index - 1].node
+    const next = index === posts.length - 1 ? null : posts[index + 1].node
+    createPage({
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {
+        prev,
+        next,
+      },
     })
+  })
 
-    return posts
+  // Create Blog pagination
+
+  // Take posts length and divide by X, ceil it
+  const limit = 4
+  const pagesTotal = posts.length
+  const numPages = Math.ceil(pagesTotal / limit)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    const currentPage = i + 1
+    const prev = i === 0 ? null : currentPage - 1
+    const next = i === pagesTotal ? null : currentPage + 1
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: path.resolve('./src/templates/blog-list.js'),
+      context: {
+        prev,
+        next,
+        limit,
+        skip: i * limit,
+        numPages,
+        currentPage,
+      },
+    })
+  })
+
+  // Redirects
+  createRedirect({
+    fromPath: '/blog/1',
+    toPath: '/blog/',
+    isPermanent: true,
+    redirectInBrowser: true,
   })
 }

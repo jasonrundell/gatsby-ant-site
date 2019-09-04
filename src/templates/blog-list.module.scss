@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--item {
+  padding: 1rem;
+}
+
+.page__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page__action {
+  padding: 1rem;
+}
+
+.page__meta {
+  font-size: 0.8rem;
+}
