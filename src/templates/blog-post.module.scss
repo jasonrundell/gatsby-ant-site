@@ -1,11 +1,14 @@
-.post__navigation {
+.pagination__navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.post__action {
+.pagination__action {
   padding: 1rem;
+  list-style: none;
 }
 
 .post__meta {

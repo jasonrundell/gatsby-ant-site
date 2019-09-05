@@ -5,6 +5,7 @@ import moment from 'moment'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Tags from '../components/tags'
+import Pagination from '../components/pagination'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 import formatAuthorName from '../utils/formatAuthorName'
@@ -49,18 +50,13 @@ export default props => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
         <Tags list={tags || []} />
-        <div className={styles.post__navigation}>
-          {prev && (
-            <Link to={prev.frontmatter.path} className={styles.post__action}>
-              ← Previous post: {prev.frontmatter.title}
-            </Link>
-          )}
-          {next && (
-            <Link to={next.frontmatter.path} className={styles.post__action}>
-              Next post: {next.frontmatter.title} →
-            </Link>
-          )}
-        </div>
+        <Pagination
+          styles={styles}
+          previousUrl={prev.frontmatter.path}
+          nextUrl={next.frontmatter.path}
+          previousLabel={`← Previous post: ${prev.frontmatter.title}`}
+          nextLabel={`Next post: ${next.frontmatter.title} →`}
+        />
       </article>
     </Layout>
   )
