@@ -20,7 +20,9 @@ exports[`Pagination renders correctly 1`] = `
     <li
       className=""
     >
-      <a>
+      <a
+        href="/"
+      >
         Next
       </a>
     </li>
