@@ -8,10 +8,9 @@ import BlogPostPreviewCard from '../components/blog-post-preview-card'
 import styles from './blog-list.module.scss'
 
 export default props => {
-  console.log(props)
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
-  const { next, prev, currentPage } = pageContext
+  const { next, prev } = pageContext // TO DO: currentPage
   return (
     <Layout
       title={data.site.siteMetadata.title}
