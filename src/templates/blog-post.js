@@ -28,6 +28,10 @@ export default props => {
   const easyDate = moment(date).format('MMMM DD, YYYY')
   const categoryFormatted = formatCategoryTitle(category)
   const authorFormatted = formatAuthorName(author)
+  const previousUrl = prev ? prev.frontmatter.path : null
+  const previousLabel = prev ? prev.frontmatter.title : null
+  const nextUrl = next ? next.frontmatter.path : null
+  const nextLabel = next ? next.frontmatter.title : null
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -52,10 +56,10 @@ export default props => {
         <Tags list={tags || []} />
         <Pagination
           styles={styles}
-          previousUrl={prev.frontmatter.path}
-          nextUrl={next.frontmatter.path}
-          previousLabel={`← Previous post: ${prev.frontmatter.title}`}
-          nextLabel={`Next post: ${next.frontmatter.title} →`}
+          previousUrl={previousUrl}
+          nextUrl={nextUrl}
+          previousLabel={`← Previous post: ${previousLabel}`}
+          nextLabel={`Next post: ${nextLabel} →`}
         />
       </article>
     </Layout>

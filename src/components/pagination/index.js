@@ -23,8 +23,8 @@ const Pagination = ({
 
 Pagination.defaultProps = {
   styles: { pagination__navigation: '', pagination__action: '' },
-  previousUrl: '/',
-  nextUrl: '/',
+  previousUrl: '',
+  nextUrl: '',
   previousLabel: 'Previous',
   nextLabel: 'Next',
 }
