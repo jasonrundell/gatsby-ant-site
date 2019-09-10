@@ -1,13 +1,16 @@
 ---
-title: 'Food Truck Semiotics VHS Raclette'
-description: 'Food Truck Semiotics VHS Raclette meta description'
-author: 'jason-rundell'
-date: '2019-07-14T18:00:00.000-04:00'
+title: Food Truck Semiotics VHS Raclette
+description: Food Truck Semiotics VHS Raclette meta description
+author: jason-rundell
+date: 2019-07-14T18:00:00.000-04:00
 path: /blog/food-truck-semiotics-vhs-raclette
-category: 'social-media'
-tags: ['food', 'truck', 'vhs']
-featuredImage: '../../images/blog/animals-daylight-domestic-yak-773176.jpg'
-featuredImageAlt: 'Yak'
+category: social-media
+tags:
+  - food
+  - truck
+  - vhs
+featuredImage: ../../images/blog/animals-daylight-domestic-yak-773176.jpg
+featuredImageAlt: Yak
 ---
 
 ![3 yaks](../../images/blog/animals-daylight-domestic-yak-773176.jpg)

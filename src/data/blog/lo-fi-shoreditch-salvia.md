@@ -1,13 +1,15 @@
 ---
-title: 'Lo-fi Shoreditch Salvia'
-description: 'Lo-fi Shoreditch Salvia meta description'
-author: 'jason-rundell'
-date: '2019-07-17T18:00:00.000-04:00'
+title: Lo-fi Shoreditch Salvia
+description: Lo-fi Shoreditch Salvia meta description
+author: jason-rundell
+date: 2019-07-17T18:00:00.000-04:00
 path: /blog/lo-fi-shoreditch-salvia
-category: 'technology'
-tags: ['saliva', 'coffee']
-featuredImage: '../../images/blog/animal-cattle-close-up-1758463.jpg'
-featuredImageAlt: 'Yak'
+category: technology
+tags:
+  - saliva
+  - coffee
+featuredImage: ../../images/blog/animal-cattle-close-up-1758463.jpg
+featuredImageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-close-up-1758463.jpg)

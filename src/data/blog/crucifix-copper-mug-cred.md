@@ -1,13 +1,16 @@
 ---
-title: 'Crucifix Copper Mug Cred'
-description: 'Crucifix Copper Mug Cred meta description'
-author: 'jason-rundell'
-date: '2019-07-11T18:00:00.000-04:00'
+title: Crucifix Copper Mug Cred
+description: Crucifix Copper Mug Cred meta description
+author: jason-rundell
+date: 2019-07-11T18:00:00.000-04:00
 path: /blog/crucifix-copper-mug-cred
-category: 'technology'
-tags: ['copper', 'crucifix', 'cornhole']
-featuredImage: '../../images/blog/animal-close-up-country-1582215.jpg'
-featuredImageAlt: 'Yak'
+category: technology
+tags:
+  - copper
+  - crucifix
+  - cornhole
+featuredImage: ../../images/blog/animal-close-up-country-1582215.jpg
+featuredImageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-close-up-country-1582215.jpg)

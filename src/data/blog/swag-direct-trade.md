@@ -1,13 +1,15 @@
 ---
-title: 'Swag Direct Trade'
-description: 'Swag Direct Trade meta description'
-author: 'jason-rundell'
-date: '2019-07-10T18:00:00.000-04:00'
+title: Swag Direct Trade
+description: Swag Direct Trade meta description
+author: jason-rundell
+date: 2019-07-10T18:00:00.000-04:00
 path: /blog/swag-direct-trade
-category: 'technology'
-tags: ['swag', 'trade']
-featuredImage: '../../images/blog/animal-animal-photography-blur-2382741.jpg'
-featuredImageAlt: 'Yak'
+category: technology
+tags:
+  - swag
+  - trade
+featuredImage: ../../images/blog/animal-animal-photography-blur-2382741.jpg
+featuredImageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-blur-2382741.jpg)

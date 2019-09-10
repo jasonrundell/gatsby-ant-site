@@ -2,13 +2,13 @@
 title: Banh Mi Tousled Deep V Selfies
 description: Banh Mi Tousled Deep V Selfies meta description
 author: jason-rundell
-date: 2019-08-20T04:00:00Z
-path: '/blog/banh-mi-tousled-deep-v-selfies'
+date: 2019-08-20T18:00:00.000-04:00
+path: /blog/banh-mi-tousled-deep-v-selfies
 category: social-media
 tags:
   - fashion
   - axe
-featuredImage: '../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
+featuredImage: ../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg
 featuredImageAlt: Yak
 ---
 
