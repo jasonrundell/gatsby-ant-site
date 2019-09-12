@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import moment from 'moment'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Tags from '../components/tags'
+import Pagination from '../components/pagination'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 import formatAuthorName from '../utils/formatAuthorName'
@@ -27,6 +28,10 @@ export default props => {
   const easyDate = moment(date).format('MMMM DD, YYYY')
   const categoryFormatted = formatCategoryTitle(category)
   const authorFormatted = formatAuthorName(author)
+  const previousUrl = prev ? prev.frontmatter.path : null
+  const previousLabel = prev ? prev.frontmatter.title : null
+  const nextUrl = next ? next.frontmatter.path : null
+  const nextLabel = next ? next.frontmatter.title : null
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -49,18 +54,13 @@ export default props => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
         <Tags list={tags || []} />
-        <div className={styles.post__navigation}>
-          {prev && (
-            <Link to={prev.frontmatter.path} className={styles.post__action}>
-              ← Previous post: {prev.frontmatter.title}
-            </Link>
-          )}
-          {next && (
-            <Link to={next.frontmatter.path} className={styles.post__action}>
-              Next post: {next.frontmatter.title} →
-            </Link>
-          )}
-        </div>
+        <Pagination
+          styles={styles}
+          previousUrl={previousUrl}
+          nextUrl={nextUrl}
+          previousLabel={`← Previous post: ${previousLabel}`}
+          nextLabel={`Next post: ${nextLabel} →`}
+        />
       </article>
     </Layout>
   )

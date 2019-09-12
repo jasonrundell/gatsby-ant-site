@@ -1,13 +1,17 @@
 ---
-title: 'Taxidermy Cardigan Fixie Single-origin Coffee'
-description: 'Taxidermy Cardigan Fixie Single-origin Coffee meta description'
-author: 'jason-rundell'
-date: '2019-07-01T18:00:00.000-04:00'
+title: Taxidermy Cardigan Fixie Single-origin Coffee
+description: Taxidermy Cardigan Fixie Single-origin Coffee meta description
+author: jason-rundell
+date: 2019-07-01T18:00:00.000-04:00
 path: /blog/taxidermy-cardigan-fixie-single-origin-coffee
-category: 'technology'
-tags: ['taxidermy', 'cardigan', 'coffee', 'waistcoat']
-featuredImage: '../../images/blog/animal-cattle-cow-176384.jpg'
-featuredImageAlt: 'Yak'
+category: technology
+tags:
+  - taxidermy
+  - cardigan
+  - coffee
+  - waistcoat
+featuredImage: ../../images/blog/animal-cattle-cow-176384.jpg
+featuredImageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-cow-176384.jpg)

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders correctly 1`] = `
+<nav
+  aria-label="Pagination Navigation"
+  role="navigation"
+>
+  <ul
+    className=""
+  />
+</nav>
+`;
