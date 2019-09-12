@@ -7,25 +7,6 @@ exports[`Pagination renders correctly 1`] = `
 >
   <ul
     className=""
-  >
-    <li
-      className=""
-    >
-      <a
-        href="/"
-      >
-        Previous
-      </a>
-    </li>
-    <li
-      className=""
-    >
-      <a
-        href="/"
-      >
-        Next
-      </a>
-    </li>
-  </ul>
+  />
 </nav>
 `;
