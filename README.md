@@ -1,5 +1,7 @@
 # gatsby-blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a23aa033-b880-4390-af38-71f86768a577/deploy-status)](https://app.netlify.com/sites/jovial-swartz-3be317/deploys)
+
 Kick off your blog project with this default boilerplate (based off of
 https://github.com/gatsbyjs/gatsby-starter-default). This starter ships with the
 main Gatsby configuration files you might need to get up and running blazing
