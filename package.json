@@ -51,7 +51,8 @@
     "test": "jest",
     "newtest": "jest -u",
     "clean": "gatsby clean",
-    "lh": "lighthousebot"
+    "lighthouse": "lighthousebot",
+    "lightcrawler": "lightcrawler"
   },
   "repository": {
     "type": "git",
