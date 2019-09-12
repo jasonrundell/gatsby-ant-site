@@ -33,6 +33,7 @@
     "husky": "^3.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
+    "lightcrawler": "0.0.9",
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "normalize.css": "^8.0.1",
     "prettier": "^1.18.2",

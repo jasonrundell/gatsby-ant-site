@@ -5,3 +5,5 @@ install:
   - npm install
 after_success:
   - npm run lh -- https://jovial-swartz-3be317.netlify.com
+  - npm run lightcrawler --url https://jovial-swartz-3be317.netlify.com --config
+    lightcrawler-config.json
