@@ -6,8 +6,8 @@ date: 2019-08-20T18:00:00.000-04:00
 path: /blog/banh-mi-tousled-deep-v-selfies
 category: social-media
 tags:
-- fashion
-- axe
+  - fashion
+  - axe
 featuredImage: ../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg
 featuredImageAlt: Yak
 ---

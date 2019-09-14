@@ -24,44 +24,44 @@ and latering it for your own purposes.
 
 ### **Prerequisite software**
 
-1. **Node.js**
+#### Node.js
 
-   Visit [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and
-   download a minimum LTS version of `10.6.0`.
+Visit [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and
+download a minimum LTS version of `10.6.0`.
 
-   Once installed, open a terminal/command window and enter:
+Once installed, open a terminal/command window and enter:
 
-   ```sh
-   node -v
-   ```
+```sh
+node -v
+```
 
-   If Node is installed corectly, you should get output like the following:
+If Node is installed corectly, you should get output like the following:
 
-   ```sh
-   $ node -v
-   v10.6.0
-   ```
+```sh
+$ node -v
+v10.6.0
+```
 
-2. **GatsbyJS CLI**
+#### GatsbyJS CLI
 
-   Follow the instructions in the quick start guide at
-   [https://www.gatsbyjs.org/docs/quick-start](https://www.gatsbyjs.org/docs/quick-start)
+Follow the instructions in the quick start guide at
+[https://www.gatsbyjs.org/docs/quick-start](https://www.gatsbyjs.org/docs/quick-start)
 
-   Once installed, open a terminal/command window and enter:
+Once installed, open a terminal/command window and enter:
 
-   ```sh
-   gatsby --v
-   ```
+```sh
+gatsby --v
+```
 
-   Is installed corectly, you should get some output like the following:
+Is installed corectly, you should get some output like the following:
 
-   ```sh
-   $ gatsby --v
-   Gatsby CLI version: 2.7.2
-   Gatsby version: 2.10.4
-   ```
+```sh
+$ gatsby --v
+Gatsby CLI version: 2.7.2
+Gatsby version: 2.10.4
+```
 
-### **Getting the project code**
+### Getting the project code
 
 **Clone**
 
@@ -73,7 +73,7 @@ git clone myfirstgatsbyblog https://github.com/jasonrundell/gatsby-blog
 
 Change `myfirstgatsbyblog` to the name of the project folder you'd like to use.
 
-### **Get your local copy up and running**
+### Get your local copy up and running
 
 1. Navigate into your new site’s directory and start it up.
 

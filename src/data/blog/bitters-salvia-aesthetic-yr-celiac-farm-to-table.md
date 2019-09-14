@@ -6,9 +6,9 @@ date: 2019-06-21T18:00:00.000-04:00
 path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table
 category: social-media
 tags:
--  bitters
--  salvia
--  celiac
+  - bitters
+  - salvia
+  - celiac
 featuredImage: ../../images/blog/animal-animal-photography-cattle-828784.jpg
 featuredImageAlt: Yak
 ---

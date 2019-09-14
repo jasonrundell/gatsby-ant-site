@@ -6,10 +6,10 @@ date: 2019-07-09T18:00:00.000-04:00
 path: /blog/chicken-literally-retro-pickled
 category: social-media
 tags:
-- chicken
-- pickle
-- retro
-- banjo
+  - chicken
+  - pickle
+  - retro
+  - banjo
 featuredImage: ../../images/blog/animal-animal-photography-blur-671931.jpg
 featuredImageAlt: Yak
 ---
