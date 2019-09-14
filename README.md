@@ -26,8 +26,8 @@ and latering it for your own purposes.
 
 1. **Node.js**
 
-   Visit https://nodejs.org/en/download/ and download a minimum LTS version of
-   `10.6.0`.
+   Visit [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and
+   download a minimum LTS version of `10.6.0`.
 
    Once installed, open a terminal/command window and enter:
 
@@ -45,7 +45,7 @@ and latering it for your own purposes.
 2. **GatsbyJS CLI**
 
    Follow the instructions in the quick start guide at
-   https://www.gatsbyjs.org/docs/quick-start
+   [https://www.gatsbyjs.org/docs/quick-start](https://www.gatsbyjs.org/docs/quick-start)
 
    Once installed, open a terminal/command window and enter:
 
@@ -99,7 +99,7 @@ Change `myfirstgatsbyblog` to the name of the project folder you'd like to use.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-## **LICENSE**:
+## **LICENSE**
 
 This project is licensed under the MIT license.
 
