@@ -4,7 +4,7 @@
 
 I've chosen to set all content to use the following ISO 8601 Format:
 
-```
+```text
 YYYY-MM-DDTHH:mm:ss.SSSZ
 ```
 
