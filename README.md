@@ -75,14 +75,14 @@ Change `myfirstgatsbyblog` to the name of the project folder you'd like to use.
 
 ### Get your local copy up and running
 
-#### Navigate into your new site’s directory and start it up.
+#### Navigate into your new site’s directory and start it up
 
 ```sh
 cd myfirstgatsbyblog/
 gatsby develop
 ```
 
-#### Open the source code and start editing!
+#### Open the source code and start editing
 
 Your site is now running at `http://localhost:8000`!
 
