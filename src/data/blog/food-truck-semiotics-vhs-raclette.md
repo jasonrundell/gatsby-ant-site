@@ -6,9 +6,9 @@ date: 2019-07-14T18:00:00.000-04:00
 path: /blog/food-truck-semiotics-vhs-raclette
 category: social-media
 tags:
-  - food
-  - truck
-  - vhs
+- food
+- truck
+- vhs
 featuredImage: ../../images/blog/animals-daylight-domestic-yak-773176.jpg
 featuredImageAlt: Yak
 ---

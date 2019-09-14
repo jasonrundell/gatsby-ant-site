@@ -6,10 +6,10 @@ date: 2019-07-01T18:00:00.000-04:00
 path: /blog/taxidermy-cardigan-fixie-single-origin-coffee
 category: technology
 tags:
-  - taxidermy
-  - cardigan
-  - coffee
-  - waistcoat
+- taxidermy
+- cardigan
+- coffee
+- waistcoat
 featuredImage: ../../images/blog/animal-cattle-cow-176384.jpg
 featuredImageAlt: Yak
 ---
