@@ -17,7 +17,7 @@ jobs:
             https://jrundell-gatsby-blog.netlify.com/blog/2
             https://jrundell-gatsby-blog.netlify.com/authors/jason-rundell
             https://jrundell-gatsby-blog.netlify.com/authors
-          budgetPath: ./budget.json
+          budgetPath: ./performance-budget.json
       - name: Save results
         uses: actions/upload-artifact@master
         with:
