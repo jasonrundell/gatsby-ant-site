@@ -127,3 +127,13 @@ This project is licensed under the MIT license.
 
 - Placeholder Yak photos provided by
   [https://www.pexels.com/search/yak/](https://www.pexels.com/search/yak/)
+
+## References / Further reading
+
+### treosh Lighthouse Audit Workflow
+
+If you want to learn more about how to configure `./performance-budget.json`,
+here are some articles:
+
+- [https://web.dev/use-lighthouse-for-performance-budgets](https://web.dev/use-lighthouse-for-performance-budgets)
+- [https://developers.google.com/web/tools/lighthouse/audits/budgets](https://developers.google.com/web/tools/lighthouse/audits/budgets)
