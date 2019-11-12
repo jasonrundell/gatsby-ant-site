@@ -17,7 +17,7 @@ tags:
 - master
 
 ---
-![](/media/blog/animals-daylight-domestic-yak-773176.jpg)
+![Yaks on a road](/media/blog/animals-daylight-domestic-yak-773176.jpg)
 
 Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh
 health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue
@@ -31,7 +31,7 @@ kickstarter post-ironic vape cred VHS you probably haven't heard ofthem. Ethical
 flexitarian occupy, mustache hot chicken irony meh. Shaman synthyuccie
 skateboard. Thundercats cred snackwave offal.
 
-![](/media/blog/animal-animal-photography-blur-671931.jpg)
+![Yak munching hay](/media/blog/animal-animal-photography-blur-671931.jpg)
 
 Tbh kogi vaporware ramps squid sustainable godard street art man braid.
 Everydaycarry selvage fingerstache kitsch, DIY distillery stumptown prism viral
