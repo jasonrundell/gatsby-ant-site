@@ -104,12 +104,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             id
             timeToRead
             frontmatter {
-              date
-              path
+              publish_date
+              slug
               author
               category
               tags
               title
+              short_description
+              featured_image
             }
           }
         }
@@ -133,7 +135,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const prev = index === 0 ? null : posts[index - 1].node
     const next = index === posts.length - 1 ? null : posts[index + 1].node
     createPage({
-      path: node.frontmatter.path,
+      path: node.frontmatter.slug,
       component: blogPostTemplate,
       context: {
         prev,
