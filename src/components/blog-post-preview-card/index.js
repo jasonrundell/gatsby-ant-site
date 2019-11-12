@@ -23,6 +23,7 @@ const BlogPostPreviewCard = ({
     <div className={styles.post__image}>
       <Link to={link} aria-hidden="true" tabIndex="-1">
         <ImageFluid image={image} alt={altText} />
+        <p>{title}</p>
       </Link>
     </div>
     <header>
