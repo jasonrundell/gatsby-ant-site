@@ -35,7 +35,7 @@ export default props => {
                 category={post.frontmatter.category}
                 title={post.frontmatter.title}
                 date={post.frontmatter.date}
-                excerpt={post.excerpt}
+                excerpt={post.frontmatter.short_description}
               />
             </li>
           )
@@ -74,7 +74,7 @@ export const BlogListQuery = graphql`
             date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
             category
             author
-            path
+            slug
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 304) {
@@ -82,7 +82,6 @@ export const BlogListQuery = graphql`
                 }
               }
             }
-            featuredImageAlt
           }
         }
       }

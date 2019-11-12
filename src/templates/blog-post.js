@@ -19,7 +19,8 @@ export default props => {
   const {
     path,
     title,
-    description,
+    meta_title,
+    meta_description,
     author,
     date,
     category,
@@ -38,8 +39,8 @@ export default props => {
       crumbs={[{ path: '/blog/', text: 'Blog' }, { path: path, text: title }]}
     >
       <SEO
-        title={`${data.site.siteMetadata.title} | Blog: ${title}`}
-        description={description}
+        title={`${data.site.siteMetadata.title} | Blog: ${meta_title}`}
+        description={meta_description}
         author={author}
         lang={data.site.siteMetadata.lang}
       />
@@ -80,12 +81,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
-        path
+        slug
         tags
         title
         category
         author
-        description
+        meta_title
+        meta_description
       }
     }
   }
