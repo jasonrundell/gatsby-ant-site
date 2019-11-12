@@ -11,10 +11,9 @@ featuredImage: "/uploads/brown-bull-on-green-glass-field-under-grey-and-blue-clo
 featuredImageAlt: Photo by Pixabay from Pexels
 
 ---
+![Yak](/uploads/brown-bull-on-green-glass-field-under-grey-and-blue-cloudy-139399.jpg)
 
-![](/uploads/brown-bull-on-green-glass-field-under-grey-and-blue-cloudy-139399.jpg)
-
-Adaptogen tattooed bitters next level, brunch letterpress microdosing tacos. Fingerstache butcher cornhole, cray pickled authentic bicycle rights freegan celiac fashion axe listicle salvia. Af pop-up food truck synth mustache forage polaroid taxidermy edison bulb tacos celiac dreamcatcher copper mug locavore. 
+Adaptogen tattooed bitters next level, brunch letterpress microdosing tacos. Fingerstache butcher cornhole, cray pickled authentic bicycle rights freegan celiac fashion axe listicle salvia. Af pop-up food truck synth mustache forage polaroid taxidermy edison bulb tacos celiac dreamcatcher copper mug locavore.
 
 ## VHS lo-fi man braid whatever flannel irony
 
