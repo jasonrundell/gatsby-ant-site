@@ -3,7 +3,10 @@ post_slug: "/blog/banh-mi-tousled-deep-v-selfies"
 blog_post_author: jason-rundell
 publish_date: 11/12/2019 3:05 AM +0000
 post_category: technology
-post_tags: []
+post_tags:
+- fashion
+- axe
+- shorts
 meta_description: Banh Mi Tousled Deep V Selfies
 meta_title: Banh Mi Tousled Deep V Selfies
 blog_post_title: Banh Mi Tousled Deep V Selfies
