@@ -3,17 +3,17 @@ title: Banh Mi Tousled Deep V Selfies
 description: Banh Mi Tousled Deep V Selfies meta description
 author: jason-rundell
 date: 2019-08-20T22:00:00.000+00:00
-path: '/blog/banh-mi-tousled-deep-v-selfies'
+path: "/blog/banh-mi-tousled-deep-v-selfies"
 category: social-media
 tags:
-  - fashion
-  - axe
-  - shorts
-  - banh mi
-featuredImage: '../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
+- fashion
+- axe
+- shorts
+- banh mi
+featuredImage: "../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg"
 featuredImageAlt: Yak
----
 
+---
 ![Yak](../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg)
 
 > Photo by KML from Pexels
@@ -23,10 +23,7 @@ sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
 
 ## Distillery taxidermy aesthetic
 
-Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh
-health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue
-bottle normcore literally. Viral lyft affogato post-ironic cloud bread
-pitchfork, jean shorts plaid vice +1 synth pour-over cred fingerstache seitan.
+Normcoreeeeee hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue bottle normcore literally. Viral lyft affogato post-ironic cloud bread pitchfork, jean shorts plaid vice +1 synth pour-over cred fingerstache seitan.
 
 Health goth lo-fi banh mi tousled deep v selfies. Bushwick lomo yr tofu
 gentrify, kickstarter post-ironic vape cred VHS you probably haven't heard of
