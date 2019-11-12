@@ -48,7 +48,8 @@
     "serve": "gatsby serve",
     "test": "jest",
     "newtest": "jest -u",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
   },
   "repository": {
     "type": "git",
