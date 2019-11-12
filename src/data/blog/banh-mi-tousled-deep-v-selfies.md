@@ -14,9 +14,9 @@ featuredImageAlt: Yak
 ---
 ![Yak](../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg)
 
-> Photo! by KML from Pexels
+> Photo by KML from Pexels
 
-Lorem ipsum dolor! amet ugh gastropub actually, gentrify shabby chic blue bottle sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
+Lorem ipsum dolor amet ugh gastropub actually, gentrify shabby chic blue bottle sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
 
 ## Distillery taxidermy aesthetic
 
