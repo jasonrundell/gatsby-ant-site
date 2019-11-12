@@ -2,52 +2,87 @@
 label: Blog post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
+- name: meta_description
+  type: text
   config:
     required: true
-- type: text
-  name: description
-  label: description
+  label: Meta Description
+  description: Page description for search engines
+- name: meta_title
+  type: text
   config:
     required: true
-- type: text
-  name: author
-  label: author
+  label: Meta Title
+  description: Page title for search engines
+- name: blog_post_title
+  type: text
   config:
     required: true
-  default: jason-rundell
-- type: datetime
-  name: date
-  label: date
+  label: Blog post title
+  description: Main title for blog post
+- name: post_slug
+  type: text
   config:
     required: true
-    date_format: YYYY-MM-DD
-    time_format: THH:mm:ss.SSSZ
-    export_format: THH:mm:ss.SSSZ
-- type: text
-  name: path
-  label: path
-  config:
-    required: true
+  label: Post slug
+  description: URI of where the post is found e.g. /blog/my-blog-post
   default: "/blog/"
-- type: text
-  name: category
-  label: category
+- name: blog_post_short_description
+  type: textarea
+  default: ''
   config:
     required: true
-- type: list
-  name: tags
-  label: tags
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Blog post short description
+  description: Description of blog post that shows up in listings
+- name: blog_post_author
+  type: select
+  default: jason-rundell
   config:
-    min: '1'
-    max: '10'
+    required: true
+    options:
+    - jason-rundell
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Blog post author
+  description: The author of the blog post
+- name: publish_date
+  type: datetime
+  label: Publish date
+  description: ''
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: h:mm A ZZ
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm A ZZ
+  default: now
+- name: post_category
+  type: select
+  default: technology
+  config:
+    required: true
+    options:
+    - technology
+    - social-media
+    - science
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Post category
+  description: The category this blog post belongs to.
+- name: post_tags
+  type: tag_list
+  default: []
+  label: Post tags
+  description: Topic tags for this blog post
 - type: file
-  name: featuredImage
-  label: featuredImage
-- type: text
-  name: featuredImageAlt
-  label: featuredImageAlt
-  config:
-    required: true
+  name: featured_image
+  label: Featured Image
