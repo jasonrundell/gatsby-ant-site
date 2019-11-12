@@ -10,6 +10,8 @@ category:
 tags:
 - fashion
 - axe
+- shorts
+- banh mi
 featuredImage: "../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg"
 featuredImageAlt: Yak
 
