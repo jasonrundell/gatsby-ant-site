@@ -14,6 +14,17 @@ blog_post_short_description: |-
   Lorem ipsum dolor amet ugh gastropub actually, gentrify shabby chic blue bottle
   sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
 featured_image: "/media/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg"
+title: Banh Mi Tousled Deep V Selfies
+slug: "/blog/banh-mi-tousled-deep-v-selfies"
+short_description: Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse
+  heirloom ugh health goth tote bag cronut snackwave skateboard cred unicorn williamsburg
+  blue bottle normcore literally.
+author: jason-rundell
+category: technology
+tags:
+- fashion
+- axe
+- shorts
 
 ---
 Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue bottle normcore literally. Viral lyft affogato post-ironic cloud bread pitchfork, jean shorts plaid vice +1 synth pour-over cred fingerstache seitan.
