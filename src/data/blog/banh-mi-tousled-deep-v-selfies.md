@@ -17,6 +17,8 @@ tags:
 - master
 
 ---
+![](/media/blog/animals-daylight-domestic-yak-773176.jpg)
+
 Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh
 health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue
 bottle normcore literally. Viral lyft affogato post-ironic cloud bread
@@ -28,6 +30,8 @@ Health goth lo-fi banh mi tousled deep v selfies. Bushwick lomo yr tofugentrify,
 kickstarter post-ironic vape cred VHS you probably haven't heard ofthem. Ethical
 flexitarian occupy, mustache hot chicken irony meh. Shaman synthyuccie
 skateboard. Thundercats cred snackwave offal.
+
+![](/media/blog/animal-animal-photography-blur-671931.jpg)
 
 Tbh kogi vaporware ramps squid sustainable godard street art man braid.
 Everydaycarry selvage fingerstache kitsch, DIY distillery stumptown prism viral
