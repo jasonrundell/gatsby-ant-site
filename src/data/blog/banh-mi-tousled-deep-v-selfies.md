@@ -38,3 +38,5 @@ Everydaycarry selvage fingerstache kitsch, DIY distillery stumptown prism viral
 vapesquid photo booth pabst. Swag fingerstache beard PBR&B. Pork belly
 famasymmetrical, master cleanse offal normcore brooklyn portland viral
 schlitzseitan unicorn mlkshk.
+
+![Yak with funny horns](src/images/blog/animal-cattle-cow-176384.jpg)
