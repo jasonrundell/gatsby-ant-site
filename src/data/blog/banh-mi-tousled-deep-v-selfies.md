@@ -6,7 +6,6 @@ date: 2019-08-20T22:00:00.000+00:00
 path: "/blog/banh-mi-tousled-deep-v-selfies"
 category:
 - social-media
-- technology
 tags:
 - fashion
 - axe
