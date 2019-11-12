@@ -86,3 +86,5 @@ fields:
 - type: file
   name: featured_image
   label: Featured Image
+pages:
+- src/data/blog/banh-mi-tousled-deep-v-selfies.md
