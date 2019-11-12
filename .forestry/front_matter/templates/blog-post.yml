@@ -14,20 +14,20 @@ fields:
     required: true
   label: Meta Title
   description: Page title for search engines
-- name: blog_post_title
+- name: title
   type: text
   config:
     required: true
-  label: Blog post title
+  label: Post title
   description: Main title for blog post
-- name: post_slug
+- name: slug
   type: text
   config:
     required: true
   label: Post slug
   description: URI of where the post is found e.g. /blog/my-blog-post
   default: "/blog/"
-- name: blog_post_short_description
+- name: short_description
   type: textarea
   default: ''
   config:
@@ -35,9 +35,9 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Blog post short description
+  label: Post short description
   description: Description of blog post that shows up in listings
-- name: blog_post_author
+- name: author
   type: select
   default: jason-rundell
   config:
@@ -49,7 +49,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Blog post author
+  label: Post author
   description: The author of the blog post
 - name: publish_date
   type: datetime
@@ -62,7 +62,7 @@ fields:
     display_utc: false
     export_format: MM/DD/YYYY h:mm A ZZ
   default: now
-- name: post_category
+- name: category
   type: select
   default: technology
   config:
@@ -78,7 +78,7 @@ fields:
       path: 
   label: Post category
   description: The category this blog post belongs to.
-- name: post_tags
+- name: tags
   type: tag_list
   default: []
   label: Post tags
