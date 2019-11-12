@@ -51,5 +51,3 @@ fields:
   label: featuredImageAlt
   config:
     required: true
-pages:
-- src/data/blog/sustainable-etsy-bitters.md
