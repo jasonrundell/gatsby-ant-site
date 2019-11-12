@@ -2,21 +2,21 @@
 publish_date: 11/12/2019 3:05 AM +0000
 meta_description: Banh Mi Tousled Deep V Selfies
 meta_title: Banh Mi Tousled Deep V Selfies
-featured_image: '/media/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
+featured_image: "/media/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg"
 title: Banh Mi Tousled Deep V Selfies
-slug: '/blog/banh-mi-tousled-deep-v-selfies'
-short_description:
-  Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom
-  ugh health goth tote bag cronut snackwave skateboard cred unicorn williamsburg
+slug: "/blog/banh-mi-tousled-deep-v-selfies"
+short_description: Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse
+  heirloom ugh health goth tote bag cronut snackwave skateboard cred unicorn williamsburg
   blue bottle normcore literally.
 author: jason-rundell
 category: technology
 tags:
-  - fashion
-  - axe
-  - shorts
----
+- fashion
+- axe
+- shorts
+- master
 
+---
 Normcore hell of paleo gentrify af hot chicken wolf. Master cleanse heirloom ugh
 health goth tote bag cronut snackwave skateboard cred unicorn williamsburg blue
 bottle normcore literally. Viral lyft affogato post-ironic cloud bread
