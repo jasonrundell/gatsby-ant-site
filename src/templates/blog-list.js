@@ -30,7 +30,7 @@ export default props => {
               <BlogPostPreviewCard
                 image={post.frontmatter.featuredImage}
                 altText={post.frontmatter.featuredImageAlt}
-                link={post.frontmatter.path}
+                link={post.frontmatter.slug}
                 author={post.frontmatter.author}
                 category={post.frontmatter.category}
                 title={post.frontmatter.title}

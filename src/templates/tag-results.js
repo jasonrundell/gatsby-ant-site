@@ -29,7 +29,7 @@ export default props => {
         {tagResult.map(({ id, frontmatter, excerpt }) => {
           return (
             <li key={id}>
-              <Link to={frontmatter.path}>{frontmatter.title}</Link>
+              <Link to={frontmatter.slug}>{frontmatter.title}</Link>
               <p>{excerpt}</p>
             </li>
           )

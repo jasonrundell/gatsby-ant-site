@@ -28,9 +28,9 @@ export default props => {
   const easyDate = moment(date).format('MMMM DD, YYYY')
   const categoryFormatted = formatCategoryTitle(category)
   const authorFormatted = formatAuthorName(author)
-  const previousUrl = prev ? prev.frontmatter.path : null
+  const previousUrl = prev ? prev.frontmatter.slug : null
   const previousLabel = prev ? prev.frontmatter.title : null
-  const nextUrl = next ? next.frontmatter.path : null
+  const nextUrl = next ? next.frontmatter.slug : null
   const nextLabel = next ? next.frontmatter.title : null
   return (
     <Layout
