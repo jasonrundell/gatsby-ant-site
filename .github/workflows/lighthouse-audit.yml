@@ -1,0 +1,25 @@
+name: Lighthouse Audit
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Audit URLs using Lighthouse and ensure performance budget
+        uses: treosh/lighthouse-ci-action@v1
+        with:
+          urls: |
+            https://jrundell-gatsby-blog.netlify.com/
+            https://jrundell-gatsby-blog.netlify.com/blog
+            https://jrundell-gatsby-blog.netlify.com/blog/banh-mi-tousled-deep-v-selfies
+            https://jrundell-gatsby-blog.netlify.com/categories/social-media
+            https://jrundell-gatsby-blog.netlify.com/categories
+            https://jrundell-gatsby-blog.netlify.com/blog/2
+            https://jrundell-gatsby-blog.netlify.com/authors/jason-rundell
+            https://jrundell-gatsby-blog.netlify.com/authors
+          budgetPath: ./performance-budget.json
+      - name: Save results
+        uses: actions/upload-artifact@master
+        with:
+          name: lighthouse-results
+          path: './results'

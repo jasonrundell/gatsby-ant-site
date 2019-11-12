@@ -77,7 +77,7 @@ export const BlogListQuery = graphql`
             path
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 640) {
+                fluid(maxWidth: 304) {
                   ...GatsbyImageSharpFluid
                 }
               }
