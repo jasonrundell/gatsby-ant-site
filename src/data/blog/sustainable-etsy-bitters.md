@@ -7,7 +7,7 @@ date: T00:00:00.000-05:00
 category: social-media
 tags:
 - helvetica
-featuredImage: "/uploads/brown-bull-on-green-glass-field-under-grey-and-blue-cloudy-139399.jpg"
+featuredImage: "../../images/blog/brown-bull-on-green-glass-field-under-grey-and-blue-cloudy-139399.jpg"
 featuredImageAlt: Photo by Pixabay from Pexels
 
 ---
