@@ -3,23 +3,23 @@ title: Banh Mi Tousled Deep V Selfies
 description: Banh Mi Tousled Deep V Selfies meta description
 author: jason-rundell
 date: 2019-08-20T22:00:00.000+00:00
-path: "/blog/banh-mi-tousled-deep-v-selfies"
-category:
-- social-media
+path: '/blog/banh-mi-tousled-deep-v-selfies'
+category: social-media
 tags:
-- fashion
-- axe
-- shorts
-- banh mi
-featuredImage: "../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg"
+  - fashion
+  - axe
+  - shorts
+  - banh mi
+featuredImage: '../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
 featuredImageAlt: Yak
-
 ---
+
 ![Yak](../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg)
 
 > Photo by KML from Pexels
 
-Lorem ipsum dolor amet ugh gastropub actually, gentrify shabby chic blue bottle sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
+Lorem ipsum dolor amet ugh gastropub actually, gentrify shabby chic blue bottle
+sriracha kinfolk succulents mlkshk waistcoat kickstarter organic godard.
 
 ## Distillery taxidermy aesthetic
 
