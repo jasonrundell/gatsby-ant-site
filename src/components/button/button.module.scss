@@ -1,31 +1,46 @@
+@import '../../styles/theme';
+
 .root {
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid $brand;
+  color: $brand;
+
   &.brand {
-    @include standardButton($style: "solidGreen");
+    border: 1px solid $brand;
+    background-color: $brand;
+    color: $white;
   }
 
   &.dark {
-    @include standardButton($style: "solidGrey");
+    border: 1px solid $dark;
+    background-color: $dark;
+    color: $white;
   }
 
   &.light {
-    @include standardButton($style: "solidWhite");
+    border: 1px solid $light;
+    background-color: $light;
+    color: $white;
   }
 
-  &.brand--outlined {
-    @include standardButton($style: "outlinedGreen");
+  &.brand--inverse {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $brand;
   }
 
-  &.dark--outlined {
-    @include standardButton($style: "outlinedGrey");
+  &.dark--inverse {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $dark;
   }
 
-  &.light--outlined {
-    @include standardButton($style: "outlinedWhite");
-  }
-
-  .text {
-    position: relative;
-    z-index: 1;
+  &.light--inverse {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $light;
   }
 }

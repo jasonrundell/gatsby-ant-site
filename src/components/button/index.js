@@ -1,17 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { classNames } from "../../utils/css"
+import { classNames } from '../../utils/css'
 
-import styles from "./button.module.scss"
+import styles from './button.module.scss'
 
 const Button = ({
   isBrand,
   isDark,
   isLight,
-  isBrandOutlined,
-  isDarkOutlined,
-  isLightOutlined,
+  isBrandInverse,
+  isDarkInverse,
+  isLightInverse,
   onClick,
   children,
 }) => {
@@ -20,19 +20,19 @@ const Button = ({
     isBrand && styles.brand,
     isDark && styles.dark,
     isLight && styles.light,
-    isBrandOutlined && styles.brandOutlined,
-    isDarkOutlined && styles.darkOutlined,
-    isLightOutlined && styles.lightOutlined
+    isBrandInverse && styles.brandInverse,
+    isDarkInverse && styles.darkInverse,
+    isLightInverse && styles.lightInverse
   )
   return (
     <button onClick={onClick} className={className}>
-      <span className={styles.text}>{children}</span>
+      {children}
     </button>
   )
 }
 
 Button.defaultProps = {
-  isCentered: false,
+  isBrand: false,
 }
 
 Button.propTypes = {
