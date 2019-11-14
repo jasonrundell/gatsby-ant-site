@@ -9,7 +9,7 @@ Array [
     Skip to main content
   </a>,
   <header
-    className="header"
+    className="root"
   >
     <div
       className="container"
@@ -61,21 +61,30 @@ Array [
         >
           Dark
         </button>
-        <button
-          className="root brandInverse"
+        <div
+          style={
+            Object {
+              "backgroundColor": "#000000",
+              "padding": "16px",
+            }
+          }
         >
-          Brand Inverse
-        </button>
-        <button
-          className="root lightInverse"
-        >
-          Light Inverse
-        </button>
-        <button
-          className="root darkInverse"
-        >
-          Dark Inverse
-        </button>
+          <button
+            className="root brandInverse"
+          >
+            Brand Inverse
+          </button>
+          <button
+            className="root lightInverse"
+          >
+            Light Inverse
+          </button>
+          <button
+            className="root darkInverse"
+          >
+            Dark Inverse
+          </button>
+        </div>
       </section>
       <section
         className="root constrained"

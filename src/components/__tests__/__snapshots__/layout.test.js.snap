@@ -9,7 +9,7 @@ Array [
     Skip to main content
   </a>,
   <header
-    className="header"
+    className="root"
   >
     <div
       className="container"

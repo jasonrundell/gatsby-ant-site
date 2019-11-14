@@ -2,7 +2,7 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  className="header"
+  className="root"
 >
   <div
     className="container"
