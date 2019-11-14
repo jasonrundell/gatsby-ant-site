@@ -22,9 +22,11 @@ export default ({ data }) => (
       <Button isBrand={true}>Brand</Button>
       <Button isLight={true}>Light</Button>
       <Button isDark={true}>Dark</Button>
-      <Button isBrandInverse={true}>Brand Inverse</Button>
-      <Button isLightInverse={true}>Light Inverse</Button>
-      <Button isDarkInverse={true}>Dark Inverse</Button>
+      <div style={{ backgroundColor: '#000000', padding: '16px' }}>
+        <Button isBrandInverse={true}>Brand Inverse</Button>
+        <Button isLightInverse={true}>Light Inverse</Button>
+        <Button isDarkInverse={true}>Dark Inverse</Button>
+      </div>
     </Section>
     <Section isConstrained={true}>
       <Icon icon="checkmark" />

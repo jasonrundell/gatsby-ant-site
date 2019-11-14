@@ -27,19 +27,19 @@
   }
 
   &.brand--inverse {
-    border: 1px solid $white;
+    border: 1px solid $brand;
     background-color: $white;
     color: $brand;
   }
 
   &.dark--inverse {
-    border: 1px solid $white;
+    border: 1px solid $dark;
     background-color: $white;
     color: $dark;
   }
 
   &.light--inverse {
-    border: 1px solid $white;
+    border: 1px solid $light;
     background-color: $white;
     color: $light;
   }
