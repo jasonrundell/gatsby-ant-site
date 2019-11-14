@@ -13,7 +13,7 @@ const Layout = ({ title, crumbs, children }) => {
     <>
       <SkipToMain />
       <Header siteTitle={title} />
-      <div className={styles.container}>
+      <div className={styles.root}>
         {crumbNode}
         <main id="main">{children}</main>
         <footer className={styles.footer}>
