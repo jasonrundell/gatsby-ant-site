@@ -1,14 +1,14 @@
 @import '../../styles/theme';
 
-.header {
+.root {
   background-color: $brand;
-  margin-bottom: 1.45rem;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .title {

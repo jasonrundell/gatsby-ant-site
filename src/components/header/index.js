@@ -5,7 +5,7 @@ import React from 'react'
 import styles from './header.module.scss'
 
 const Header = ({ siteTitle }) => (
-  <header className={styles.header}>
+  <header className={styles.root}>
     <div className={styles.container}>
       <h1 className={styles.title}>
         <Link to="/" className={styles.link}>
