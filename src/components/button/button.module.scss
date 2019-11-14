@@ -1,0 +1,31 @@
+.root {
+  cursor: pointer;
+  &.brand {
+    @include standardButton($style: "solidGreen");
+  }
+
+  &.dark {
+    @include standardButton($style: "solidGrey");
+  }
+
+  &.light {
+    @include standardButton($style: "solidWhite");
+  }
+
+  &.brand--outlined {
+    @include standardButton($style: "outlinedGreen");
+  }
+
+  &.dark--outlined {
+    @include standardButton($style: "outlinedGrey");
+  }
+
+  &.light--outlined {
+    @include standardButton($style: "outlinedWhite");
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+  }
+}
