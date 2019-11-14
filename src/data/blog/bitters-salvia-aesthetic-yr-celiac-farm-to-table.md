@@ -1,6 +1,11 @@
 ---
+meta_title: Bitters Salvia Aesthetic Yr Celiac Farm-to-table
+meta_description:
+  Bitters Salvia Aesthetic Yr Celiac Farm-to-table meta description
 title: Bitters Salvia Aesthetic Yr Celiac Farm-to-table
-description: Bitters Salvia Aesthetic Yr Celiac Farm-to-table meta description
+the_excerpt:
+  Four loko live-edge microdosing kickstarter hexagon kitsch snackwave listicle
+  sustainable jean shorts literally hoodie paleo schlitz heirloom.
 author: jason-rundell
 date: 2019-06-21T18:00:00.000-04:00
 path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table
@@ -10,7 +15,7 @@ tags:
   - salvia
   - celiac
 featured_image: ../../images/blog/animal-animal-photography-cattle-828784.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-cattle-828784.jpg)

@@ -1,6 +1,12 @@
 ---
+meta_title: Tofu Next Level Pickled Hammock
+meta_description: Tofu Next Level Pickled Hammock meta description
 title: Tofu Next Level Pickled Hammock
-description: Tofu Next Level Pickled Hammock meta description
+the_excerpt:
+  Asymmetrical retro activated charcoal skateboard man braid. Blog waistcoat
+  vinyl normcore actually. Mlkshk distillery cliche craft beer hammock. Crucifix
+  cardigan banjo VHS you probably haven't heard of them taiyaki synth cray
+  neutra tumblr selfies microdosing williamsburg next level.
 author: jason-rundell
 date: 2019-07-15T18:00:00.000-04:00
 path: /blog/tofu-next-level-pickled-hammock
@@ -10,7 +16,7 @@ tags:
   - pickle
   - hammock
 featured_image: ../../images/blog/alpine-alps-animal-1704296.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/alpine-alps-animal-1704296.jpg)

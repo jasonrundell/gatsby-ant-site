@@ -1,6 +1,12 @@
 ---
+meta_title: Swag Direct Trade
+meta_description: Swag Direct Trade meta description
 title: Swag Direct Trade
-description: Swag Direct Trade meta description
+the_excerpt:
+  Lorem ipsum dolor amet swag banjo viral roof party typewriter flannel health
+  goth pok pok kickstarter. Roof party coloring book VHS kombucha tote bag
+  banjo. Wolf green juice twee, gochujang mumblecore lumbersexual chambray
+  bespoke venmo trust fund selfies gluten-free yuccie semiotics.
 author: jason-rundell
 date: 2019-07-10T18:00:00.000-04:00
 path: /blog/swag-direct-trade
@@ -9,7 +15,7 @@ tags:
   - swag
   - trade
 featured_image: ../../images/blog/animal-animal-photography-blur-2382741.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-blur-2382741.jpg)

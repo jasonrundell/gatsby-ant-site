@@ -1,6 +1,10 @@
 ---
+meta_title: Chicken Literally Retro Pickled
+meta_description: Chicken Literally Retro Pickled description
 title: Chicken Literally Retro Pickled
-description: Chicken Literally Retro Pickled description
+the_excerpt:
+  Hella godard scenester, fingerstache banjo letterpress succulents live-edge
+  hot chicken skateboard fashion axe distillery.
 author: jason-rundell
 date: 2019-07-09T18:00:00.000-04:00
 path: /blog/chicken-literally-retro-pickled
@@ -11,7 +15,7 @@ tags:
   - retro
   - banjo
 featured_image: ../../images/blog/animal-animal-photography-blur-671931.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-blur-671931.jpg)

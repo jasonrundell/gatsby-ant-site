@@ -110,6 +110,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               category
               tags
               title
+              meta_title
+              meta_description
+              the_excerpt
             }
           }
         }

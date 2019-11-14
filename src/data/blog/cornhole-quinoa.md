@@ -1,6 +1,11 @@
 ---
+meta_title: Cornhole Quinoa
+meta_description: Cornhole Quinoa meta description
 title: Cornhole Quinoa
-description: Cornhole Quinoa meta description
+the_excerpt:
+  Lomo kale chips single-origin coffee bicycle rights narwhal humblebrag
+  helvetica gastropub ugh migas 8-bit. Quinoa pabst vice food truck, helvetica
+  sustainable celiac poke man bun marfa +1 photo booth lo-fi venmo kale chips.
 author: jason-rundell
 date: 2019-07-08T18:00:00.000-04:00
 path: /blog/cornhole-quinoa
@@ -11,7 +16,7 @@ tags:
   - hoodie
   - banjo
 featured_image: ../../images/blog/animal-animal-photography-bull-144234.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-bull-144234.jpg)

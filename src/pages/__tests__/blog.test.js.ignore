@@ -22,7 +22,7 @@ describe('Blog', () => {
                 date: '',
                 path: '',
                 featured_image: '',
-                featured_imageAlt: '',
+                featured_image_alt: '',
               },
             },
           },

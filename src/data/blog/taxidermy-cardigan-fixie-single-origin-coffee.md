@@ -1,6 +1,11 @@
 ---
+meta_title: Taxidermy Cardigan Fixie Single-origin Coffee
+meta_description: Taxidermy Cardigan Fixie Single-origin Coffee meta description
 title: Taxidermy Cardigan Fixie Single-origin Coffee
-description: Taxidermy Cardigan Fixie Single-origin Coffee meta description
+the_excerpt:
+  Slow-carb la croix lumbersexual chartreuse blue bottle salvia. Taxidermy
+  cardigan fixie single-origin coffee fashion axe snackwave pinterest jean
+  shorts chillwave. Pitchfork semiotics ethical green juice flannel.
 author: jason-rundell
 date: 2019-07-01T18:00:00.000-04:00
 path: /blog/taxidermy-cardigan-fixie-single-origin-coffee
@@ -11,7 +16,7 @@ tags:
   - coffee
   - waistcoat
 featured_image: ../../images/blog/animal-cattle-cow-176384.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-cow-176384.jpg)

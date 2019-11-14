@@ -17,9 +17,10 @@ export default props => {
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
   const {
+    meta_title,
+    meta_description,
     path,
     title,
-    description,
     author,
     date,
     category,
@@ -35,11 +36,14 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
-      crumbs={[{ path: '/blog/', text: 'Blog' }, { path: path, text: title }]}
+      crumbs={[
+        { path: '/blog/', text: 'Blog' },
+        { path: path, text: title },
+      ]}
     >
       <SEO
-        title={`${data.site.siteMetadata.title} | Blog: ${title}`}
-        description={description}
+        title={`${data.site.siteMetadata.title} | Blog: ${meta_title}`}
+        description={meta_description}
         author={author}
         lang={data.site.siteMetadata.lang}
       />
@@ -85,7 +89,8 @@ export const pageQuery = graphql`
         title
         category
         author
-        description
+        meta_title
+        meta_description
       }
     }
   }

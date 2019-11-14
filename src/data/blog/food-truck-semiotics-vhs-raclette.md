@@ -1,6 +1,12 @@
 ---
+meta_title: Food Truck Semiotics VHS Raclette
+meta_description: Food Truck Semiotics VHS Raclette meta description
 title: Food Truck Semiotics VHS Raclette
-description: Food Truck Semiotics VHS Raclette meta description
+the_excerpt:
+  Lorem ipsum dolor amet jean shorts man bun bitters kombucha gentrify yr tumblr
+  occupy 3 wolf moon. Messenger bag normcore pug street art pour-over, tbh
+  occupy. Post-ironic palo santo yuccie cloud bread unicorn. Man braid viral
+  enamel pin.
 author: jason-rundell
 date: 2019-07-14T18:00:00.000-04:00
 path: /blog/food-truck-semiotics-vhs-raclette
@@ -10,7 +16,7 @@ tags:
   - truck
   - vhs
 featured_image: ../../images/blog/animals-daylight-domestic-yak-773176.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![3 yaks](../../images/blog/animals-daylight-domestic-yak-773176.jpg)

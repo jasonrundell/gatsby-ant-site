@@ -1,6 +1,11 @@
 ---
+meta_title: Cray Authentic Swag
+meta_description: Cray Authentic Swag meta description
 title: Cray Authentic Swag
-description: Cray Authentic Swag meta description
+the_excerpt:
+  Church-key wayfarers swag godard subway tile affogato. Viral celiac coloring
+  book taiyaki kombucha selvage, pour-over dreamcatcher gentrify bushwick
+  chartreuse. Vinyl fanny pack fingerstache neutra.
 author: jason-rundell
 date: 2019-07-03T18:00:00.000-04:00
 path: /blog/cray-authentic-swag
@@ -10,7 +15,7 @@ tags:
   - messenger
   - tofu
 featured_image: ../../images/blog/animal-bull-cattle-306036.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-bull-cattle-306036.jpg)

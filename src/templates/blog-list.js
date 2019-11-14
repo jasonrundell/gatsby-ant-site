@@ -29,13 +29,13 @@ export default props => {
             <li key={post.id} className={styles.listItem}>
               <BlogPostPreviewCard
                 image={post.frontmatter.featured_image}
-                altText={post.frontmatter.featured_imageAlt}
+                altText={post.frontmatter.featured_image_alt}
                 link={post.frontmatter.path}
                 author={post.frontmatter.author}
                 category={post.frontmatter.category}
                 title={post.frontmatter.title}
                 date={post.frontmatter.date}
-                excerpt={post.excerpt}
+                excerpt={post.frontmatter.the_excerpt}
               />
             </li>
           )
@@ -71,6 +71,7 @@ export const BlogListQuery = graphql`
           id
           frontmatter {
             title
+            the_excerpt
             date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
             category
             author
@@ -82,7 +83,7 @@ export const BlogListQuery = graphql`
                 }
               }
             }
-            featured_imageAlt
+            featured_image_alt
           }
         }
       }

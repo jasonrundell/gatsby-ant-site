@@ -1,6 +1,11 @@
 ---
+meta_title: Banh Mi Tousled Deep V Selfies
+meta_description: Banh Mi Tousled Deep V Selfies meta description
 title: Banh Mi Tousled Deep V Selfies
-description: Banh Mi Tousled Deep V Selfies meta description
+the_excerpt:
+  Lorem ipsum dolor amet ugh gastropub actually, gentrify shabby chic blue
+  bottle sriracha kinfolk succulents mlkshk waistcoat kickstarter organic
+  godard.
 author: jason-rundell
 date: 2019-08-20T22:00:00.000+00:00
 path: '/blog/banh-mi-tousled-deep-v-selfies'
@@ -11,7 +16,7 @@ tags:
   - shorts
   - banh mi
 featured_image: '../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg'
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/close-up-photo-of-yak-with-long-horns-2382741.jpg)

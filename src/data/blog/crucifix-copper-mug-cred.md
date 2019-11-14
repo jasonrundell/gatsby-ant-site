@@ -1,6 +1,10 @@
 ---
+meta_title: Crucifix Copper Mug Cred
+meta_description: Crucifix Copper Mug Cred meta description
 title: Crucifix Copper Mug Cred
-description: Crucifix Copper Mug Cred meta description
+the_excerpt:
+  Lo-fi trust fund fashion axe, taxidermy four loko letterpress typewriter.
+  Edison bulb 8-bit mumblecore seitan mlkshk.
 author: jason-rundell
 date: 2019-07-11T18:00:00.000-04:00
 path: /blog/crucifix-copper-mug-cred
@@ -10,7 +14,7 @@ tags:
   - crucifix
   - cornhole
 featured_image: ../../images/blog/animal-close-up-country-1582215.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-close-up-country-1582215.jpg)

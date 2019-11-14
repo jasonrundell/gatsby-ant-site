@@ -1,6 +1,11 @@
 ---
+meta_title: Lo-fi Shoreditch Salvia
+meta_description: Lo-fi Shoreditch Salvia meta description
 title: Lo-fi Shoreditch Salvia
-description: Lo-fi Shoreditch Salvia meta description
+the_excerpt:
+  Lo-fi shoreditch salvia, VHS aesthetic vexillologist narwhal unicorn hashtag.
+  Tousled four dollar toast seitan mumblecore pour-over, beard ennui actually
+  pok pok activated charcoal pop-up meh bicycle rights.
 author: jason-rundell
 date: 2019-07-17T18:00:00.000-04:00
 path: /blog/lo-fi-shoreditch-salvia
@@ -9,7 +14,7 @@ tags:
   - saliva
   - coffee
 featured_image: ../../images/blog/animal-cattle-close-up-1758463.jpg
-featured_imageAlt: Yak
+featured_image_alt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-close-up-1758463.jpg)
