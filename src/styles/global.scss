@@ -1,0 +1,31 @@
+/** Normalize all the things **/
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'theme';
+
+/** My personal styling for a simple accessible start **/
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: $black;
+  font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: $brand;
+}
+
+a:visited,
+a:hover {
+  color: $brand;
+}
