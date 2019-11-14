@@ -27,7 +27,7 @@ Array [
     </div>
   </header>,
   <div
-    className="container"
+    className="root"
   >
     <main
       id="main"
