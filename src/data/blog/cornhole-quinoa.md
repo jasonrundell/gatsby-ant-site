@@ -10,8 +10,8 @@ tags:
   - quinoa
   - hoodie
   - banjo
-featuredImage: ../../images/blog/animal-animal-photography-bull-144234.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-animal-photography-bull-144234.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-bull-144234.jpg)

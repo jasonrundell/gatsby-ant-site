@@ -10,8 +10,8 @@ tags:
   - pickle
   - retro
   - banjo
-featuredImage: ../../images/blog/animal-animal-photography-blur-671931.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-animal-photography-blur-671931.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-blur-671931.jpg)

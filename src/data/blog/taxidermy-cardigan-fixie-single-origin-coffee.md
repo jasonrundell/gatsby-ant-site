@@ -10,8 +10,8 @@ tags:
   - cardigan
   - coffee
   - waistcoat
-featuredImage: ../../images/blog/animal-cattle-cow-176384.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-cattle-cow-176384.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-cow-176384.jpg)

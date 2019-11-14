@@ -9,8 +9,8 @@ tags:
   - food
   - truck
   - vhs
-featuredImage: ../../images/blog/animals-daylight-domestic-yak-773176.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animals-daylight-domestic-yak-773176.jpg
+featured_imageAlt: Yak
 ---
 
 ![3 yaks](../../images/blog/animals-daylight-domestic-yak-773176.jpg)

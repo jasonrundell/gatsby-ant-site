@@ -9,8 +9,8 @@ tags:
   - bitters
   - salvia
   - celiac
-featuredImage: ../../images/blog/animal-animal-photography-cattle-828784.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-animal-photography-cattle-828784.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-cattle-828784.jpg)

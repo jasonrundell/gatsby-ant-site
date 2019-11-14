@@ -8,8 +8,8 @@ category: technology
 tags:
   - swag
   - trade
-featuredImage: ../../images/blog/animal-animal-photography-blur-2382741.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-animal-photography-blur-2382741.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-animal-photography-blur-2382741.jpg)

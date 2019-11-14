@@ -28,8 +28,8 @@ export default props => {
           return (
             <li key={post.id} className={styles.listItem}>
               <BlogPostPreviewCard
-                image={post.frontmatter.featuredImage}
-                altText={post.frontmatter.featuredImageAlt}
+                image={post.frontmatter.featured_image}
+                altText={post.frontmatter.featured_imageAlt}
                 link={post.frontmatter.path}
                 author={post.frontmatter.author}
                 category={post.frontmatter.category}
@@ -75,14 +75,14 @@ export const BlogListQuery = graphql`
             category
             author
             path
-            featuredImage {
+            featured_image {
               childImageSharp {
                 fluid(maxWidth: 304) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
-            featuredImageAlt
+            featured_imageAlt
           }
         }
       }

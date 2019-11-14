@@ -8,8 +8,8 @@ category: technology
 tags:
   - saliva
   - coffee
-featuredImage: ../../images/blog/animal-cattle-close-up-1758463.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-cattle-close-up-1758463.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-cattle-close-up-1758463.jpg)

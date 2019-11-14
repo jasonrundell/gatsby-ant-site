@@ -9,8 +9,8 @@ tags:
   - copper
   - crucifix
   - cornhole
-featuredImage: ../../images/blog/animal-close-up-country-1582215.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/animal-close-up-country-1582215.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/animal-close-up-country-1582215.jpg)

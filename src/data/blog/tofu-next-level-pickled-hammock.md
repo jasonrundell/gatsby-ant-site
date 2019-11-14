@@ -9,8 +9,8 @@ tags:
   - tofu
   - pickle
   - hammock
-featuredImage: ../../images/blog/alpine-alps-animal-1704296.jpg
-featuredImageAlt: Yak
+featured_image: ../../images/blog/alpine-alps-animal-1704296.jpg
+featured_imageAlt: Yak
 ---
 
 ![Yak](../../images/blog/alpine-alps-animal-1704296.jpg)
