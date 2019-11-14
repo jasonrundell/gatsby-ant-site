@@ -1,5 +1,6 @@
-.breadcrumb {
-  font-size: 1rem;
+@import '../../styles/theme';
+
+.root {
   ol {
     margin: 0;
     padding: 0;
@@ -13,12 +14,12 @@
       margin: 0 0.75rem;
       transform: rotate(15deg);
       border-right: 1px solid currentColor;
-      height: 0.8em;
+      height: 0.8rem;
       content: '';
     }
   }
 }
 [aria-current] {
-  color: black;
+  color: $black;
   font-weight: 700;
 }

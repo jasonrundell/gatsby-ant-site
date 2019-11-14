@@ -12,7 +12,7 @@ export default ({ crumbs }) => {
     )
   })
   return (
-    <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
+    <nav aria-label="Breadcrumb" className={styles.root}>
       <ol>
         <li>
           <Link to="/">Home</Link>
