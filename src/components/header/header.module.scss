@@ -1,5 +1,7 @@
+@import '../../styles/theme';
+
 .header {
-  background-color: black;
+  background-color: $brand;
   margin-bottom: 1.45rem;
 }
 
@@ -14,9 +16,9 @@
 }
 
 .link {
-  color: white;
+  color: $white;
   text-decoration: none;
   &:visited {
-    color: white;
+    color: $white;
   }
 }
