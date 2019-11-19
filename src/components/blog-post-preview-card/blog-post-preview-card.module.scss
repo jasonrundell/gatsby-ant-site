@@ -1,8 +1,13 @@
+@import '../../styles/theme';
+
 .post__image {
-  @media (min-width: 768px) {
-    float: left;
+  float: left;
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: $desktopBreakpoint) {
     width: 23rem;
-    padding: 0 2rem;
   }
 }
 

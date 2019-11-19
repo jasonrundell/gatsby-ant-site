@@ -19,7 +19,7 @@ const BlogPostPreviewCard = ({
   link,
   excerpt,
 }) => (
-  <div>
+  <>
     <div className={styles.post__image}>
       <Link to={link} aria-hidden="true" tabIndex="-1">
         <ImageFluid image={image} alt={altText} />
@@ -38,7 +38,7 @@ const BlogPostPreviewCard = ({
       </p>
     </header>
     {excerpt && <p>{excerpt}</p>}
-  </div>
+  </>
 )
 
 BlogPostPreviewCard.defaultProps = {
