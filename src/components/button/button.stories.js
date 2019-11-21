@@ -37,7 +37,7 @@ export const brandInverse = () => (
 )
 
 export const lightInverse = () => (
-  <Button isLInverse={true} onClick={action('light inverse clicked')}>
+  <Button isLightInverse={true} onClick={action('light inverse clicked')}>
     Button
   </Button>
 )
