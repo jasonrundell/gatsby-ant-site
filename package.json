@@ -19,23 +19,33 @@
     "gatsby-transformer-remark": "^2.6.12",
     "gatsby-transformer-sharp": "^2.2.6",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-gatsby": "^0.2.8",
     "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
     "eslint": "^6.1.0",
     "husky": "^3.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "normalize.css": "^8.0.1",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.9.0"
+    "react-test-renderer": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0"
   },
   "keywords": [
     "gatsby"
@@ -49,7 +59,9 @@
     "test": "jest",
     "newtest": "jest -u",
     "clean": "gatsby clean",
-    "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080"
+    "forestry:preview": "gatsby develop -H 0.0.0.0 -p 8080",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
