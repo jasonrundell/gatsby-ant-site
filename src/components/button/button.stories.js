@@ -1,10 +1,15 @@
 import React from 'react'
 import { action } from '@storybook/addon-actions'
-//import { Button } from '@storybook/react/demo';
-import Button from '../src/components/button'
+import Button from '../button'
 
 export default {
-  title: 'Buttons',
+  title: 'Atomic Components | Button',
+
+  parameters: {
+    component: Button,
+    componentSubtitle:
+      'Displays an image that represents a user or organization',
+  },
 }
 
 export const brand = () => (
