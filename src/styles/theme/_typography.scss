@@ -1,4 +1,5 @@
 $fontFamily: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+$monoFamily: Monaco, Consolas, 'Lucida Console', monospace;
 
 @mixin body() {
   font-family: $fontFamily;
