@@ -2,10 +2,8 @@ import React from 'react'
 
 import variables from '!!sass-variable-parser!./_colors.scss'
 
-console.log(variables)
-
 export default {
-  title: 'Design Tokens | Colors',
+  title: 'Design Tokens | Color',
 
   parameters: {
     componentSubtitle: 'Theme colors',
@@ -13,21 +11,32 @@ export default {
 }
 
 export const ColorPalette = () => (
-  <div>
+  <div
+    style={{
+      fontFamily:
+        '"Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      display: 'flex',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    }}
+  >
     {Object.keys(variables).map((key, index) => {
       return (
-        <div key={index}>
-          <h3>{key}</h3>
-          <p style={{ color: variables[key] }}>Example text.</p>
-          <div style={{ backgroundColor: variables[key], padding: '1rem' }}>
-            Example background.
+        <div key={index} style={{ padding: '1rem', margin: '1rem' }}>
+          <h3 style={{ textTransform: 'capitalize' }}>{key}</h3>
+          <div
+            style={{
+              backgroundColor: variables[key],
+              width: '2rem',
+              height: '2rem',
+              border: '1px solid #000',
+            }}
+          ></div>
+          <div>
+            <code>
+              ${key}: {variables[key]}
+            </code>
           </div>
-          <p>
-            Hex: <code>{variables[key]}</code>
-          </p>
-          <p>
-            SASS Variable: <code>${key}</code>
-          </p>
         </div>
       )
     })}
