@@ -70,17 +70,17 @@ Array [
           }
         >
           <button
-            className="root brandInverse"
+            className="root brand__inverse"
           >
             Brand Inverse
           </button>
           <button
-            className="root lightInverse"
+            className="root light__inverse"
           >
             Light Inverse
           </button>
           <button
-            className="root darkInverse"
+            className="root dark__inverse"
           >
             Dark Inverse
           </button>
