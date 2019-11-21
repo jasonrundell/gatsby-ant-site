@@ -18,11 +18,11 @@ const Button = ({
   const className = classNames(
     styles.root,
     isBrand && styles.brand,
-    isDark && styles.dark,
     isLight && styles.light,
+    isDark && styles.dark,
     isBrandInverse && styles.brandInverse,
-    isDarkInverse && styles.darkInverse,
-    isLightInverse && styles.lightInverse
+    isLightInverse && styles.lightInverse,
+    isDarkInverse && styles.darkInverse
   )
   return (
     <button onClick={onClick} className={className}>
@@ -37,9 +37,33 @@ Button.defaultProps = {
 
 Button.propTypes = {
   /**
-    Use the loading state to indicate that the data Avatar needs is still loading.
+    Throw in any child string or object
     */
   children: PropTypes.any.isRequired,
+  /**
+    Set button style to 'Brand'
+    */
+  isBrand: PropTypes.bool,
+  /**
+    Set button style to 'Light'
+    */
+  isLight: PropTypes.bool,
+  /**
+    Set button style to 'Dark'
+    */
+  isDark: PropTypes.bool,
+  /**
+    Set button style to 'Inverse Brand'
+    */
+  isBrandInverse: PropTypes.bool,
+  /**
+    Set button style to 'Light Inverse'
+    */
+  isLightInverse: PropTypes.bool,
+  /**
+    Set button style to 'Dark Inverse'
+    */
+  isDarkInverse: PropTypes.bool,
 }
 
 /**
