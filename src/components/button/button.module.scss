@@ -7,40 +7,40 @@
   border-radius: 0.3rem;
   border: 1px solid $brand;
   color: $brand;
+}
 
-  &.brand {
-    border: 1px solid $brand;
-    background-color: $brand;
-    color: $white;
-  }
+.brand {
+  border: 1px solid $brand;
+  background-color: $brand;
+  color: $white;
+}
 
-  &.dark {
-    border: 1px solid $dark;
-    background-color: $dark;
-    color: $white;
-  }
+.brand__inverse {
+  border: 1px solid $brand;
+  background-color: $white;
+  color: $brand;
+}
 
-  &.light {
-    border: 1px solid $light;
-    background-color: $light;
-    color: $white;
-  }
+.light {
+  border: 1px solid $light;
+  background-color: $light;
+  color: $white;
+}
 
-  &.brand--inverse {
-    border: 1px solid $brand;
-    background-color: $white;
-    color: $brand;
-  }
+.light__inverse {
+  border: 1px solid $light;
+  background-color: $white;
+  color: $light;
+}
 
-  &.dark--inverse {
-    border: 1px solid $dark;
-    background-color: $white;
-    color: $dark;
-  }
+.dark {
+  border: 1px solid $dark;
+  background-color: $dark;
+  color: $white;
+}
 
-  &.light--inverse {
-    border: 1px solid $light;
-    background-color: $white;
-    color: $light;
-  }
+.dark__inverse {
+  border: 1px solid $dark;
+  background-color: $white;
+  color: $dark;
 }

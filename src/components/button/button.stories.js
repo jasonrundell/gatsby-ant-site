@@ -7,8 +7,7 @@ export default {
 
   parameters: {
     component: Button,
-    componentSubtitle:
-      'Displays an image that represents a user or organization',
+    componentSubtitle: 'Displays a button that should be used for actions.',
   },
 }
 

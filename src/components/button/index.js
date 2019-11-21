@@ -5,6 +5,11 @@ import { classNames } from '../../utils/css'
 
 import styles from './button.module.scss'
 
+/**
+- Primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”.
+- For navigational function, see the **Link** atomic component. 
+**/
+
 const Button = ({
   isBrand,
   isDark,
@@ -20,9 +25,9 @@ const Button = ({
     isBrand && styles.brand,
     isLight && styles.light,
     isDark && styles.dark,
-    isBrandInverse && styles.brandInverse,
-    isLightInverse && styles.lightInverse,
-    isDarkInverse && styles.darkInverse
+    isBrandInverse && styles.brand__inverse,
+    isLightInverse && styles.light__inverse,
+    isDarkInverse && styles.dark__inverse
   )
   return (
     <button onClick={onClick} className={className}>
@@ -65,10 +70,5 @@ Button.propTypes = {
     */
   isDarkInverse: PropTypes.bool,
 }
-
-/**
-- Use an avatar for attributing actions or content to specific users.
-- The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
-**/
 
 export default Button
