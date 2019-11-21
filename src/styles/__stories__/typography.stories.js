@@ -1,16 +1,18 @@
 import React from 'react'
 
-import variables from '!!sass-variable-parser!./_colors.scss'
+import variables from '!!sass-variable-parser!../theme/_typography.scss'
 
 export default {
-  title: 'Design Tokens | Color',
+  title: 'Design Tokens | Typography',
 
   parameters: {
-    componentSubtitle: 'Theme colors',
+    componentSubtitle: 'Theme typography',
   },
 }
 
-export const ColorPalette = () => (
+console.log(variables)
+
+export const Fonts = () => (
   <div
     style={{
       fontFamily:
@@ -24,18 +26,14 @@ export const ColorPalette = () => (
       return (
         <div key={index} style={{ padding: '1rem', margin: '1rem' }}>
           <h3 style={{ textTransform: 'capitalize' }}>{key}</h3>
-          <div
-            style={{
-              backgroundColor: variables[key],
-              width: '2rem',
-              height: '2rem',
-              border: '1px solid #000',
-            }}
-          ></div>
           <div>
             <code>
               ${key}: {variables[key]}
             </code>
+            <p style={{ fontFamily: variables[key] }}>
+              Example paragraph of{' '}
+              <span style={{ textTransform: 'capitalize' }}>{key}</span>
+            </p>
           </div>
         </div>
       )
