@@ -128,4 +128,6 @@ This project is licensed under the MIT license.
 - Placeholder Yak photos provided by
   [https://www.pexels.com/search/yak/](https://www.pexels.com/search/yak/)
 
+- [How to configure SCSS modules for Webpack](https://developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/)
+
 ## References / Further reading
