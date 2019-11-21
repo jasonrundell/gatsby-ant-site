@@ -46,6 +46,7 @@
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.9.0",
     "sass-loader": "^8.0.0",
+    "sass-variable-parser": "^1.2.2",
     "style-loader": "^1.0.0"
   },
   "keywords": [
