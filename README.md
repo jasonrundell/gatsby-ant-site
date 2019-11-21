@@ -130,4 +130,6 @@ This project is licensed under the MIT license.
 
 - [How to configure SCSS modules for Webpack](https://developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/)
 
+- [Learn Storybook: Document for stakeholders](https://www.learnstorybook.com/design-systems-for-developers/react/en/document/)
+
 ## References / Further reading
