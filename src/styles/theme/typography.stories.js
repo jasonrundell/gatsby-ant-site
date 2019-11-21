@@ -12,7 +12,7 @@ export default {
 
 console.log(variables)
 
-export const Headings = () => (
+export const Fonts = () => (
   <div
     style={{
       fontFamily:
@@ -30,6 +30,10 @@ export const Headings = () => (
             <code>
               ${key}: {variables[key]}
             </code>
+            <p style={{ fontFamily: variables[key] }}>
+              Example paragraph of{' '}
+              <span style={{ textTransform: 'capitalize' }}>{key}</span>
+            </p>
           </div>
         </div>
       )
