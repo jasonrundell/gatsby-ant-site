@@ -11,12 +11,12 @@ import styles from './blog-list.module.scss'
 export default props => {
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
-  const { nextPageNumber, previousPageNumber, totalPosts, limit } = pageContext
+  const { nextPageUrl, previousPageUrl, totalPosts, limit } = pageContext
 
   const paginationItemRender = (current, type, originalElement) => {
     if (type === 'prev') {
       return (
-        <Link to={`/blog/${previousPageNumber}`}>
+        <Link to={previousPageUrl}>
           <Icon type="left" />
         </Link>
       )
@@ -24,14 +24,18 @@ export default props => {
 
     if (type === 'next') {
       return (
-        <Link to={`/blog/${nextPageNumber}`}>
+        <Link to={nextPageUrl}>
           <Icon type="right" />
         </Link>
       )
     }
 
     if (type === 'page') {
-      return <Link to={`/blog/${current}`}>{current}</Link>
+      if (current === 1) {
+        return <Link to={`/blog/`}>{current}</Link>
+      } else {
+        return <Link to={`/blog/${current}`}>{current}</Link>
+      }
     }
 
     return originalElement

@@ -8,7 +8,7 @@ the_excerpt:
   godard.
 author: jason-rundell
 date: 2019-08-20T22:00:00.000+00:00
-path: '/blog/banh-mi-tousled-deep-v-selfies'
+path: /blog/banh-mi-tousled-deep-v-selfies/
 category: social-media
 tags:
   - fashion

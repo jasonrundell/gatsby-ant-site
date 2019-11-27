@@ -18,7 +18,7 @@ const createTagPages = (createPage, edges) => {
   Object.keys(tagResults).forEach(tagName => {
     const tagResult = tagResults[tagName]
     createPage({
-      path: `/tags/${tagName}`,
+      path: `/tags/${tagName}/`,
       component: tagResultsTemplate,
       context: {
         tagResults,
@@ -48,7 +48,7 @@ const createCategoryPages = (createPage, edges) => {
   Object.keys(categoryResults).forEach(category => {
     const categoryResult = categoryResults[category]
     createPage({
-      path: `/categories/${category}`,
+      path: `/categories/${category}/`,
       component: categoryResultsTemplate,
       context: {
         categoryResults,
@@ -76,7 +76,7 @@ const createAuthorPages = (createPage, edges) => {
   Object.keys(authorResults).forEach(author => {
     const authorResult = authorResults[author]
     createPage({
-      path: `/authors/${author}`,
+      path: `/authors/${author}/`,
       component: authorResultsTemplate,
       context: {
         authorResults,
@@ -156,11 +156,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const previousPageNumber = i === 0 ? null : currentPage - 1
     const nextPageNumber = i === totalPosts ? null : currentPage + 1
     createPage({
-      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      path: i === 0 ? `/blog/` : `/blog/${i + 1}/`,
       component: path.resolve('./src/templates/blog-list.js'),
       context: {
         previousPageNumber,
+        previousPageUrl: `/blog/${previousPageNumber}/`,
         nextPageNumber,
+        nextPageUrl: `/blog/${nextPageNumber}/`,
         limit,
         skip: i * limit,
         totalPosts,
@@ -171,6 +173,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Redirects
+  createRedirect({
+    fromPath: '/blog/1/',
+    toPath: '/blog/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
+
   createRedirect({
     fromPath: '/blog/1',
     toPath: '/blog/',

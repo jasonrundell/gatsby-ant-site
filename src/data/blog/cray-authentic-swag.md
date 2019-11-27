@@ -8,7 +8,7 @@ the_excerpt:
   chartreuse. Vinyl fanny pack fingerstache neutra.
 author: jason-rundell
 date: 2019-07-03T18:00:00.000-04:00
-path: /blog/cray-authentic-swag
+path: /blog/cray-authentic-swag/
 category: black-holes
 tags:
   - swag

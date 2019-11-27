@@ -8,7 +8,7 @@ the_excerpt:
   sustainable celiac poke man bun marfa +1 photo booth lo-fi venmo kale chips.
 author: jason-rundell
 date: 2019-07-08T18:00:00.000-04:00
-path: /blog/cornhole-quinoa
+path: /blog/cornhole-quinoa/
 category: black-holes
 tags:
   - cornhole

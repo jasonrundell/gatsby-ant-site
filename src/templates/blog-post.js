@@ -5,7 +5,7 @@ import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Tags from '../components/tags'
+import TagsList from '../components/TagsList'
 // import Pagination from '../components/pagination'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
@@ -78,14 +78,14 @@ export default props => {
       <article>
         <h1>{title}</h1>
         <p className={styles.post__meta}>
-          <Link to={`/authors/${author}`}>{authorFormatted}</Link> |{' '}
+          <Link to={`/authors/${author}/`}>{authorFormatted}</Link> |{' '}
           <time dateTime={date}>{easyDate}</time> |{' '}
-          <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
+          <Link to={`/categories/${category}/`}>{categoryFormatted}</Link>
         </p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
-        <Tags list={tags || []} />
+        <TagsList tags={tags || []} />
         {/* <Pagination
           styles={styles}
           previousUrl={previousUrl}

@@ -8,7 +8,7 @@ the_excerpt:
   shorts chillwave. Pitchfork semiotics ethical green juice flannel.
 author: jason-rundell
 date: 2019-07-01T18:00:00.000-04:00
-path: /blog/taxidermy-cardigan-fixie-single-origin-coffee
+path: /blog/taxidermy-cardigan-fixie-single-origin-coffee/
 category: technology
 tags:
   - taxidermy
