@@ -7,7 +7,7 @@ the_excerpt:
   hot chicken skateboard fashion axe distillery.
 author: jason-rundell
 date: 2019-07-09T18:00:00.000-04:00
-path: /blog/chicken-literally-retro-pickled
+path: /blog/chicken-literally-retro-pickled/
 category: social-media
 tags:
   - chicken

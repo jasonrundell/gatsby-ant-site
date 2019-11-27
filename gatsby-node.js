@@ -18,7 +18,7 @@ const createTagPages = (createPage, edges) => {
   Object.keys(tagResults).forEach(tagName => {
     const tagResult = tagResults[tagName]
     createPage({
-      path: `/tags/${tagName}`,
+      path: `/tags/${tagName}/`,
       component: tagResultsTemplate,
       context: {
         tagResults,
@@ -48,7 +48,7 @@ const createCategoryPages = (createPage, edges) => {
   Object.keys(categoryResults).forEach(category => {
     const categoryResult = categoryResults[category]
     createPage({
-      path: `/categories/${category}`,
+      path: `/categories/${category}/`,
       component: categoryResultsTemplate,
       context: {
         categoryResults,
@@ -76,7 +76,7 @@ const createAuthorPages = (createPage, edges) => {
   Object.keys(authorResults).forEach(author => {
     const authorResult = authorResults[author]
     createPage({
-      path: `/authors/${author}`,
+      path: `/authors/${author}/`,
       component: authorResultsTemplate,
       context: {
         authorResults,
@@ -149,20 +149,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Take posts length and divide by X, ceil it
   const limit = 4
-  const postsTotal = posts.length
-  const numPages = Math.ceil(postsTotal / limit)
+  const totalPosts = posts.length
+  const numPages = Math.ceil(totalPosts / limit)
   Array.from({ length: numPages }).forEach((_, i) => {
     const currentPage = i + 1
     const previousPageNumber = i === 0 ? null : currentPage - 1
-    const nextPageNumber = i === postsTotal ? null : currentPage + 1
+    const nextPageNumber = i === totalPosts ? null : currentPage + 1
     createPage({
-      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      path: i === 0 ? `/blog/` : `/blog/${i + 1}/`,
       component: path.resolve('./src/templates/blog-list.js'),
       context: {
         previousPageNumber,
+        previousPageUrl: `/blog/${previousPageNumber}/`,
         nextPageNumber,
+        nextPageUrl: `/blog/${nextPageNumber}/`,
         limit,
         skip: i * limit,
+        totalPosts,
         numPages,
         currentPage,
       },
@@ -170,6 +173,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Redirects
+  createRedirect({
+    fromPath: '/blog/1/',
+    toPath: '/blog/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  })
+
   createRedirect({
     fromPath: '/blog/1',
     toPath: '/blog/',

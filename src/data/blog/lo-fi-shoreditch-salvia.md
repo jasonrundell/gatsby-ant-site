@@ -8,7 +8,7 @@ the_excerpt:
   pok pok activated charcoal pop-up meh bicycle rights.
 author: jason-rundell
 date: 2019-07-17T18:00:00.000-04:00
-path: /blog/lo-fi-shoreditch-salvia
+path: /blog/lo-fi-shoreditch-salvia/
 category: technology
 tags:
   - saliva

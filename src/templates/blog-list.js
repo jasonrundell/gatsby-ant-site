@@ -1,17 +1,46 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BlogPostPreviewCard from '../components/blog-post-preview-card'
-import PaginationList from '../components/pagination-list'
 
 import styles from './blog-list.module.scss'
 
 export default props => {
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
-  const { nextPageNumber, previousPageNumber, numPages } = pageContext
+  const { nextPageUrl, previousPageUrl, totalPosts, limit } = pageContext
+
+  const paginationItemRender = (current, type, originalElement) => {
+    if (type === 'prev') {
+      return (
+        <Link to={previousPageUrl}>
+          <Icon type="left" />
+        </Link>
+      )
+    }
+
+    if (type === 'next') {
+      return (
+        <Link to={nextPageUrl}>
+          <Icon type="right" />
+        </Link>
+      )
+    }
+
+    if (type === 'page') {
+      if (current === 1) {
+        return <Link to={`/blog/`}>{current}</Link>
+      } else {
+        return <Link to={`/blog/${current}`}>{current}</Link>
+      }
+    }
+
+    return originalElement
+  }
+
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -42,16 +71,11 @@ export default props => {
         })}
       </ul>
       <div className={styles.pagination__container}>
-        <PaginationList
-          styles={styles}
-          pagesCount={numPages}
-          path={'/blog/'}
-          previousPageNumber={previousPageNumber}
-          nextPageNumber={nextPageNumber}
-          previousBridge={'...'}
-          nextBridge={'...'}
-          previousLabel={'< Previous Page'}
-          nextLabel={'Next Page >'}
+        <Pagination
+          defaultCurrent={1}
+          pageSize={limit}
+          total={totalPosts}
+          itemRender={paginationItemRender}
         />
       </div>
     </Layout>

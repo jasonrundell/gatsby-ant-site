@@ -1,15 +1,17 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import moment from 'moment'
+import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Tags from '../components/tags'
-import Pagination from '../components/pagination'
+import TagsList from '../components/TagsList'
+// import Pagination from '../components/pagination'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 import formatAuthorName from '../utils/formatAuthorName'
 
+import './blog-post.css'
 import styles from './blog-post.module.scss'
 
 export default props => {
@@ -33,6 +35,32 @@ export default props => {
   const previousLabel = prev ? prev.frontmatter.title : null
   const nextUrl = next ? next.frontmatter.path : null
   const nextLabel = next ? next.frontmatter.title : null
+
+  const paginationItemRender = (current, type, originalElement) => {
+    if (type === 'prev') {
+      return (
+        <Link to={previousUrl}>
+          <Icon type="left" /> Previous post: {previousLabel}
+        </Link>
+      )
+    }
+
+    if (type === 'next') {
+      return (
+        <Link to={nextUrl}>
+          Next post: {nextLabel}
+          <Icon type="right" />
+        </Link>
+      )
+    }
+
+    if (type === 'page') {
+      return null
+    }
+
+    return originalElement
+  }
+
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -50,21 +78,22 @@ export default props => {
       <article>
         <h1>{title}</h1>
         <p className={styles.post__meta}>
-          <Link to={`/authors/${author}`}>{authorFormatted}</Link> |{' '}
+          <Link to={`/authors/${author}/`}>{authorFormatted}</Link> |{' '}
           <time dateTime={date}>{easyDate}</time> |{' '}
-          <Link to={`/categories/${category}`}>{categoryFormatted}</Link>
+          <Link to={`/categories/${category}/`}>{categoryFormatted}</Link>
         </p>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
-        <Tags list={tags || []} />
-        <Pagination
+        <TagsList tags={tags || []} />
+        {/* <Pagination
           styles={styles}
           previousUrl={previousUrl}
           nextUrl={nextUrl}
           previousLabel={`← Previous post: ${previousLabel}`}
           nextLabel={`Next post: ${nextLabel} →`}
-        />
+        /> */}
+        <Pagination itemRender={paginationItemRender} styles={styles} />
       </article>
     </Layout>
   )
