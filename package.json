@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-site-ant-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A full-featured Gatsby site with Ant Design.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jason Rundell <jason.rundell@gmail.com>",
   "dependencies": {
+    "antd": "^3.25.3",
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-algolia": "^0.3.3",
