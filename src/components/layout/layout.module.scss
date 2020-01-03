@@ -7,7 +7,12 @@
   padding-left: 2rem;
 }
 
-.footer {
-  @include bodySmall();
-  text-align: center;
+.site-name {
+  float: left;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  &:visited {
+    color: #fff;
+  }
 }
