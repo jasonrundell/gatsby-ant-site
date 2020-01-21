@@ -8,7 +8,7 @@ import Breadcrumb from '../breadcrumb'
 
 import styles from './Layout.module.scss'
 
-import './node_modules/antd/dist/antd.css'
+import 'antd/dist/antd.css'
 
 const { Header, Content, Footer } = Layout
 

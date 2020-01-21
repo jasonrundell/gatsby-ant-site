@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import moment from 'moment'
 import { Icon, Pagination } from 'antd'
 
-import Layout from '../components/Layingout'
+import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import TagsList from '../components/TagsList'
 
