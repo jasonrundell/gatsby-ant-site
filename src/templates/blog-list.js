@@ -14,7 +14,7 @@ export default props => {
   const { nextPageUrl, previousPageUrl, totalPosts, limit } = pageContext
 
   const paginationItemRender = (current, type, originalElement) => {
-    if (type === 'prev') {
+    if (previousPageUrl && type === 'prev') {
       return (
         <Link to={previousPageUrl}>
           <Icon type="left" />
@@ -22,7 +22,7 @@ export default props => {
       )
     }
 
-    if (type === 'next') {
+    if (nextPageUrl && type === 'next') {
       return (
         <Link to={nextPageUrl}>
           <Icon type="right" />
