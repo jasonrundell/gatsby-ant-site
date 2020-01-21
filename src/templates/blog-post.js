@@ -37,7 +37,7 @@ export default props => {
   const nextLabel = next ? next.frontmatter.title : null
 
   const paginationItemRender = (current, type, originalElement) => {
-    if (type === 'prev') {
+    if (previousUrl && type === 'prev') {
       return (
         <Link to={previousUrl}>
           <Icon type="left" /> Previous post: {previousLabel}
@@ -45,7 +45,7 @@ export default props => {
       )
     }
 
-    if (type === 'next') {
+    if (nextUrl && type === 'next') {
       return (
         <Link to={nextUrl}>
           Next post: {nextLabel}
