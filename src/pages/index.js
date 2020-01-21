@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 const { Title, Paragraph } = Typography
 
 export default ({ data }) => (
-  <Layout title={data.site.siteMetadata.title}>
+  <Layout title={data.site.siteMetadata.title} pathname="/">
     <SEO
       title={`${data.site.siteMetadata.title} | Home`}
       description={data.site.siteMetadata.description}

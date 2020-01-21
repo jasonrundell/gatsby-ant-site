@@ -10,8 +10,9 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname={path}
       crumbs={[
-        { path: '/tags', text: 'Tags' },
+        { path: '/tags/', text: 'Tags' },
         { path: path, text: pageContext.tag },
       ]}
     >
@@ -35,7 +36,7 @@ export default props => {
           )
         })}
       </ul>
-      <Link to="/tags">All tags</Link>
+      <Link to="/tags/">All tags</Link>
     </Layout>
   )
 }

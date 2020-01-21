@@ -44,6 +44,7 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname="/blog/"
       crumbs={[{ path: '/blog/', text: 'Blog' }]}
     >
       <SEO

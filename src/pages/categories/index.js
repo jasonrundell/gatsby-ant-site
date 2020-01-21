@@ -13,7 +13,8 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
-      crumbs={[{ path: '/categories', text: 'Categories' }]}
+      pathname="/categories/"
+      crumbs={[{ path: '/categories/', text: 'Categories' }]}
     >
       <SEO
         title={`${data.site.siteMetadata.title} | Categories`}
@@ -31,7 +32,7 @@ export default props => {
           </li>
         ))}
       </ul>
-      <Link to="/blog">All posts</Link>
+      <Link to="/blog/">All posts</Link>
     </Layout>
   )
 }
