@@ -87,7 +87,7 @@ export default props => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
         <TagsList tags={tags || []} />
-        <Pagination itemRender={paginationItemRender} styles={styles} />
+        <Pagination itemRender={paginationItemRender} />
       </article>
     </Layout>
   )
