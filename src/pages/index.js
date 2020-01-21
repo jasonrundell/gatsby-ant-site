@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { Typography } from 'antd'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import SEO from '../components/SearchEngineOptimization'
 
 const { Title, Paragraph } = Typography
 
