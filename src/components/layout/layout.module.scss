@@ -1,6 +1,15 @@
 @import '../../styles/theme';
 
-.root {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.content {
+  margin-top: 4rem;
   padding-top: 1rem;
   padding-right: 2rem;
   padding-bottom: 1rem;
@@ -11,6 +20,7 @@
   float: left;
   margin-right: 1.5rem;
   font-size: 1.5rem;
+  font-weight: 400;
   color: #fff;
   &:visited {
     color: #fff;

@@ -13,35 +13,35 @@ import 'antd/dist/antd.css'
 
 const { Header, Content, Footer } = Layout
 
-const _Layout = ({ title, crumbs, children }) => {
+const _Layout = ({ title, crumbs, children, pathname }) => {
   return (
     <>
-      <SkipToMain />
-      <Header>
+      <Header className={styles.header}>
         <Link to="/" className={styles.siteName}>
           {title}
         </Link>
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['1']}
-          style={{ lineHeight: '64px' }}
+          selectedKeys={[pathname]}
+          style={{ lineHeight: '4rem' }}
         >
-          <Menu.Item key="1">
+          <Menu.Item key="/">
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="2">
+          <Menu.Item key="/blog/">
             <Link to="/blog/">Blog</Link>
           </Menu.Item>
-          <Menu.Item key="3">
+          <Menu.Item key="/about/">
             <Link to="/about/">About</Link>
           </Menu.Item>
-          <Menu.Item key="4">
+          <Menu.Item key="/contact/">
             <Link to="/contact/">Contact</Link>
           </Menu.Item>
         </Menu>
       </Header>
-      <Content id="main" className={styles.root}>
+      <SkipToMain />
+      <Content id="main" className={styles.content}>
         {crumbs && <Breadcrumb crumbs={crumbs} />}
         {children}
       </Content>
