@@ -4,7 +4,7 @@ import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import BlogPostPreviewCard from '../components/blog-post-preview-card'
+import BlogPostCard from '../components/BlogPostCard'
 
 import styles from './blog-list.module.scss'
 
@@ -57,7 +57,7 @@ export default props => {
         {posts.map(({ node: post }) => {
           return (
             <li key={post.id} className={styles.listItem}>
-              <BlogPostPreviewCard
+              <BlogPostCard
                 image={post.frontmatter.featured_image}
                 altText={post.frontmatter.featured_image_alt}
                 link={post.frontmatter.path}

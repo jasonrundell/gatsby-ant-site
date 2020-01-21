@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import PropTypes from 'prop-types'
-import ImageFluid from '../image-fluid'
+import ImageFluid from '../ImageFluid'
 
 import formatCategoryTitle from '../../utils/formatCategoryTitle'
 import formatAuthorName from '../../utils/formatAuthorName'
 
-import styles from './blog-post-preview-card.module.scss'
+import styles from './index.module.scss'
 
-const BlogPostPreviewCard = ({
+const BlogPostCard = ({
   image,
   altText,
   title,
@@ -41,11 +41,11 @@ const BlogPostPreviewCard = ({
   </>
 )
 
-BlogPostPreviewCard.defaultProps = {
+BlogPostCard.defaultProps = {
   altText: '',
 }
 
-BlogPostPreviewCard.propTypes = {
+BlogPostCard.propTypes = {
   altText: PropTypes.string,
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
@@ -53,4 +53,4 @@ BlogPostPreviewCard.propTypes = {
   excerpt: PropTypes.string,
 }
 
-export default BlogPostPreviewCard
+export default BlogPostCard
