@@ -3,10 +3,12 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { Tag } from 'antd'
 
+import styles from './TagsList.module.scss'
+
 const TagsList = ({ tags = [] }) => (
-  <ul>
+  <ul className={styles.root}>
     {tags.map(tag => (
-      <li key={tag}>
+      <li className={styles.listItem} key={tag}>
         <Tag>
           <Link to={`/tags/${tag}/`}>{tag}</Link>
         </Tag>
