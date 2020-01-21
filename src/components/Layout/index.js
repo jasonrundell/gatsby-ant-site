@@ -31,12 +31,6 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           <Menu.Item key="/blog/">
             <Link to="/blog/">Blog</Link>
           </Menu.Item>
-          <Menu.Item key="/about/">
-            <Link to="/about/">About</Link>
-          </Menu.Item>
-          <Menu.Item key="/contact/">
-            <Link to="/contact/">Contact</Link>
-          </Menu.Item>
         </Menu>
       </Header>
       <SkipToMain />
@@ -45,13 +39,16 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
         {children}
       </Content>
       <Footer className={styles.footer}>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}. Built with
         {` `}
         <a href="https://www.gatsbyjs.org" rel="noopener noreferrer">
           Gatsby
+        </a>{' '}
+        and{' '}
+        <a href="https://ant.design/" rel="noopener noreferrer">
+          Ant Design
         </a>
         .{` `}
-        Calin says hello.
       </Footer>
     </>
   )
