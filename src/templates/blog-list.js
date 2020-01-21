@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/layout'
-import SEO from '../components/SearchEngineOptimization'
+import SEO from '../components/SEO'
 import BlogPostPreviewCard from '../components/blog-post-preview-card'
 
 import styles from './blog-list.module.scss'

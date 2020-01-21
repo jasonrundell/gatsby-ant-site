@@ -4,7 +4,7 @@ import moment from 'moment'
 import { Icon, Pagination } from 'antd'
 
 import Layout from '../components/layout'
-import SEO from '../components/SearchEngineOptimization'
+import SEO from '../components/SEO'
 import TagsList from '../components/TagsList'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
