@@ -6,7 +6,6 @@ import { Icon, Pagination } from 'antd'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TagsList from '../components/TagsList'
-// import Pagination from '../components/pagination'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 import formatAuthorName from '../utils/formatAuthorName'
