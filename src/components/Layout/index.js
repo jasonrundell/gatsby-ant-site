@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { Layout, Menu } from 'antd'
 
 import SkipToMain from '../SkipToMain'
-import Breadcrumb from '../breadcrumb'
+import Breadcrumb from '../Breadcrumb'
 
 import styles from './Layout.module.scss'
 
