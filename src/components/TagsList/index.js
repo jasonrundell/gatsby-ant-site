@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { Tag } from 'antd'
 
-import styles from './TagsList.module.scss'
+import styles from './index.module.scss'
 
 const TagsList = ({ tags = [] }) => (
   <ul className={styles.root}>

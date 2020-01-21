@@ -6,7 +6,7 @@ import { Layout, Menu } from 'antd'
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
 
-import styles from './Layout.module.scss'
+import styles from './index.module.scss'
 
 import 'antd/dist/antd.css'
 
