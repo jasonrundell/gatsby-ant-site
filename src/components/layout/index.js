@@ -45,7 +45,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
         {crumbs && <Breadcrumb crumbs={crumbs} />}
         {children}
       </Content>
-      <Footer>
+      <Footer className={styles.footer}>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org" rel="noopener noreferrer">
