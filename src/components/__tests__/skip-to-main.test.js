@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import SkipToMain from '../skip-to-main'
+import SkipToMain from '../SkipToMain'
 
 describe('SkipToMain', () => {
   it('renders correctly', () => {

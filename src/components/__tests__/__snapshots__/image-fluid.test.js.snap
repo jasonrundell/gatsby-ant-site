@@ -11,6 +11,7 @@ exports[`ImageFluid renders correctly 1`] = `
   }
 >
   <div
+    aria-hidden={true}
     style={
       Object {
         "paddingBottom": "100%",
