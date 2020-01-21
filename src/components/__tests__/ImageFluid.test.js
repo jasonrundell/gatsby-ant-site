@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ImageFluid from '../image-fluid'
+import ImageFluid from '../ImageFluid'
 
 describe('ImageFluid', () => {
   it('renders correctly', () => {
