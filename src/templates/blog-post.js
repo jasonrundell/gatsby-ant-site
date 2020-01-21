@@ -87,13 +87,6 @@ export default props => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h3>Tags</h3>
         <TagsList tags={tags || []} />
-        {/* <Pagination
-          styles={styles}
-          previousUrl={previousUrl}
-          nextUrl={nextUrl}
-          previousLabel={`← Previous post: ${previousLabel}`}
-          nextLabel={`Next post: ${nextLabel} →`}
-        /> */}
         <Pagination itemRender={paginationItemRender} styles={styles} />
       </article>
     </Layout>
