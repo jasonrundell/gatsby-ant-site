@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import styles from './breadcrumb.module.scss'
+import styles from './index.module.scss'
 
 export default ({ crumbs }) => {
   const crumbItems = crumbs.map(crumb => {
