@@ -76,7 +76,7 @@ export default props => {
         <Row type="flex">
           <TagsList tags={tags || []} />
         </Row>
-        <Row type="flex">
+        <Row type="flex" justify="space-between">
           {prev && (
             <Link to={previousUrl}>
               <Icon type="left" /> Previous post: {previousLabel}
