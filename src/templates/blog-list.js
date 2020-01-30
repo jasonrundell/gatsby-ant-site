@@ -23,7 +23,13 @@ export default props => {
     <Layout
       title={data.site.siteMetadata.title}
       pathname="/blog/"
-      crumbs={[{ path: '/blog/', text: 'Blog' }]}
+      crumbs={[
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/blog/', breadcrumbName: 'Blog' },
+      ]}
     >
       <SEO
         title={`${data.site.siteMetadata.title} | Blog`}
@@ -53,11 +59,9 @@ export default props => {
         <Pagination
           totalPosts={totalPosts}
           pageSize={limit}
-          roothPath={'/blog/'}
+          rootPath={'/blog/'}
           previousPageNumber={previousPageNumber}
           nextPageNumber={nextPageNumber}
-          previousBridge={'...'}
-          nextBridge={'...'}
           currentPage={currentPage}
         />
       </div>

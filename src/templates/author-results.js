@@ -15,8 +15,12 @@ export default props => {
       title={data.site.siteMetadata.title}
       pathname={path}
       crumbs={[
-        { path: '/authors/', text: 'Authors' },
-        { path: path, text: pageContext.author },
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/authors/', breadcrumbName: 'Authors' },
+        { path: path, breadcrumbName: pageContext.author },
       ]}
     >
       <SEO

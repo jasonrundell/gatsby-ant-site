@@ -1,24 +1,22 @@
-import { Link } from 'gatsby'
 import React from 'react'
-
-import styles from './index.module.scss'
+import { Link } from 'gatsby'
+import { Breadcrumb } from 'antd'
 
 export default ({ crumbs }) => {
-  const crumbItems = crumbs.map(crumb => {
-    return (
-      <li key={crumb.path}>
-        <Link to={crumb.path}>{crumb.text}</Link>
-      </li>
+  const itemRender = (route, params, routes, paths) => {
+    const last = routes.indexOf(route) === routes.length - 1
+    return last ? (
+      <span>{route.breadcrumbName}</span>
+    ) : (
+      <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
     )
-  })
+  }
+
   return (
-    <nav aria-label="Breadcrumb" className={styles.root}>
-      <ol>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        {crumbItems}
-      </ol>
-    </nav>
+    <Breadcrumb
+      aria-label="Breadcrumb"
+      itemRender={itemRender}
+      routes={crumbs}
+    />
   )
 }
