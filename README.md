@@ -1,6 +1,6 @@
 # gatsby-site-ant-starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a23aa033-b880-4390-af38-71f86768a577/deploy-status)](https://app.netlify.com/sites/jovial-swartz-3be317/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a23aa033-b880-4390-af38-71f86768a577/deploy-status)](https://app.netlify.com/sites/gatsby-ant-site/deploys)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e8ed336683d4daeb3a3429e5eb50320)](https://www.codacy.com/manual/jason.rundell/gatsby-blog?utm_source=github.com&utm_medium=referral&utm_content=jasonrundell/gatsby-blog&utm_campaign=Badge_Grade)
 
 Kick off your blog project with this default boilerplate (based off of
@@ -14,7 +14,7 @@ collection of
 
 ## View current build
 
-[https://jovial-swartz-3be317.netlify.com](https://jovial-swartz-3be317.netlify.com)
+[https://gatsby-ant-site.netlify.com](https://gatsby-ant-site.netlify.com/)
 
 ## 🚀 Quick start
 
@@ -105,7 +105,7 @@ This project is licensed under the MIT license.
 
 ## Demo
 
-[https://jovial-swartz-3be317.netlify.com/](https://jovial-swartz-3be317.netlify.com/)
+[https://gatsby-ant-site.netlify.com/](https://gatsby-ant-site.netlify.com/)
 
 ## Cudos
 
