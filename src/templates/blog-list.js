@@ -38,18 +38,19 @@ export default props => {
         lang={data.site.siteMetadata.lang}
       />
       <ul className={styles.list}>
-        {posts.map(({ node: post }) => {
+        {posts.map(({ node: item }) => {
+          const post = item.frontmatter
           return (
-            <li key={post.id} className={styles.listItem}>
+            <li key={item.id} className={styles.listItem}>
               <BlogPostCard
-                image={post.frontmatter.featured_image}
-                altText={post.frontmatter.featured_image_alt}
-                link={post.frontmatter.path}
-                author={post.frontmatter.author}
-                category={post.frontmatter.category}
-                title={post.frontmatter.title}
-                date={post.frontmatter.date}
-                excerpt={post.frontmatter.the_excerpt}
+                image={post.featured_image}
+                altText={post.featured_image_alt}
+                link={post.path}
+                author={post.author}
+                category={post.category}
+                title={post.title}
+                date={post.date}
+                excerpt={post.the_excerpt}
               />
             </li>
           )
