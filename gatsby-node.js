@@ -146,23 +146,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Create Blog pagination
-
-  // Take posts length and divide by X, ceil it
   const limit = 4
   const totalPosts = posts.length
   const numPages = Math.ceil(totalPosts / limit)
   Array.from({ length: numPages }).forEach((_, i) => {
     const currentPage = i + 1
     const previousPageNumber = i === 0 ? null : currentPage - 1
-    const nextPageNumber = i === totalPosts ? null : currentPage + 1
+    const nextPageNumber = i === numPages - 1 ? null : currentPage + 1
     createPage({
       path: i === 0 ? `/blog/` : `/blog/${i + 1}/`,
       component: path.resolve('./src/templates/blog-list.js'),
       context: {
         previousPageNumber,
-        previousPageUrl: `/blog/${previousPageNumber}/`,
         nextPageNumber,
-        nextPageUrl: `/blog/${nextPageNumber}/`,
         limit,
         skip: i * limit,
         totalPosts,

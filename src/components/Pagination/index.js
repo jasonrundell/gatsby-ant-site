@@ -6,11 +6,9 @@ import PropTypes from 'prop-types'
 const PaginationList = ({
   totalPosts,
   pageSize,
-  roothPath,
+  rootPath,
   previousPageNumber,
   nextPageNumber,
-  previousBridge,
-  nextBridge,
   previousLabel,
   nextLabel,
   currentPage,
@@ -18,7 +16,8 @@ const PaginationList = ({
   const linkList = () => {
     let links = []
     let linkClassName
-    for (let i = 1; i <= pageSize; i++) {
+    const numberOfPages = Math.ceil(totalPosts / pageSize)
+    for (let i = 1; i <= numberOfPages; i++) {
       if (i === currentPage) {
         linkClassName = `ant-pagination-item ant-pagination-item-${i} ant-pagination-item-active`
       } else {
@@ -27,13 +26,13 @@ const PaginationList = ({
       if (i === 1) {
         links.push(
           <li key={i} className={linkClassName}>
-            <Link to={`${roothPath}`}>{i}</Link>
+            <Link to={`${rootPath}`}>{i}</Link>
           </li>
         )
       } else {
         links.push(
           <li key={i} className={linkClassName}>
-            <Link to={`${roothPath}${i}`}>{i}</Link>
+            <Link to={`${rootPath}${i}`}>{i}</Link>
           </li>
         )
       }
@@ -53,7 +52,7 @@ const PaginationList = ({
       <ul>
         {previousPageNumber && (
           <li className={prevClassName}>
-            <Link to={`${roothPath}${previousPageNumber}`}>
+            <Link to={`${rootPath}${previousPageNumber}`}>
               <Icon type="left" /> {previousLabel}
             </Link>
           </li>
@@ -61,7 +60,7 @@ const PaginationList = ({
         {linkList()}
         {nextPageNumber && (
           <li className="ant-pagination-next">
-            <Link to={`${roothPath}${nextPageNumber}`}>
+            <Link to={`${rootPath}${nextPageNumber}`}>
               {nextLabel} <Icon type="right" />
             </Link>
           </li>
@@ -72,22 +71,19 @@ const PaginationList = ({
 }
 
 PaginationList.defaultProps = {
-  previousBridge: '...',
-  nextBridge: '...',
   previousLabel: 'Previous Page',
   nextLabel: 'Next Page',
 }
 
 PaginationList.propTypes = {
+  totalPosts: PropTypes.number.isRequired,
   pageSize: PropTypes.number.isRequired,
-  roothPath: PropTypes.string.isRequired,
+  rootPath: PropTypes.string.isRequired,
+  currentPage: PropTypes.number.isRequired,
   previousPageNumber: PropTypes.number,
   nextPageNumber: PropTypes.number,
-  previousBridge: PropTypes.string,
-  nextBridge: PropTypes.string,
   previousLabel: PropTypes.string,
   nextLabel: PropTypes.string,
-  currentPage: PropTypes.string,
 }
 
 export default PaginationList
