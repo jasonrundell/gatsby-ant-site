@@ -40,18 +40,11 @@ const PaginationList = ({
     return links
   }
 
-  let prevClassName = `ant-pagination-prev`
-  if (currentPage === 1) {
-    prevClassName = `ant-pagination-disabled ant-pagination-prev`
-  } else {
-    prevClassName = `ant-pagination-prev`
-  }
-
   return (
     <nav role="navigation" aria-label="Pagination Navigation">
       <ul>
         {previousPageNumber && (
-          <li className={prevClassName}>
+          <li className={`ant-pagination-prev`}>
             <Link to={`${rootPath}${previousPageNumber}`}>
               <Icon type="left" /> {previousLabel}
             </Link>
@@ -59,7 +52,7 @@ const PaginationList = ({
         )}
         {linkList()}
         {nextPageNumber && (
-          <li className="ant-pagination-next">
+          <li className={`ant-pagination-next`}>
             <Link to={`${rootPath}${nextPageNumber}`}>
               {nextLabel} <Icon type="right" />
             </Link>
