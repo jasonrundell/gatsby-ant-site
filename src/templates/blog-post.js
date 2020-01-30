@@ -71,7 +71,7 @@ export default props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Row>
         <Row type="flex">
-          <Title level={5}>Tags</Title>
+          <Title level={4}>Tags</Title>
         </Row>
         <Row type="flex">
           <TagsList tags={tags || []} />
