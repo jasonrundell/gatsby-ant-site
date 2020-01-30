@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 
@@ -13,9 +13,14 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname={path}
       crumbs={[
-        { path: '/categories', text: 'Categories' },
-        { path: path, text: pageContext.category },
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/categories/', breadcrumbName: 'Categories' },
+        { path: path, breadcrumbName: pageContext.category },
       ]}
     >
       <SEO
@@ -38,7 +43,7 @@ export default props => {
           )
         })}
       </ul>
-      <Link to="/categories">All categories</Link>
+      <Link to="/categories/">All categories</Link>
     </Layout>
   )
 }

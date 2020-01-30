@@ -9,7 +9,7 @@ the_excerpt:
   neutra tumblr selfies microdosing williamsburg next level.
 author: jason-rundell
 date: 2019-07-15T18:00:00.000-04:00
-path: /blog/tofu-next-level-pickled-hammock
+path: /blog/tofu-next-level-pickled-hammock/
 category: technology
 tags:
   - tofu

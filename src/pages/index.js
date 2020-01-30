@@ -1,56 +1,53 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { Typography, Row } from 'antd'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Section from '../components/section'
-import Button from '../components/button'
-import Icon from '../components/icons'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import BlogPostCard from '../components/BlogPostCard'
 
-export default ({ data }) => (
-  <Layout title={data.site.siteMetadata.title}>
-    <SEO
-      title={`${data.site.siteMetadata.title} | Home`}
-      description={data.site.siteMetadata.description}
-      author={data.site.siteMetadata.author}
-      lang={data.site.siteMetadata.lang}
-    />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <Section isLarge={true}>
-      <Button>Default</Button>
-      <Button isBrand={true}>Brand</Button>
-      <Button isLight={true}>Light</Button>
-      <Button isDark={true}>Dark</Button>
-      <div style={{ backgroundColor: '#000000', padding: '16px' }}>
-        <Button isBrandInverse={true}>Brand Inverse</Button>
-        <Button isLightInverse={true}>Light Inverse</Button>
-        <Button isDarkInverse={true}>Dark Inverse</Button>
-      </div>
-    </Section>
-    <Section isConstrained={true}>
-      <Icon icon="checkmark" />
-      <Icon icon="checkmark" isBrand={true} />
-      <Icon icon="checkmark" isLight={true} />
-      <Icon icon="checkmark" isDark={true} />
-    </Section>
-    <Section>
-      <Icon icon="dot" />
-      <Icon icon="dot" isBrand={true} />
-      <Icon icon="dot" isLight={true} />
-      <Icon icon="dot" isDark={true} />
-    </Section>
-    <Section>
-      <Icon icon="tooltip" />
-      <Icon icon="tooltip" isBrand={true} />
-      <Icon icon="tooltip" isLight={true} />
-      <Icon icon="tooltip" isDark={true} />
-    </Section>
-    <Section>
-      <Link to="/blog/">Go to the Blog</Link>
-    </Section>
-  </Layout>
-)
+const { Title } = Typography
+
+export default ({ data }) => {
+  const latestPost = data.allMarkdownRemark.edges[0].node.frontmatter
+
+  return (
+    <Layout title={data.site.siteMetadata.title} pathname="/">
+      <SEO
+        title={`${data.site.siteMetadata.title} | Home`}
+        description={data.site.siteMetadata.description}
+        author={data.site.siteMetadata.author}
+        lang={data.site.siteMetadata.lang}
+      />
+      <Row type="flex" justify="center">
+        <Title>{data.site.siteMetadata.title}</Title>
+      </Row>
+      <Row type="flex" justify="center">
+        <Title level={2}>
+          A starter blog site made with Gatsby and Ant Design
+        </Title>
+      </Row>
+      <Row type="flex" justify="start">
+        <Title level={3}>Latest blog post</Title>
+      </Row>
+      <Row type="flex" justify="start">
+        <BlogPostCard
+          image={latestPost.featured_image}
+          altText={latestPost.featured_image_alt}
+          link={latestPost.path}
+          author={latestPost.author}
+          category={latestPost.category}
+          title={latestPost.title}
+          date={latestPost.date}
+          excerpt={latestPost.the_excerpt}
+        />
+      </Row>
+      <Row type="flex" justify="start">
+        <Link to="/blog/">Go to the Blog</Link>
+      </Row>
+    </Layout>
+  )
+}
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -66,6 +63,33 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            the_excerpt
+            date(formatString: "YYYY-MM-DDTHH:mm:ss.SSSZ")
+            category
+            author
+            path
+            featured_image {
+              childImageSharp {
+                fluid(maxWidth: 304) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            featured_image_alt
+          }
         }
       }
     }

@@ -8,7 +8,7 @@ the_excerpt:
   sustainable jean shorts literally hoodie paleo schlitz heirloom.
 author: jason-rundell
 date: 2019-06-21T18:00:00.000-04:00
-path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table
+path: /blog/bitters-salvia-aesthetic-yr-celiac-farm-to-table/
 category: social-media
 tags:
   - bitters

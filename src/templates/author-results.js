@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 import formatAuthorName from '../utils/formatAuthorName'
 
@@ -13,9 +13,14 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname={path}
       crumbs={[
-        { path: '/authors', text: 'Authors' },
-        { path: path, text: pageContext.author },
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/authors/', breadcrumbName: 'Authors' },
+        { path: path, breadcrumbName: pageContext.author },
       ]}
     >
       <SEO
@@ -38,7 +43,7 @@ export default props => {
           )
         })}
       </ul>
-      <Link to="/authors">All authors</Link>
+      <Link to="/authors/">All authors</Link>
     </Layout>
   )
 }

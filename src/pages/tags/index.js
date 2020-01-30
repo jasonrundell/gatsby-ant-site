@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
 
 export default props => {
   const { data } = props
@@ -11,6 +11,7 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname="/tags/"
       crumbs={[{ path: '/tags/', text: 'Tags' }]}
     >
       <SEO
@@ -29,7 +30,7 @@ export default props => {
           </li>
         ))}
       </ul>
-      <Link to="/blog">All posts</Link>
+      <Link to="/blog/">All posts</Link>
     </Layout>
   )
 }

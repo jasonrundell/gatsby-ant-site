@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 export default props => {
   const { data, pageContext, path, tag } = props
@@ -10,9 +10,14 @@ export default props => {
   return (
     <Layout
       title={data.site.siteMetadata.title}
+      pathname={path}
       crumbs={[
-        { path: '/tags', text: 'Tags' },
-        { path: path, text: pageContext.tag },
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/tags/', breadcrumbName: 'Tags' },
+        { path: path, breadcrumbName: pageContext.tag },
       ]}
     >
       <SEO
@@ -35,7 +40,7 @@ export default props => {
           )
         })}
       </ul>
-      <Link to="/tags">All tags</Link>
+      <Link to="/tags/">All tags</Link>
     </Layout>
   )
 }

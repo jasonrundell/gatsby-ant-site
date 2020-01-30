@@ -1,4 +1,4 @@
-# gatsby-blog
+# gatsby-site-ant-starter
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a23aa033-b880-4390-af38-71f86768a577/deploy-status)](https://app.netlify.com/sites/jovial-swartz-3be317/deploys)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e8ed336683d4daeb3a3429e5eb50320)](https://www.codacy.com/manual/jason.rundell/gatsby-blog?utm_source=github.com&utm_medium=referral&utm_content=jasonrundell/gatsby-blog&utm_campaign=Badge_Grade)
@@ -35,7 +35,7 @@ Once installed, open a terminal/command window and enter:
 node -v
 ```
 
-If Node is installed corectly, you should get output like the following:
+If Node is installed correctly, you should get output like the following:
 
 ```sh
 $ node -v
@@ -53,7 +53,7 @@ Once installed, open a terminal/command window and enter:
 gatsby --v
 ```
 
-Is installed corectly, you should get some output like the following:
+Is installed correctly, you should get some output like the following:
 
 ```sh
 $ gatsby --v
