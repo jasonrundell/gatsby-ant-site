@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import moment from 'moment'
-import { Icon, Pagination } from 'antd'
+import { Icon, Row, Typography } from 'antd'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -12,6 +12,8 @@ import formatAuthorName from '../utils/formatAuthorName'
 
 import './blog-post.css'
 import styles from './blog-post.module.scss'
+
+const { Title, Paragraph } = Typography
 
 export default props => {
   const { data, pageContext } = props
@@ -35,31 +37,6 @@ export default props => {
   const nextUrl = next ? next.frontmatter.path : null
   const nextLabel = next ? next.frontmatter.title : null
 
-  const paginationItemRender = (current, type, originalElement) => {
-    if (previousUrl && type === 'prev') {
-      return (
-        <Link to={previousUrl}>
-          <Icon type="left" /> Previous post: {previousLabel}
-        </Link>
-      )
-    }
-
-    if (nextUrl && type === 'next') {
-      return (
-        <Link to={nextUrl}>
-          Next post: {nextLabel}
-          <Icon type="right" />
-        </Link>
-      )
-    }
-
-    if (type === 'page') {
-      return null
-    }
-
-    return originalElement
-  }
-
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -80,17 +57,38 @@ export default props => {
         lang={data.site.siteMetadata.lang}
       />
       <article>
-        <h1>{title}</h1>
-        <p className={styles.post__meta}>
-          <Link to={`/authors/${author}/`}>{authorFormatted}</Link> |{' '}
-          <time dateTime={date}>{easyDate}</time> |{' '}
-          <Link to={`/categories/${category}/`}>{categoryFormatted}</Link>
-        </p>
-
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <h3>Tags</h3>
-        <TagsList tags={tags || []} />
-        <Pagination itemRender={paginationItemRender} />
+        <Row type="flex" justify="center">
+          <Title>{title}</Title>
+        </Row>
+        <Row type="flex" justify="center">
+          <Paragraph className={styles.post__meta}>
+            <Link to={`/authors/${author}/`}>{authorFormatted}</Link> |{' '}
+            <time dateTime={date}>{easyDate}</time> |{' '}
+            <Link to={`/categories/${category}/`}>{categoryFormatted}</Link>
+          </Paragraph>
+        </Row>
+        <Row type="flex">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Row>
+        <Row type="flex">
+          <Title level={5}>Tags</Title>
+        </Row>
+        <Row type="flex">
+          <TagsList tags={tags || []} />
+        </Row>
+        <Row type="flex">
+          {prev && (
+            <Link to={previousUrl}>
+              <Icon type="left" /> Previous post: {previousLabel}
+            </Link>
+          )}
+          {next && (
+            <Link to={nextUrl}>
+              Next post: {nextLabel}
+              <Icon type="right" />
+            </Link>
+          )}
+        </Row>
       </article>
     </Layout>
   )
