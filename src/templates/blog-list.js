@@ -1,51 +1,35 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
-import { Icon, Pagination } from 'antd'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import BlogPostCard from '../components/BlogPostCard'
+import Pagination from '../components/Pagination'
 
 import styles from './blog-list.module.scss'
 
 export default props => {
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
-  const { nextPageUrl, previousPageUrl, totalPosts, limit } = pageContext
-
-  const paginationItemRender = (current, type, originalElement) => {
-    if (previousPageUrl && type === 'prev') {
-      return (
-        <Link to={previousPageUrl}>
-          <Icon type="left" />
-        </Link>
-      )
-    }
-
-    if (nextPageUrl && type === 'next') {
-      return (
-        <Link to={nextPageUrl}>
-          <Icon type="right" />
-        </Link>
-      )
-    }
-
-    if (type === 'page') {
-      if (current === 1) {
-        return <Link to={`/blog/`}>{current}</Link>
-      } else {
-        return <Link to={`/blog/${current}`}>{current}</Link>
-      }
-    }
-
-    return originalElement
-  }
+  const {
+    totalPosts,
+    limit,
+    previousPageNumber,
+    nextPageNumber,
+    currentPage,
+  } = pageContext
 
   return (
     <Layout
       title={data.site.siteMetadata.title}
       pathname="/blog/"
-      crumbs={[{ path: '/blog/', text: 'Blog' }]}
+      crumbs={[
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/blog/', breadcrumbName: 'Blog' },
+      ]}
     >
       <SEO
         title={`${data.site.siteMetadata.title} | Blog`}
@@ -54,18 +38,19 @@ export default props => {
         lang={data.site.siteMetadata.lang}
       />
       <ul className={styles.list}>
-        {posts.map(({ node: post }) => {
+        {posts.map(({ node: item }) => {
+          const post = item.frontmatter
           return (
-            <li key={post.id} className={styles.listItem}>
+            <li key={item.id} className={styles.listItem}>
               <BlogPostCard
-                image={post.frontmatter.featured_image}
-                altText={post.frontmatter.featured_image_alt}
-                link={post.frontmatter.path}
-                author={post.frontmatter.author}
-                category={post.frontmatter.category}
-                title={post.frontmatter.title}
-                date={post.frontmatter.date}
-                excerpt={post.frontmatter.the_excerpt}
+                image={post.featured_image}
+                altText={post.featured_image_alt}
+                link={post.path}
+                author={post.author}
+                category={post.category}
+                title={post.title}
+                date={post.date}
+                excerpt={post.the_excerpt}
               />
             </li>
           )
@@ -73,10 +58,12 @@ export default props => {
       </ul>
       <div className={styles.pagination__container}>
         <Pagination
-          defaultCurrent={1}
+          totalPosts={totalPosts}
           pageSize={limit}
-          total={totalPosts}
-          itemRender={paginationItemRender}
+          rootPath={'/blog/'}
+          previousPageNumber={previousPageNumber}
+          nextPageNumber={nextPageNumber}
+          currentPage={currentPage}
         />
       </div>
     </Layout>

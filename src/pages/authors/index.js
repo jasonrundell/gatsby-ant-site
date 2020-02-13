@@ -14,7 +14,13 @@ export default props => {
     <Layout
       title={data.site.siteMetadata.title}
       pathname="/authors/"
-      crumbs={[{ path: '/authors/', text: 'Authors' }]}
+      crumbs={[
+        {
+          path: '/',
+          breadcrumbName: 'Home',
+        },
+        { path: '/authors/', breadcrumbName: 'Authors' },
+      ]}
     >
       <SEO
         title={`${data.site.siteMetadata.title} | Authors`}

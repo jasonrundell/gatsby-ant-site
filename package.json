@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Jason Rundell <jason.rundell@gmail.com>",
   "dependencies": {
-    "antd": "^3.25.3",
+    "antd": "^3.26.7",
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-algolia": "^0.3.3",
