@@ -21,6 +21,12 @@
   }
 }
 
+.mobile-menu__button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
 .content {
   display: flex;
   flex-direction: column;

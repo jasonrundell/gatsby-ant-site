@@ -6,10 +6,10 @@ import { Layout, Menu, List, Popover, Button, Icon } from 'antd'
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
 
-import styles from './Layout.module.scss'
-
 import 'antd/dist/antd.css'
 import '../../styles/antd-overrides.scss'
+
+import styles from './Layout.module.scss'
 
 const { Header, Content, Footer } = Layout
 
@@ -87,7 +87,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
             onClick={mobileMenuOnClick}
             trigger="click"
           >
-            <Button type="primary">
+            <Button type="primary" className={styles.mobileMenu__button}>
               <Icon type={menuCollapsed ? 'menu-unfold' : 'menu-fold'} /> Menu
             </Button>
           </Popover>
