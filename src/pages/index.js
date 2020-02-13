@@ -4,12 +4,12 @@ import { Typography, Row } from 'antd'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import BlogPostCard from '../components/BlogPostCard'
+import BlogPostList from '../components/BlogPostList'
 
 const { Title } = Typography
 
 export default ({ data }) => {
-  const latestPost = data.allMarkdownRemark.edges[0].node.frontmatter
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout title={data.site.siteMetadata.title} pathname="/">
@@ -28,19 +28,10 @@ export default ({ data }) => {
         </Title>
       </Row>
       <Row type="flex" justify="start">
-        <Title level={3}>Latest blog post</Title>
+        <Title level={3}>Latest blog posts</Title>
       </Row>
       <Row type="flex" justify="start">
-        <BlogPostCard
-          image={latestPost.featured_image}
-          altText={latestPost.featured_image_alt}
-          link={latestPost.path}
-          author={latestPost.author}
-          category={latestPost.category}
-          title={latestPost.title}
-          date={latestPost.date}
-          excerpt={latestPost.the_excerpt}
-        />
+        <BlogPostList posts={posts} />
       </Row>
       <Row type="flex" justify="start">
         <Link to="/blog/">Go to the Blog</Link>
@@ -68,7 +59,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1
+      limit: 2
     ) {
       edges {
         node {

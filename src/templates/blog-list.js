@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import BlogPostCard from '../components/BlogPostCard'
+import BlogPostList from '../components/BlogPostList'
 import Pagination from '../components/Pagination'
 
 import styles from './blog-list.module.scss'
@@ -37,25 +37,7 @@ export default props => {
         author={data.site.siteMetadata.author}
         lang={data.site.siteMetadata.lang}
       />
-      <ul className={styles.list}>
-        {posts.map(({ node: item }) => {
-          const post = item.frontmatter
-          return (
-            <li key={item.id} className={styles.listItem}>
-              <BlogPostCard
-                image={post.featured_image}
-                altText={post.featured_image_alt}
-                link={post.path}
-                author={post.author}
-                category={post.category}
-                title={post.title}
-                date={post.date}
-                excerpt={post.the_excerpt}
-              />
-            </li>
-          )
-        })}
-      </ul>
+      <BlogPostList posts={posts} />
       <div className={styles.pagination__container}>
         <Pagination
           totalPosts={totalPosts}
