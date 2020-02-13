@@ -31,6 +31,12 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           <Menu.Item key="/blog/">
             <Link to="/blog/">Blog</Link>
           </Menu.Item>
+          <Menu.Item key="/products/">
+            <Link to="/products/">Products</Link>
+          </Menu.Item>
+          <Menu.Item key="/contact-us/">
+            <Link to="/contact-us/">Contact Us</Link>
+          </Menu.Item>
         </Menu>
       </Header>
       <SkipToMain />
