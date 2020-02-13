@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Typography, Row } from 'antd'
 
 import Layout from '../components/Layout'
