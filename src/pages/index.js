@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import BlogPostList from '../components/BlogPostList'
 
-const { Title } = Typography
+const { Title, Paragraph } = Typography
 
 export default ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -23,9 +23,9 @@ export default ({ data }) => {
         <Title>{data.site.siteMetadata.title}</Title>
       </Row>
       <Row type="flex" justify="center">
-        <Title level={2}>
+        <Paragraph>
           A starter blog site made with Gatsby and Ant Design
-        </Title>
+        </Paragraph>
       </Row>
       <Row type="flex" justify="start">
         <Title level={3}>Latest blog posts</Title>
