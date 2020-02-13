@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Link, navigate } from 'gatsby'
-import { Layout, Menu, TreeSelect } from 'antd'
+import { Link } from 'gatsby'
+import { Layout, Menu, List, Popover, Button, Icon } from 'antd'
 
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
@@ -12,14 +12,48 @@ import 'antd/dist/antd.css'
 import '../../styles/antd-overrides.scss'
 
 const { Header, Content, Footer } = Layout
-const { TreeNode } = TreeSelect
 
 const _Layout = ({ title, crumbs, children, pathname }) => {
-  const [menuValue] = useState(undefined)
+  const [menuCollapsed, setMenuCollapsed] = useState(false)
 
-  const onChange = value => {
-    navigate(value)
+  const mobileMenuOnClick = () => {
+    if (menuCollapsed) {
+      setMenuCollapsed(false)
+    } else {
+      setMenuCollapsed(true)
+    }
   }
+
+  const mobileMenuData = [
+    {
+      title: 'Home',
+      url: '/',
+    },
+    {
+      title: 'Blog',
+      url: '/blog',
+    },
+    {
+      title: 'Products',
+      url: '/products/',
+    },
+    {
+      title: 'Contact Us',
+      url: '/contact-us/',
+    },
+  ]
+
+  const mobileMenuList = (
+    <List
+      dataSource={mobileMenuData}
+      renderItem={item => (
+        <List.Item>
+          <Link to={item.url}>{item.title}</Link>
+        </List.Item>
+      )}
+    />
+  )
+
   return (
     <>
       <Header className={styles.header}>
@@ -47,24 +81,16 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           </Menu.Item>
         </Menu>
         <div className={styles.mobileMenu}>
-          <TreeSelect
-            showSearch
-            value={menuValue}
-            dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
-            placeholder="Menu"
-            allowClear
-            treeDefaultExpandAll
-            onChange={onChange}
+          <Popover
+            placement="bottomRight"
+            content={mobileMenuList}
+            onClick={mobileMenuOnClick}
+            trigger="click"
           >
-            <TreeNode value="/" title="Home" key="/" />
-            <TreeNode value="/blog/" title="Blog" key="/blog/" />
-            <TreeNode value="/products/" title="Products" key="/products/" />
-            <TreeNode
-              value="/contact-us/"
-              title="Contact Us"
-              key="/contact-us/"
-            />
-          </TreeSelect>
+            <Button type="primary">
+              <Icon type={menuCollapsed ? 'menu-unfold' : 'menu-fold'} /> Menu
+            </Button>
+          </Popover>
         </div>
       </Header>
       <SkipToMain />
