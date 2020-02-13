@@ -9,6 +9,7 @@ import Breadcrumb from '../Breadcrumb'
 import styles from './Layout.module.scss'
 
 import 'antd/dist/antd.css'
+import '../../styles/antd-overrides.scss'
 
 const { Header, Content, Footer } = Layout
 const { TreeNode } = TreeSelect
