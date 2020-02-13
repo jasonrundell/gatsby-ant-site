@@ -4,6 +4,14 @@
   left: 0;
   z-index: 1;
   width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.mobile-menu {
+  @media (min-width: $tabletBreakpoint) {
+    display: none;
+  }
 }
 
 .content {

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { Layout, Menu } from 'antd'
+import { Link, navigate } from 'gatsby'
+import { Layout, Menu, TreeSelect } from 'antd'
 
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
@@ -11,8 +11,14 @@ import styles from './index.module.scss'
 import 'antd/dist/antd.css'
 
 const { Header, Content, Footer } = Layout
+const { TreeNode } = TreeSelect
 
 const _Layout = ({ title, crumbs, children, pathname }) => {
+  const [menuValue, setMenuValue] = useState(undefined)
+
+  const onChange = value => {
+    navigate(value)
+  }
   return (
     <>
       <Header className={styles.header}>
@@ -20,7 +26,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           {title}
         </Link>
         <Menu
-          className={`visible--large`}
+          className={styles.visibleLarge}
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname]}
@@ -39,6 +45,26 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
             <Link to="/contact-us/">Contact Us</Link>
           </Menu.Item>
         </Menu>
+        <div className={styles.mobileMenu}>
+          <TreeSelect
+            showSearch
+            value={menuValue}
+            dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
+            placeholder="Menu"
+            allowClear
+            treeDefaultExpandAll
+            onChange={onChange}
+          >
+            <TreeNode value="/" title="Home" key="/" />
+            <TreeNode value="/blog/" title="Blog" key="/blog/" />
+            <TreeNode value="/products/" title="Products" key="/products/" />
+            <TreeNode
+              value="/contact-us/"
+              title="Contact Us"
+              key="/contact-us/"
+            />
+          </TreeSelect>
+        </div>
       </Header>
       <SkipToMain />
       <Content id="main" className={styles.content}>
