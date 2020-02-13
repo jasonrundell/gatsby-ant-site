@@ -9,6 +9,7 @@
 
 .list--item {
   flex: 0 0 100%;
+  padding-right: 1rem;
 
   @media (min-width: $desktopBreakpoint) {
     flex: 0 0 50%;
