@@ -6,7 +6,7 @@ import { Layout, Menu, TreeSelect } from 'antd'
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
 
-import styles from './index.module.scss'
+import styles from './Layout.module.scss'
 
 import 'antd/dist/antd.css'
 
@@ -14,7 +14,7 @@ const { Header, Content, Footer } = Layout
 const { TreeNode } = TreeSelect
 
 const _Layout = ({ title, crumbs, children, pathname }) => {
-  const [menuValue, setMenuValue] = useState(undefined)
+  const [menuValue] = useState(undefined)
 
   const onChange = value => {
     navigate(value)
@@ -26,7 +26,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           {title}
         </Link>
         <Menu
-          className={styles.visibleLarge}
+          className={styles.menu}
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname]}

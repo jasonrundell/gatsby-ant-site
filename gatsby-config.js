@@ -48,7 +48,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        data: `@import "./src/styles/globals";`,
+        data: `@import "./src/styles/globals.scss";`,
       },
     },
     {

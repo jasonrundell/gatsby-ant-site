@@ -8,6 +8,13 @@
   padding-left: 2rem;
 }
 
+.menu {
+  display: none;
+  @media (min-width: $tabletBreakpoint) {
+    display: block;
+  }
+}
+
 .mobile-menu {
   @media (min-width: $tabletBreakpoint) {
     display: none;
