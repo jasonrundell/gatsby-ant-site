@@ -33,9 +33,6 @@ export default ({ data }) => {
       <Row type="flex" justify="start">
         <BlogPostList posts={posts} />
       </Row>
-      <Row type="flex" justify="start">
-        <Link to="/blog/">Go to the Blog</Link>
-      </Row>
     </Layout>
   )
 }
