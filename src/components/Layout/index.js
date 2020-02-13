@@ -1,18 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { Layout, Menu } from 'antd'
+import { Layout, Menu, List, Popover, Button, Icon } from 'antd'
 
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
 
-import styles from './index.module.scss'
-
 import 'antd/dist/antd.css'
+import '../../styles/antd-overrides.scss'
+
+import styles from './Layout.module.scss'
 
 const { Header, Content, Footer } = Layout
 
 const _Layout = ({ title, crumbs, children, pathname }) => {
+  const [menuCollapsed, setMenuCollapsed] = useState(false)
+
+  const mobileMenuOnClick = () => {
+    if (menuCollapsed) {
+      setMenuCollapsed(false)
+    } else {
+      setMenuCollapsed(true)
+    }
+  }
+
+  const mobileMenuData = [
+    {
+      title: 'Home',
+      url: '/',
+    },
+    {
+      title: 'Blog',
+      url: '/blog',
+    },
+    {
+      title: 'Products',
+      url: '/products/',
+    },
+    {
+      title: 'Contact Us',
+      url: '/contact-us/',
+    },
+  ]
+
+  const mobileMenuList = (
+    <List
+      dataSource={mobileMenuData}
+      renderItem={item => (
+        <List.Item>
+          <Link to={item.url}>{item.title}</Link>
+        </List.Item>
+      )}
+    />
+  )
+
   return (
     <>
       <Header className={styles.header}>
@@ -20,6 +61,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           {title}
         </Link>
         <Menu
+          className={styles.menu}
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname]}
@@ -31,7 +73,25 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           <Menu.Item key="/blog/">
             <Link to="/blog/">Blog</Link>
           </Menu.Item>
+          <Menu.Item key="/products/">
+            <Link to="/products/">Products</Link>
+          </Menu.Item>
+          <Menu.Item key="/contact-us/">
+            <Link to="/contact-us/">Contact Us</Link>
+          </Menu.Item>
         </Menu>
+        <div className={styles.mobileMenu}>
+          <Popover
+            placement="bottomRight"
+            content={mobileMenuList}
+            onClick={mobileMenuOnClick}
+            trigger="click"
+          >
+            <Button type="primary" className={styles.mobileMenu__button}>
+              <Icon type={menuCollapsed ? 'menu-unfold' : 'menu-fold'} /> Menu
+            </Button>
+          </Popover>
+        </div>
       </Header>
       <SkipToMain />
       <Content id="main" className={styles.content}>

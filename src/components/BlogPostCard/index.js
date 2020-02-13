@@ -7,7 +7,7 @@ import ImageFluid from '../ImageFluid'
 import formatCategoryTitle from '../../utils/formatCategoryTitle'
 import formatAuthorName from '../../utils/formatAuthorName'
 
-import styles from './index.module.scss'
+import styles from './BlogPostCard.module.scss'
 
 const BlogPostCard = ({
   image,

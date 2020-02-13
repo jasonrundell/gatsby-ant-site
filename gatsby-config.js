@@ -44,8 +44,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-axe`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        data: `@import "./src/styles/globals.scss";`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
