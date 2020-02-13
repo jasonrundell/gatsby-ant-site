@@ -20,6 +20,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
           {title}
         </Link>
         <Menu
+          className={`visible--large`}
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname]}
