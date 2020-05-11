@@ -46,7 +46,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
   const mobileMenuList = (
     <List
       dataSource={mobileMenuData}
-      renderItem={item => (
+      renderItem={(item) => (
         <List.Item>
           <Link to={item.url}>{item.title}</Link>
         </List.Item>

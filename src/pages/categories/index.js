@@ -6,7 +6,7 @@ import SEO from '../../components/SEO'
 
 import formatCategoryTitle from '../../utils/formatCategoryTitle'
 
-export default props => {
+export default (props) => {
   const { data } = props
   const { allMarkdownRemark } = data
   const { group } = allMarkdownRemark
@@ -30,7 +30,7 @@ export default props => {
       />
       <h1>All Categories</h1>
       <ul>
-        {group.map(item => (
+        {group.map((item) => (
           <li key={item.fieldValue}>
             <Link to={`/categories/${item.fieldValue}`}>
               {formatCategoryTitle(item.fieldValue)} ({item.totalCount})

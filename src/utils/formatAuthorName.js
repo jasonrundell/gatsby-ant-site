@@ -1,7 +1,7 @@
 import capitalizeAll from './capitalizeAll'
 import replaceAll from './replaceAll'
 
-const formatAuthorName = authorSlug => {
+const formatAuthorName = (authorSlug) => {
   authorSlug = replaceAll(authorSlug, '-', ' ')
   authorSlug = capitalizeAll(authorSlug)
 

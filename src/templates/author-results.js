@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 
 import formatAuthorName from '../utils/formatAuthorName'
 
-export default props => {
+export default (props) => {
   const { data, pageContext, path } = props
   const { authorResult, author } = pageContext
   const authorFormatted = formatAuthorName(author)

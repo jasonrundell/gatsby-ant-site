@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 
 import formatCategoryTitle from '../utils/formatCategoryTitle'
 
-export default props => {
+export default (props) => {
   const { data, pageContext, path } = props
   const { categoryResult, category } = pageContext
   const categoryFormatted = formatCategoryTitle(category)

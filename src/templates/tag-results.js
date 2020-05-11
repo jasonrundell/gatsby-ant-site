@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 
-export default props => {
+export default (props) => {
   const { data, pageContext, path, tag } = props
   const { tagResult } = pageContext
   return (

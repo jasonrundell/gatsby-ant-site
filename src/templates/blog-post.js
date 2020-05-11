@@ -15,7 +15,7 @@ import styles from './blog-post.module.scss'
 
 const { Title, Paragraph } = Typography
 
-export default props => {
+export default (props) => {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
