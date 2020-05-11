@@ -60,7 +60,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run newtest"
+      "pre-push": "npm run test"
     }
   }
 }
