@@ -30,7 +30,7 @@
     "babel-preset-gatsby": "^0.2.8",
     "cross-env": "^7.0.2",
     "eslint": "^7.0.0",
-    "husky": "^3.0.3",
+    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "normalize.css": "^8.0.1",
