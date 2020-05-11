@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "babel-jest": "^26.0.1",
-    "babel-preset-gatsby": "^0.2.8",
+    "babel-preset-gatsby": "^0.4.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.0.0",
     "husky": "^4.2.5",
