@@ -7,8 +7,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
     "antd": "^3.26.7",
-    "gatsby": "^2.13.57",
-    "gatsby-image": "^2.2.8",
+    "gatsby": "^2.21.22",
+    "gatsby-image": "^2.4.3",
     "gatsby-plugin-manifest": "^2.2.5",
     "gatsby-plugin-offline": "^3.2.1",
     "gatsby-plugin-react-axe": "^0.4.0",
