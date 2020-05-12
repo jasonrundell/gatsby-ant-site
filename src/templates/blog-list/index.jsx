@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import BlogPostList from '../components/BlogPostList'
-import Pagination from '../components/Pagination'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
+import BlogPostList from '../../components/BlogPostList'
+import Pagination from '../../components/Pagination'
 
 import styles from './blog-list.module.scss'
 

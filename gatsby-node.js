@@ -1,12 +1,12 @@
 const path = require('path')
 
 const createTagPages = (createPage, edges) => {
-  const tagResultsTemplate = path.resolve(`src/templates/tag-results.js`)
+  const tagResultsTemplate = path.resolve(`src/templates/tag-results/index.jsx`)
   const tagResults = {}
 
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
-      node.frontmatter.tags.forEach((tag) => {
+      node.frontmatter.tags.forEach(tag => {
         if (!tagResults[tag]) {
           tagResults[tag] = []
         }
@@ -15,7 +15,7 @@ const createTagPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(tagResults).forEach((tagName) => {
+  Object.keys(tagResults).forEach(tagName => {
     const tagResult = tagResults[tagName]
     createPage({
       path: `/tags/${tagName}/`,
@@ -31,7 +31,7 @@ const createTagPages = (createPage, edges) => {
 
 const createCategoryPages = (createPage, edges) => {
   const categoryResultsTemplate = path.resolve(
-    `src/templates/category-results.js`
+    `src/templates/category-results/index.jsx`
   )
   const categoryResults = {}
 
@@ -45,7 +45,7 @@ const createCategoryPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(categoryResults).forEach((category) => {
+  Object.keys(categoryResults).forEach(category => {
     const categoryResult = categoryResults[category]
     createPage({
       path: `/categories/${category}/`,
@@ -60,7 +60,7 @@ const createCategoryPages = (createPage, edges) => {
 }
 
 const createAuthorPages = (createPage, edges) => {
-  const authorResultsTemplate = path.resolve(`src/templates/author-results.js`)
+  const authorResultsTemplate = path.resolve(`src/templates/author-results/index.jsx`)
   const authorResults = {}
 
   edges.forEach(({ node }) => {
@@ -73,7 +73,7 @@ const createAuthorPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(authorResults).forEach((author) => {
+  Object.keys(authorResults).forEach(author => {
     const authorResult = authorResults[author]
     createPage({
       path: `/authors/${author}/`,
@@ -90,7 +90,7 @@ const createAuthorPages = (createPage, edges) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions
 
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const blogPostTemplate = path.resolve(`src/templates/blog-post/index.jsx`)
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -155,7 +155,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const nextPageNumber = i === numPages - 1 ? null : currentPage + 1
     createPage({
       path: i === 0 ? `/blog/` : `/blog/${i + 1}/`,
-      component: path.resolve('./src/templates/blog-list.js'),
+      component: path.resolve('./src/templates/blog-list/index.jsx'),
       context: {
         previousPageNumber,
         nextPageNumber,

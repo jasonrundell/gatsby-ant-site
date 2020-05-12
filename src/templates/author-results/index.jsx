@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
 
-import formatCategoryTitle from '../utils/formatCategoryTitle'
+import formatAuthorName from '../../utils/formatAuthorName'
 
 export default (props) => {
   const { data, pageContext, path } = props
-  const { categoryResult, category } = pageContext
-  const categoryFormatted = formatCategoryTitle(category)
+  const { authorResult, author } = pageContext
+  const authorFormatted = formatAuthorName(author)
   return (
     <Layout
       title={data.site.siteMetadata.title}
@@ -19,22 +19,22 @@ export default (props) => {
           path: '/',
           breadcrumbName: 'Home',
         },
-        { path: '/categories/', breadcrumbName: 'Categories' },
-        { path: path, breadcrumbName: pageContext.category },
+        { path: '/authors/', breadcrumbName: 'Authors' },
+        { path: path, breadcrumbName: pageContext.author },
       ]}
     >
       <SEO
-        title={`${data.site.siteMetadata.title} | Category: '${categoryFormatted}'`}
+        title={`${data.site.siteMetadata.title} | Author: '${authorFormatted}'`}
         description={data.site.siteMetadata.description}
         author={data.site.siteMetadata.author}
         lang={data.site.siteMetadata.lang}
       />
       <h1>
-        {categoryResult.length} post{categoryResult.length === 1 ? '' : 's'} in
-        '{categoryFormatted}'
+        {authorResult.length} post{authorResult.length === 1 ? '' : 's'} by '
+        {authorFormatted}'
       </h1>
       <ul>
-        {categoryResult.map(({ id, frontmatter, excerpt }) => {
+        {authorResult.map(({ id, frontmatter, excerpt }) => {
           return (
             <li key={id}>
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
@@ -43,13 +43,13 @@ export default (props) => {
           )
         })}
       </ul>
-      <Link to="/categories/">All categories</Link>
+      <Link to="/authors/">All authors</Link>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query CategoryResults {
+  query AuthorsResults {
     site {
       siteMetadata {
         title
