@@ -4,12 +4,12 @@ import moment from 'moment'
 import { Row, Typography } from 'antd'
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import TagsList from '../components/TagsList'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
+import TagsList from '../../components/TagsList'
 
-import formatCategoryTitle from '../utils/formatCategoryTitle'
-import formatAuthorName from '../utils/formatAuthorName'
+import formatCategoryTitle from '../../utils/formatCategoryTitle'
+import formatAuthorName from '../../utils/formatAuthorName'
 
 import './blog-post.css'
 import styles from './blog-post.module.scss'
