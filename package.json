@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jason Rundell <jason.rundell@gmail.com>",
   "dependencies": {
+    "@ant-design/icons": "^4.1.0",
     "antd": "^3.26.7",
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
