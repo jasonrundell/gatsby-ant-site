@@ -6,25 +6,12 @@
   width: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
-}
-
-.menu {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   @media (min-width: $tabletBreakpoint) {
-    display: block;
+    justify-content: flex-start;
   }
-}
-
-.mobile-menu {
-  @media (min-width: $tabletBreakpoint) {
-    display: none;
-  }
-}
-
-.mobile-menu__button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
 }
 
 .content {
