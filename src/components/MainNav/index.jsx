@@ -9,8 +9,8 @@ import SiteNavContext from '../../context/site-nav'
 import styles from './MainNav.module.scss'
 
 const MainNav = ({ pathname }) => {
-  const [menuCollapsed, setMenuCollapsed] = useState(false)
   const { nav } = useContext(SiteNavContext)
+  const [menuCollapsed, setMenuCollapsed] = useState(false)
 
   const mobileMenuOnClick = () => {
     if (menuCollapsed) {
@@ -19,11 +19,12 @@ const MainNav = ({ pathname }) => {
       setMenuCollapsed(true)
     }
   }
-  const mobileMenuData = nav
+
+  const siteNavLinks = nav
 
   const mobileMenuList = (
     <List
-      dataSource={mobileMenuData}
+      dataSource={siteNavLinks}
       renderItem={(item) => (
         <List.Item>
           <Link to={item.url}>{item.title}</Link>
@@ -40,18 +41,11 @@ const MainNav = ({ pathname }) => {
         selectedKeys={[pathname]}
         style={{ lineHeight: '4rem' }}
       >
-        <Menu.Item key="/">
-          <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item key="/blog/">
-          <Link to="/blog/">Blog</Link>
-        </Menu.Item>
-        <Menu.Item key="/products/">
-          <Link to="/products/">Products</Link>
-        </Menu.Item>
-        <Menu.Item key="/contact-us/">
-          <Link to="/contact-us/">Contact Us</Link>
-        </Menu.Item>
+        {siteNavLinks.map((item) => (
+          <Menu.Item key={item.id}>
+            <Link to={item.url}>{item.title}</Link>
+          </Menu.Item>
+        ))}
       </Menu>
       <div className={styles.mobileMenu}>
         <Popover
