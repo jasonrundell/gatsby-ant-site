@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import { Menu, List, Popover, Button } from 'antd'
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
+
+import SiteNavContext from '../../context/site-nav'
 
 import styles from './MainNav.module.scss'
 
 const MainNav = ({ pathname }) => {
   const [menuCollapsed, setMenuCollapsed] = useState(false)
+  const { nav } = useContext(SiteNavContext)
 
   const mobileMenuOnClick = () => {
     if (menuCollapsed) {
