@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import { Menu, List, Popover, Button } from 'antd'
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
 
