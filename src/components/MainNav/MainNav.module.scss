@@ -1,0 +1,15 @@
+.menu {
+  display: none;
+  @media (min-width: $tabletBreakpoint) {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (min-width: $tabletBreakpoint) {
+    display: none;
+  }
+}
