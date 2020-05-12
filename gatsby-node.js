@@ -6,7 +6,7 @@ const createTagPages = (createPage, edges) => {
 
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
-      node.frontmatter.tags.forEach((tag) => {
+      node.frontmatter.tags.forEach(tag => {
         if (!tagResults[tag]) {
           tagResults[tag] = []
         }
@@ -15,7 +15,7 @@ const createTagPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(tagResults).forEach((tagName) => {
+  Object.keys(tagResults).forEach(tagName => {
     const tagResult = tagResults[tagName]
     createPage({
       path: `/tags/${tagName}/`,
@@ -45,7 +45,7 @@ const createCategoryPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(categoryResults).forEach((category) => {
+  Object.keys(categoryResults).forEach(category => {
     const categoryResult = categoryResults[category]
     createPage({
       path: `/categories/${category}/`,
@@ -73,7 +73,7 @@ const createAuthorPages = (createPage, edges) => {
     }
   })
 
-  Object.keys(authorResults).forEach((author) => {
+  Object.keys(authorResults).forEach(author => {
     const authorResult = authorResults[author]
     createPage({
       path: `/authors/${author}/`,
