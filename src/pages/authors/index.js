@@ -6,7 +6,7 @@ import SEO from '../../components/SEO'
 
 import formatAuthorName from '../../utils/formatAuthorName'
 
-export default props => {
+export default (props) => {
   const { data } = props
   const { allMarkdownRemark } = data
   const { group } = allMarkdownRemark
@@ -30,7 +30,7 @@ export default props => {
       />
       <h1>All Authors</h1>
       <ul>
-        {group.map(item => (
+        {group.map((item) => (
           <li key={item.fieldValue}>
             <Link to={`/authors/${item.fieldValue}`}>
               {formatAuthorName(item.fieldValue)} ({item.totalCount})

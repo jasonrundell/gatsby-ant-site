@@ -5,13 +5,13 @@
   "version": "0.1.0",
   "author": "Jason Rundell <jason.rundell@gmail.com>",
   "dependencies": {
+    "@ant-design/icons": "^4.1.0",
     "antd": "^3.26.7",
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
-    "gatsby-plugin-algolia": "^0.3.3",
     "gatsby-plugin-manifest": "^2.2.5",
-    "gatsby-plugin-offline": "^2.2.5",
-    "gatsby-plugin-react-axe": "^0.2.2",
+    "gatsby-plugin-offline": "^3.2.1",
+    "gatsby-plugin-react-axe": "^0.4.0",
     "gatsby-plugin-react-helmet": "^3.1.3",
     "gatsby-plugin-sass": "^2.1.6",
     "gatsby-plugin-sharp": "^2.2.11",
@@ -24,18 +24,18 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^6.0.0"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
-    "babel-preset-gatsby": "^0.2.8",
-    "cross-env": "^5.2.0",
-    "eslint": "^6.1.0",
-    "husky": "^3.0.3",
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.0.0",
+    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.8.0",
+    "jest": "^26.0.1",
     "normalize.css": "^8.0.1",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.5",
     "react-test-renderer": "^16.9.0"
   },
   "keywords": [
@@ -61,7 +61,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run newtest"
+      "pre-push": "npm run test"
     }
   }
 }

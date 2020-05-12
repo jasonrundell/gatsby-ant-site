@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import moment from 'moment'
-import { Icon, Row, Typography } from 'antd'
+import { Row, Typography } from 'antd'
+import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -15,7 +16,7 @@ import styles from './blog-post.module.scss'
 
 const { Title, Paragraph } = Typography
 
-export default props => {
+export default (props) => {
   const { data, pageContext } = props
   const { markdownRemark: post } = data
   const { next, prev } = pageContext
@@ -79,13 +80,13 @@ export default props => {
         <Row type="flex" justify="space-between">
           {prev && (
             <Link to={previousUrl}>
-              <Icon type="left" /> Previous post: {previousLabel}
+              <LeftOutlined /> Previous post: {previousLabel}
             </Link>
           )}
           {next && (
             <Link to={nextUrl}>
               Next post: {nextLabel}
-              <Icon type="right" />
+              <RightOutlined />
             </Link>
           )}
         </Row>

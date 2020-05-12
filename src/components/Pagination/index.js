@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Icon } from 'antd'
+import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import PropTypes from 'prop-types'
 
 const PaginationList = ({
@@ -46,7 +46,7 @@ const PaginationList = ({
         {previousPageNumber && (
           <li className={`ant-pagination-prev`}>
             <Link to={`${rootPath}${previousPageNumber}`}>
-              <Icon type="left" /> {previousLabel}
+              <LeftOutlined /> {previousLabel}
             </Link>
           </li>
         )}
@@ -54,7 +54,7 @@ const PaginationList = ({
         {nextPageNumber && (
           <li className={`ant-pagination-next`}>
             <Link to={`${rootPath}${nextPageNumber}`}>
-              {nextLabel} <Icon type="right" />
+              {nextLabel} <RightOutlined />
             </Link>
           </li>
         )}

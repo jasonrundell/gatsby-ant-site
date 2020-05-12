@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { Layout, Menu, List, Popover, Button, Icon } from 'antd'
+import { Layout, Menu, List, Popover, Button } from 'antd'
+import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
 
 import SkipToMain from '../SkipToMain'
 import Breadcrumb from '../Breadcrumb'
@@ -46,7 +47,7 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
   const mobileMenuList = (
     <List
       dataSource={mobileMenuData}
-      renderItem={item => (
+      renderItem={(item) => (
         <List.Item>
           <Link to={item.url}>{item.title}</Link>
         </List.Item>
@@ -88,7 +89,9 @@ const _Layout = ({ title, crumbs, children, pathname }) => {
             trigger="click"
           >
             <Button type="primary" className={styles.mobileMenu__button}>
-              <Icon type={menuCollapsed ? 'menu-unfold' : 'menu-fold'} /> Menu
+              {menuCollapsed && <MenuUnfoldOutlined />}
+              {!menuCollapsed && <MenuFoldOutlined />}
+              Menu
             </Button>
           </Popover>
         </div>

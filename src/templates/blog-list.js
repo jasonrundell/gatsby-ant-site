@@ -8,7 +8,7 @@ import Pagination from '../components/Pagination'
 
 import styles from './blog-list.module.scss'
 
-export default props => {
+export default (props) => {
   const { data, pageContext } = props
   const { edges: posts } = data.allMarkdownRemark
   const {

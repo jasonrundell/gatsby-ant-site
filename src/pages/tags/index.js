@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 
-export default props => {
+export default (props) => {
   const { data } = props
   const { allMarkdownRemark } = data
   const { group } = allMarkdownRemark
@@ -22,7 +22,7 @@ export default props => {
       />
       <h1>All Tags</h1>
       <ul>
-        {group.map(item => (
+        {group.map((item) => (
           <li key={item.fieldValue}>
             <Link to={`/tags/${item.fieldValue}`}>
               {item.fieldValue} ({item.totalCount})
